@@ -1,0 +1,14 @@
+python logohunter_multi.py  --image --input_brands ../data/test/test_brands/test_golden_state.jpg  \
+                              --input_images ../data/cropped_one  \
+                              --output ../data/out_multi \
+                              --box 'multi.csv' \
+                              --yolo_model keras_yolo3/logs/0002/trained_weights_final.h5 \
+                              --classes data_all_classes.txt
+
+
+python logohunter.py  --image --input_brands ../data/test/test_brands/test_golden_state.jpg  \
+                              --input_images ../data/houses_SF  \
+                              --output ../data/test/test_single --outtxt \
+                              --box 'single.csv' \
+                              --yolo_model keras_yolo3/logs/0001/trained_weights_final.h5 \
+                              --classes data_classes.txt

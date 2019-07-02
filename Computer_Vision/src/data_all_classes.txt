@@ -1,12 +1,4 @@
-background
-facade
-molding
-cornice
-pillar
 window
 door
-sill
-blind
-balcony
-shop
-deco
+opening
+garage

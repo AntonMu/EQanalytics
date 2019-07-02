@@ -14,8 +14,7 @@ from similarity import load_brands_compute_cutoffs
 from utils import load_extractor_model, load_features, model_flavor_from_name, parse_input
 import test
 import utils
-import pandas as pd
-import numpy as np
+
 sim_threshold = 0.95
 output_txt = 'out.txt'
 
@@ -98,14 +97,6 @@ if __name__ == '__main__':
         '--fpr', type=float, dest = 'fpr', default = 0.95,
         help='False positive rate target to define similarity cutoffs'
     )
-    
-    
-    parser.add_argument(
-        '--box', type=str, dest = 'box', default = 'bounding_boxes.csv',
-        help='Specify the filne name for bounding boxes'
-    )
-    
-    
 
     FLAGS = parser.parse_args()
 
@@ -180,9 +171,7 @@ if __name__ == '__main__':
                     }
                    )
 
-        # Make a dataframe for the prediction outputs
-        out_df = pd.DataFrame(columns=['image', 'xmin', 'ymin', 'xmax', 'ymax', 'label','confidence','x_size','y_size'])
-        
+
         input_paths = sorted(FLAGS.input_brands)
         # labels to draw on images - could also be read from filename
         input_labels = [ os.path.basename(s).split('test_')[-1].split('.')[0] for s in input_paths]
@@ -207,22 +196,13 @@ if __name__ == '__main__':
             text = img_path
             prediction, image = detect_logo(yolo, img_path, save_img = save_img_logo,
                                               save_img_path = FLAGS.output,
-                                              postfix='_houses')
+                                              postfix='_logo')
 
             text = match_logo(image, prediction, (model, my_preprocess), text,
                       (feat_input, sim_cutoff, bins, cdf_list, input_labels),
                       save_img = save_img_match, save_img_path=FLAGS.output)
-            
             print(text)
-            y_size,x_size,_ = np.array(image).shape
-            for single_prediction in prediction:
-#                 row = [text]
-#                 row.append(prediction)
-#                 print('row',row)
-#                 print(type(prediction))
-#                 print([text]+single_prediction)
-                out_df=out_df.append(pd.DataFrame([[text[:-1]]+single_prediction + [y_size,x_size]],columns=['image', 'xmin', 'ymin', 'xmax', 'ymax', 'label','confidence','x_size','y_size']))
-#             print(prediction)
+            print(prediction)
             text_out += (text)
 
         if FLAGS.save_to_txt:
@@ -233,7 +213,6 @@ if __name__ == '__main__':
         print('Processed {} images in {:.1f}sec - {:.1f}FPS'.format(
              len(FLAGS.input_images), end-start, len(FLAGS.input_images)/(end-start)
              ))
-        out_df.to_csv(FLAGS.box,index=False)
 
     # video mode
     # elif FLAGS.video:

@@ -23,7 +23,7 @@ def _main():
     num_classes = len(class_names)
     anchors = get_anchors(anchors_path)
 
-    input_shape = (416, 416) # multiple of 32, hw
+    input_shape = (640, 640) # multiple of 32, hw
     epoch1, epoch2 = 40, 40
 
     is_tiny_version = (len(anchors)==6) # default setting
