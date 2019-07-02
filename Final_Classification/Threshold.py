@@ -131,8 +131,6 @@ def calcuate_softness(df,metric='x_len'):
     return result_df
 
 
-# df_path = 'C:/Users/Anton/Documents/Insight/eq/EQ_new/Final_Segmentation/multi.csv'
-# file_path = 'C:/Users/Anton/Documents/Insight/eq/EQ_new/Final_Segmentation/Selection/'
 df_path = 'multi.csv'
 file_path = 'Selection/'
 label_names = ['background', 'facade', 'molding', 'cornice', 'pillar', 'window', 'door', 'sill', 'blind', 'balcony', 'shop', 'deco']
