@@ -29,7 +29,7 @@ On a high level, the model training consists of four seperate steps:
 ### Inference
 Model inference consists of four similar steps. After entering an address (or list of addresses), the corresponding street view images will be downloaded. For all images, the housing model first segments and crops one house per address. Then the opening detector labels all openings and creates a csv file with all dimensions and positions of the openings. Finally, the softness score is determined and used to classify the building as "soft", "non_soft" or "undetermined". 
 
-![pipeline](/Misc/pipeline.gif)
+![pipeline](/VOTT_houses.png)
 
 ## Repo structure
 + `1_Pre_Processing`: All Preprocessing Tasks
