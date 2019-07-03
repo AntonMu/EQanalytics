@@ -1,4 +1,5 @@
-# LogoHunter: Brand Detection As A Service
+
+# EQanalytics: Detection of Vulnerable Buildings
 
 Machine learning project developed at Insight Data Science, 2019 AI session.
 
