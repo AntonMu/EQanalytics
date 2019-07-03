@@ -1,0 +1,811 @@
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aquapac/img000041_15.jpg 228,249,241,324,0 131,110,151,135,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aquapac/img000039_15.jpg 259,106,304,117,0 83,246,126,257,0 274,78,287,93,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aquapac/img000017_15.jpg 606,128,741,154,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aquapac/img000031_15.jpg 444,502,545,535,0 445,435,502,498,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/armitron/img000094_17.jpg 55,139,107,149,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/armitron/img000100_17.jpg 259,194,333,212,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/armitron/img000036_17.jpg 90,185,141,199,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/armitron/img000177_17.jpg 210,557,328,587,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/armitron/img000061_17.jpg 78,107,110,114,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/armitron/img000033_17.jpg 135,96,164,104,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/armitron/img000066_17.jpg 183,32,262,62,0 56,550,100,599,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/armitron/img000062_17.jpg 72,91,105,96,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/armitron/img000175_17.jpg 317,349,381,364,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/armitron/img000130_17.jpg 137,166,175,175,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/armitron/img000103_17.jpg 144,425,232,442,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/armitron/img000013_17.jpg 187,283,370,319,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BASF/img000054_24.jpg 612,926,768,960,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BASF/img000018_24.jpg 237,150,475,201,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BASF/img000138_24.jpg 874,517,966,538,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BASF/img000010_24.jpg 287,35,334,53,0 404,46,420,67,0 238,34,275,52,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BASF/img000015_24.jpg 46,263,605,371,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BASF/img000174_24.jpg 275,86,351,103,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BASF/img000032_24.jpg 153,126,205,148,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BASF/img000058_24.jpg 36,102,109,119,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bensherman/img000010_29.jpg 125,63,216,78,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bemwireless/img000022_28.jpg 323,495,468,559,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bemwireless/img000044_28.jpg 45,117,77,129,0 236,120,267,132,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bemwireless/img000145_28.jpg 321,200,341,209,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bemwireless/img000129_28.jpg 99,143,144,162,0 358,143,407,164,0 624,133,671,152,0 97,450,148,466,0 376,459,426,476,0 644,455,693,474,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bemwireless/img000002_28.jpg 57,191,80,199,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bemwireless/img000207_28.jpg 54,235,76,254,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bemwireless/img000003_28.jpg 308,782,411,812,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bemwireless/img000127_28.jpg 237,147,262,161,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bemwireless/img000032_28.jpg 14,12,52,24,0 22,66,46,75,0 140,66,163,75,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bemwireless/img000096_28.jpg 108,309,157,324,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bemwireless/img000182_28.jpg 232,725,486,776,0 528,394,593,410,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bemwireless/img000187_28.jpg 313,176,424,247,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bemwireless/img000054_28.jpg 20,195,50,204,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bemwireless/img000153_28.jpg 384,81,567,133,0 456,343,562,384,0 999,343,1100,377,0 429,847,600,883,0 506,571,548,590,0 1036,565,1076,582,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bemwireless/img000105_28.jpg 99,151,123,160,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bemwireless/img000074_28.jpg 136,175,203,228,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bemwireless/img000085_28.jpg 112,153,157,173,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bemwireless/img000001_28.jpg 167,379,225,400,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bemwireless/img000186_28.jpg 44,440,121,464,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bemwireless/img000130_28.jpg 8,109,34,120,0 162,110,188,121,0 316,110,344,124,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bemwireless/img000025_28.jpg 57,131,100,152,0 182,108,209,122,0 268,89,284,100,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bemwireless/img000094_28.jpg 110,248,245,288,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bemwireless/img000176_28.jpg 290,389,354,403,0 318,547,371,574,0 347,708,408,731,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/athalon/img000030_19.jpg 220,237,235,250,0 249,103,277,184,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/athalon/img000015_19.jpg 300,771,372,912,0 305,895,380,942,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/0samples/img000015_1.jpg 66,276,158,305,0 18,251,58,306,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/0samples/img000010_1.jpg 294,207,358,282,0 323,377,371,402,0 183,351,206,388,0 212,340,233,380,0 258,319,319,359,0 404,194,488,246,0 422,128,461,197,0 240,331,257,368,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/0samples/img000013_1.jpg 48,18,245,101,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/amazon/img000093_10.jpg 386,143,526,191,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/amazon/img000010_10.jpg 337,53,399,76,0 378,291,468,321,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/amazon/img000090_10.jpg 786,492,1539,949,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/amazon/img000089_10.jpg 83,268,326,362,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/amazon/img000055_10.jpg 4,304,980,701,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/amazon/img000041_10.jpg 110,15,743,325,0 187,201,895,595,0 44,1,479,128,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/amazon/img000056_10.jpg 218,27,763,397,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/amazon/img000109_10.jpg 297,300,330,313,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/amazon/img000028_10.jpg 52,17,452,157,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bellodigital/img000023_27.jpg 493,114,579,365,0 628,315,772,621,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bellodigital/img000013_27.jpg 155,121,194,153,0 258,124,298,156,0 360,141,397,167,0 456,137,490,164,0 548,131,580,154,0 101,256,186,317,0 216,244,297,304,0 319,243,394,299,0 422,234,484,288,0 515,220,575,277,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bellodigital/img000025_27.jpg 558,616,629,691,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bellodigital/img000016_27.jpg 739,526,946,768,0 270,490,495,680,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bellodigital/img000009_27.jpg 368,509,460,585,0 717,646,823,753,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bellodigital/img000028_27.jpg 717,572,934,770,0 389,572,598,730,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000056_37.jpg 196,168,230,240,0 1,321,24,368,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000102_37.jpg 1773,698,2608,875,0 1578,752,1714,901,0 562,560,749,813,0 3357,342,3501,475,0 3206,372,3298,424,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000310_37.jpg 28,24,164,159,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000493_37.jpg 106,362,245,477,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000021_37.jpg 172,502,420,542,0 179,135,416,358,0 245,547,347,566,0 208,699,230,721,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000148_37.jpg 343,248,493,398,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000124_37.jpg 750,212,824,298,0 337,328,367,384,0 79,89,144,190,0 386,245,698,375,0 753,309,850,336,0 689,732,809,844,0 861,717,935,808,0 600,147,655,224,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000029_37.jpg 88,102,546,154,0 290,44,346,100,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000014_37.jpg 373,135,430,217,0 82,270,167,316,0 526,265,614,310,0 40,252,58,300,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000178_37.jpg 259,224,288,264,0 332,219,355,260,0 250,280,268,307,0 260,339,275,359,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000377_37.jpg 6,5,73,73,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000220_37.jpg 2063,721,2830,952,0 1927,844,2053,991,0 1109,1042,1261,1280,0 1376,952,1525,1147,0 707,1552,781,1673,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000142_37.jpg 1601,223,1718,430,0 1,1,286,328,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000304_37.jpg 116,39,332,66,0 342,32,383,73,0 66,30,106,71,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000081_37.jpg 838,145,1342,461,0 1217,791,1264,859,0 688,66,820,223,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000283_37.jpg 235,186,468,229,0 186,195,225,239,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000140_37.jpg 478,269,524,333,0 96,338,120,384,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000417_37.jpg 503,278,601,372,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000215_37.jpg 168,97,240,110,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000038_37.jpg 272,161,312,202,0 335,281,432,318,0 145,279,253,312,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000054_37.jpg 717,175,825,281,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000351_37.jpg 144,63,413,96,0 384,353,408,380,0 487,354,513,381,0 149,351,175,378,0 46,352,73,378,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000003_37.jpg 158,75,201,141,0 800,92,823,158,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000368_37.jpg 146,86,330,266,0 616,229,733,350,0 546,232,597,282,0 46,427,265,636,0 74,715,168,809,0 196,728,787,797,0 294,429,771,495,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000071_37.jpg 63,15,116,72,0 193,22,215,80,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000427_37.jpg 224,68,367,96,0 88,230,111,266,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000120_37.jpg 593,298,705,315,0 205,300,247,317,0 541,297,561,318,0 738,296,757,315,0 780,391,810,452,0 231,189,258,270,0 70,305,108,319,0 278,138,358,223,0 609,347,649,367,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000483_37.jpg 249,211,338,305,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000070_37.jpg 271,41,299,77,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000489_37.jpg 81,142,161,159,0 426,129,467,173,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000037_37.jpg 191,79,210,116,0 212,88,301,128,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000006_37.jpg 150,70,261,90,0 128,71,145,92,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000503_37.jpg 1376,2515,1873,3015,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000194_37.jpg 16,62,86,129,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000032_37.jpg 352,99,392,154,0 114,110,133,173,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000040_37.jpg 278,132,422,160,0 245,123,271,152,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000395_37.jpg 264,15,810,195,0 91,1,225,101,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000113_37.jpg 212,77,294,96,0 414,81,485,100,0 399,78,413,97,0 196,79,208,98,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000389_37.jpg 400,111,503,128,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000344_37.jpg 406,88,496,175,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000466_37.jpg 1,185,81,214,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000046_37.jpg 335,169,383,231,0 82,24,231,217,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000295_37.jpg 1137,300,1229,399,0 1263,311,1767,393,0 374,172,532,326,0 413,420,456,468,0 747,310,774,411,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000448_37.jpg 922,584,958,632,0 964,590,1160,635,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000156_37.jpg 358,146,465,199,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000502_37.jpg 252,244,341,302,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000313_37.jpg 107,29,365,203,0 546,69,568,114,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000447_37.jpg 214,258,403,315,0 663,316,741,347,0 643,311,661,343,0 783,345,813,375,0 685,360,731,411,0 42,269,87,329,0 169,245,206,300,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000323_37.jpg 595,66,745,172,0 543,39,588,114,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000408_37.jpg 307,261,392,351,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000055_37.jpg 402,357,979,433,0 661,464,725,527,0 98,241,125,260,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000334_37.jpg 227,138,360,263,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000371_37.jpg 247,117,879,235,0 992,387,1019,412,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000137_37.jpg 350,98,388,144,0 748,177,782,241,0 665,170,710,225,0 395,112,570,174,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000104_37.jpg 106,54,142,112,0 233,52,269,112,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000286_37.jpg 255,43,349,138,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000062_37.jpg 210,1,257,61,0 270,160,289,181,0 264,188,280,195,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000049_37.jpg 235,19,270,56,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000141_37.jpg 353,156,385,219,0 283,401,293,413,0 635,290,675,303,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000027_37.jpg 118,54,195,152,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000327_37.jpg 455,179,516,249,0 1090,239,1126,291,0 615,190,1027,288,0 809,610,882,696,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000043_37.jpg 428,218,484,288,0 273,209,342,320,0 811,317,854,393,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000360_37.jpg 154,148,333,198,0 495,139,590,185,0 88,55,135,109,0 255,253,280,279,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000200_37.jpg 493,360,760,465,0 607,469,640,520,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000105_37.jpg 293,99,311,129,0 195,146,258,161,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/burgerking/img000481_37.jpg 140,100,339,130,0 106,103,134,133,0 88,32,339,57,0 37,34,84,62,0 368,134,393,176,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chevrolet/img000047_42.jpg 2011,580,2066,615,0 1314,939,1331,950,0 2068,585,2211,647,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chevrolet/img000086_42.jpg 265,68,377,89,0 226,72,262,89,0 179,233,197,241,0 413,257,433,267,0 1,225,14,232,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chevrolet/img000061_42.jpg 179,58,211,69,0 213,57,301,70,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chevrolet/img000056_42.jpg 239,150,296,176,0 299,114,494,170,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chevrolet/img000048_42.jpg 1901,769,2145,879,0 2163,795,2705,960,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chevrolet/img000059_42.jpg 155,426,178,437,0 474,104,675,132,0 396,106,462,131,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chevrolet/img000021_42.jpg 574,280,598,289,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chevrolet/img000034_42.jpg 635,918,714,952,0 508,446,583,481,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chevrolet/img000072_42.jpg 1368,806,1411,832,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bionade/img000005_32.jpg 2314,488,2640,683,0 2164,1841,2779,2068,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bionade/img000098_32.jpg 225,65,295,116,0 374,60,441,117,0 538,47,609,105,0 710,72,778,126,0 671,369,810,432,0 505,363,640,422,0 344,363,477,419,0 195,363,331,423,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bionade/img000022_32.jpg 174,390,315,444,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bionade/img000016_32.jpg 373,91,432,131,0 341,346,458,391,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bionade/img000143_32.jpg 94,318,212,368,0 103,56,162,101,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bionade/img000115_32.jpg 273,126,349,190,0 274,14,361,67,0 241,353,354,404,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bionade/img000046_32.jpg 833,300,998,415,0 1188,294,1352,408,0 754,1033,1091,1159,0 1108,1036,1442,1176,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bionade/img000026_32.jpg 110,250,261,324,0 14,259,55,308,0 335,284,436,323,0 361,48,410,81,0 83,174,102,188,0 110,168,128,175,0 63,174,81,181,0 40,163,53,170,0 86,157,100,162,0 128,152,140,157,0 156,162,169,169,0 198,157,213,162,0 128,171,145,181,0 172,165,187,176,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bionade/img000093_32.jpg 29,47,81,83,0 147,70,195,99,0 255,92,297,119,0 366,44,418,78,0 3,295,111,339,0 125,288,222,326,0 237,284,320,318,0 340,291,449,334,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bionade/img000109_32.jpg 391,315,654,444,0 183,346,297,391,0 32,310,164,377,0 143,67,208,126,0 234,102,291,149,0 617,77,679,132,0 711,31,779,87,0 816,242,946,328,0 688,292,813,368,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bionade/img000065_32.jpg 174,206,444,315,0 451,201,724,310,0 744,211,1007,322,0 1023,223,1199,333,0 1,197,170,315,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bionade/img000092_32.jpg 273,117,470,189,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bionade/img000056_32.jpg 282,290,456,461,0 752,755,1068,1072,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bionade/img000103_32.jpg 393,196,469,245,0 540,230,618,289,0 692,274,786,342,0 649,1,948,99,0 1,259,223,474,0 387,277,460,341,0 532,320,605,386,0 674,369,763,448,0 837,405,893,445,0 872,345,916,374,0 909,295,942,316,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bionade/img000041_32.jpg 32,148,63,168,0 98,149,130,170,0 163,149,194,169,0 229,149,259,169,0 296,149,326,167,0 15,289,80,314,0 84,290,146,315,0 149,289,210,313,0 214,290,277,314,0 282,289,345,314,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/azeca/img000022_22.jpg 340,201,384,214,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/azeca/img000032_22.jpg 219,192,308,237,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/azeca/img000013_22.jpg 234,72,319,97,0 330,259,346,313,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/abus/img000064_2.jpg 339,372,369,384,0 166,347,196,362,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/abus/img000006_2.jpg 88,180,156,198,0 193,218,246,232,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/abus/img000061_2.jpg 152,274,195,296,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000071_40.jpg 305,268,320,278,0 301,425,334,460,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000189_40.jpg 225,137,245,150,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000050_40.jpg 493,231,528,254,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000098_40.jpg 461,226,511,284,0 815,698,879,760,0 1243,705,1351,840,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000009_40.jpg 111,67,123,78,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000086_40.jpg 546,364,562,382,0 330,250,352,271,0 362,392,375,404,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000175_40.jpg 324,186,348,240,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000135_40.jpg 109,276,160,330,0 431,47,447,75,0 366,280,384,304,0 659,340,683,357,0 571,336,593,352,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000101_40.jpg 631,174,680,185,0 787,292,799,309,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000126_40.jpg 392,249,422,292,0 147,463,193,472,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000000_40.jpg 627,409,672,437,0 275,113,317,130,0 640,358,696,370,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000002_40.jpg 745,379,784,405,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000208_40.jpg 231,115,297,136,0 389,187,458,208,0 253,11,304,44,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000172_40.jpg 158,381,188,406,0 455,354,508,370,0 579,460,603,478,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000095_40.jpg 222,274,242,292,0 372,218,387,238,0 411,261,427,280,0 586,453,605,466,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000210_40.jpg 458,133,479,149,0 527,27,570,38,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000186_40.jpg 178,62,215,100,0 751,200,800,282,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000233_40.jpg 192,300,218,343,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000070_40.jpg 431,84,461,116,0 764,281,781,304,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000007_40.jpg 718,355,804,459,0 1741,771,1816,859,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000044_40.jpg 179,172,207,191,0 75,72,98,92,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000119_40.jpg 54,46,67,59,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000180_40.jpg 179,203,197,218,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000140_40.jpg 427,174,459,215,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000170_40.jpg 141,78,156,91,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000171_40.jpg 7,236,35,248,0 89,330,106,340,0 559,359,584,382,0 424,301,444,318,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000029_40.jpg 197,326,219,345,0 467,171,490,193,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000013_40.jpg 367,121,388,144,0 595,294,614,315,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000111_40.jpg 216,353,243,403,0 684,551,729,589,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000176_40.jpg 154,340,187,364,0 475,137,508,164,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000241_40.jpg 324,96,350,123,0 187,125,203,142,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000001_40.jpg 325,129,350,150,0 523,266,554,285,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000146_40.jpg 382,70,398,85,0 461,236,487,252,0 174,253,185,263,0 19,150,43,159,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/caterpillar/img000102_40.jpg 311,127,326,140,0 519,234,533,248,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aspirin/img000006_18.jpg 324,79,606,213,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aspirin/img000031_18.jpg 377,228,514,468,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000077_45.jpg 16,20,125,40,0 17,108,126,131,0 339,23,412,37,0 15,208,124,229,0 339,110,411,127,0 340,208,412,225,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000106_45.jpg 105,78,293,128,0 55,174,299,233,0 28,180,35,248,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000030_45.jpg 8,4,108,26,0 11,62,108,85,0 13,119,111,142,0 18,175,111,195,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000073_45.jpg 751,288,944,333,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000057_45.jpg 12,206,233,256,0 36,172,252,185,0 478,209,486,310,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000028_45.jpg 419,180,1013,321,0 141,526,927,708,0 68,483,86,729,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000101_45.jpg 68,22,118,53,0 63,89,113,120,0 66,153,116,189,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000161_45.jpg 1318,178,1400,199,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000193_45.jpg 305,1263,1075,1439,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000034_45.jpg 80,114,165,135,0 211,387,434,440,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000031_45.jpg 6,65,97,85,0 57,95,131,116,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000198_45.jpg 267,906,1435,1169,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000045_45.jpg 95,60,205,89,0 44,134,196,171,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000075_45.jpg 99,151,278,243,0 279,214,446,274,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000125_45.jpg 134,93,404,152,0 400,438,589,472,0 165,771,438,831,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000067_45.jpg 38,364,487,466,0 71,317,480,337,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000159_45.jpg 109,457,143,491,0 165,310,265,414,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000006_45.jpg 15,56,124,80,0 13,113,123,138,0 14,169,122,195,0 18,43,123,49,0 18,101,123,106,0 17,156,125,162,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000166_45.jpg 53,138,316,270,0 6,247,50,312,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000173_45.jpg 15,252,38,332,0 103,245,125,332,0 201,241,225,331,0 289,234,310,322,0 362,82,395,90,0 140,275,155,327,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000130_45.jpg 117,787,963,985,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000220_45.jpg 63,27,212,69,0 71,4,218,27,0 59,71,202,88,0 57,100,211,127,0 44,114,172,155,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000202_45.jpg 187,287,480,369,0 122,276,132,375,0 162,233,452,260,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000185_45.jpg 108,177,140,318,0 177,278,387,329,0 190,233,395,262,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/colgate/img000017_45.jpg 20,13,73,25,0 19,73,71,86,0 16,134,70,147,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000040_35.jpg 1054,707,1257,785,0 951,689,1041,787,0 1078,652,1106,667,0 1065,651,1078,670,0 413,245,472,267,0 863,296,924,327,0 1162,179,1303,242,0 1099,164,1150,223,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000001_35.jpg 656,212,965,387,0 548,303,646,412,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000260_35.jpg 325,7,374,20,0 199,15,240,28,0 98,22,130,34,0 86,23,96,36,0 185,16,198,30,0 306,7,320,22,0 6,134,38,161,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000003_35.jpg 159,59,248,103,0 127,81,154,115,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000266_35.jpg 455,262,494,300,0 438,279,455,303,0 500,312,522,342,0 852,514,874,529,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000057_35.jpg 157,208,563,455,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000103_35.jpg 263,83,577,199,0 74,47,216,206,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000165_35.jpg 88,87,287,139,0 3,80,67,145,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000153_35.jpg 171,76,211,101,0 154,68,170,85,0 22,389,63,424,0 4,417,19,434,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000029_35.jpg 291,40,324,55,0 278,39,290,53,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000062_35.jpg 992,743,1219,845,0 892,783,967,870,0 1019,1208,1067,1331,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000188_35.jpg 158,81,298,160,0 1,30,134,169,0 247,20,275,34,0 234,27,246,36,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000108_35.jpg 248,41,337,102,0 214,78,243,121,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000262_35.jpg 611,241,666,274,0 818,253,848,284,0 758,505,797,518,0 431,567,484,601,0 587,253,610,277,0 405,560,428,591,0 738,503,755,519,0 803,245,820,272,0 438,388,486,412,0 1045,445,1074,459,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000261_35.jpg 233,59,279,92,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000326_35.jpg 80,15,125,46,0 72,8,81,25,0 188,73,211,93,0 183,71,189,80,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000259_35.jpg 434,234,469,247,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000141_35.jpg 440,64,506,89,0 410,71,436,95,0 76,351,149,379,0 40,347,69,377,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000352_35.jpg 1592,441,1825,648,0 1463,364,1581,555,0 821,273,1156,548,0 723,455,809,593,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000016_35.jpg 210,80,399,175,0 165,129,204,190,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000179_35.jpg 79,56,177,98,0 46,66,74,103,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000118_35.jpg 226,54,322,103,0 182,43,219,76,0 424,277,448,335,0 364,258,390,325,0 298,232,320,305,0 174,234,199,310,0 82,247,109,325,0 80,326,99,352,0 173,313,194,343,0 298,309,313,334,0 367,325,387,351,0 427,335,449,360,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000226_35.jpg 194,196,223,216,0 184,194,197,211,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000151_35.jpg 125,37,188,56,0 100,35,121,56,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000293_35.jpg 688,325,1109,608,0 20,111,618,753,0 854,65,954,107,0 813,86,844,118,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000147_35.jpg 360,93,420,131,0 335,82,359,110,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000012_35.jpg 230,175,431,267,0 131,154,209,227,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000345_35.jpg 106,21,188,78,0 72,47,98,95,0 496,6,520,60,0 528,27,588,85,0 690,114,720,146,0 677,102,691,135,0 540,158,598,180,0 611,154,630,175,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000098_35.jpg 149,137,197,247,0 125,251,179,306,0 347,52,383,168,0 348,165,391,221,0 565,62,619,166,0 594,171,642,218,0 654,171,713,263,0 703,268,740,307,0 725,235,769,321,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000084_35.jpg 147,81,182,112,0 134,99,149,120,0 657,102,679,123,0 646,99,659,118,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000332_35.jpg 667,3,990,91,0 504,1,616,108,0 738,289,801,321,0 712,284,734,310,0 514,424,540,452,0 549,430,627,459,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bosch/img000126_35.jpg 176,89,390,219,0 39,34,150,150,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/axa/img000016_21.jpg 2,1,234,206,0 236,65,399,295,0 410,180,538,366,0 547,236,620,388,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/axa/img000102_21.jpg 123,228,144,249,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/axa/img000043_21.jpg 290,399,317,434,0 277,398,290,435,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/axa/img000090_21.jpg 83,236,104,256,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/axa/img000097_21.jpg 516,391,553,427,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/axa/img000047_21.jpg 257,1,1241,776,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/axa/img000017_21.jpg 205,26,236,57,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000102_47.jpg 34,135,553,308,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000084_47.jpg 431,444,602,511,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000101_47.jpg 590,202,746,251,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000060_47.jpg 231,103,449,148,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000011_47.jpg 544,536,1085,772,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000003_47.jpg 145,71,253,96,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000000_47.jpg 704,193,994,257,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000079_47.jpg 264,1,396,107,0 477,346,531,365,0 413,436,452,447,0 579,427,605,434,0 148,424,171,432,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000031_47.jpg 164,84,195,119,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000095_47.jpg 198,82,274,107,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000032_47.jpg 493,57,1147,498,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000171_47.jpg 58,135,305,203,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000040_47.jpg 223,154,852,280,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000021_47.jpg 130,39,199,60,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000159_47.jpg 186,148,456,295,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000009_47.jpg 407,250,519,319,0 309,376,342,391,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000071_47.jpg 210,143,264,156,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000178_47.jpg 278,220,1624,690,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000053_47.jpg 274,64,480,116,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000012_47.jpg 2150,303,3111,660,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000085_47.jpg 10,101,147,164,0 232,296,258,304,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000098_47.jpg 132,87,307,124,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000014_47.jpg 152,60,374,147,0 455,275,483,282,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000154_47.jpg 491,157,684,195,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000124_47.jpg 227,115,314,153,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000028_47.jpg 604,186,778,229,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000117_47.jpg 1,108,399,191,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000059_47.jpg 126,122,269,157,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000119_47.jpg 188,26,226,34,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000034_47.jpg 216,135,317,159,0 13,532,118,557,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000016_47.jpg 382,230,544,333,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000081_47.jpg 237,123,295,165,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/costco/img000114_47.jpg 227,1230,4749,2098,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/benrus/img000088_30.jpg 371,178,383,240,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/benrus/img000095_30.jpg 280,285,353,299,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/benrus/img000073_30.jpg 337,273,367,392,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/benrus/img000004_30.jpg 283,161,335,171,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/benrus/img000017_30.jpg 141,172,203,183,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/benrus/img000001_30.jpg 227,116,283,128,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/benrus/img000006_30.jpg 462,270,594,305,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/benrus/img000080_30.jpg 320,279,418,296,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/benrus/img000048_30.jpg 245,201,258,280,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/benrus/img000039_30.jpg 163,401,234,419,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/benrus/img000005_30.jpg 440,276,551,295,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/berthawatches/img000018_31.jpg 202,165,243,186,0 384,257,425,269,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/berthawatches/img000017_31.jpg 1196,290,1254,400,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/berthawatches/img000059_31.jpg 114,244,199,281,0 347,231,381,249,0 614,144,674,180,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/berthawatches/img000061_31.jpg 171,208,209,226,0 415,227,453,245,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/berthawatches/img000053_31.jpg 94,94,129,105,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/berthawatches/img000082_31.jpg 101,163,154,180,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/berthawatches/img000085_31.jpg 472,396,514,467,0 719,84,935,162,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/berthawatches/img000003_31.jpg 333,160,398,181,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/berthawatches/img000055_31.jpg 368,544,421,576,0 688,259,742,289,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/berthawatches/img000096_31.jpg 481,278,501,332,0 518,561,869,636,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/berthawatches/img000097_31.jpg 235,195,280,205,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/berthawatches/img000101_31.jpg 150,175,202,192,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bellabeat/img000002_26.jpg 2218,2545,2868,2792,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000093_6.jpg 160,199,191,236,0 228,65,271,162,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000055_6.jpg 68,54,199,249,0 237,88,501,232,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000107_6.jpg 99,48,183,165,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000149_6.jpg 446,91,507,185,0 694,79,750,166,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000131_6.jpg 398,277,492,458,0 442,876,642,935,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000034_6.jpg 318,104,343,141,0 968,169,981,188,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000181_6.jpg 323,239,358,253,0 98,169,123,213,0 525,158,542,212,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000245_6.jpg 433,54,570,213,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000141_6.jpg 611,159,700,289,0 833,161,882,285,0 1225,107,1312,210,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000042_6.jpg 32,51,549,331,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000083_6.jpg 146,243,179,285,0 347,239,488,286,0 666,239,705,283,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000175_6.jpg 155,262,183,333,0 397,343,415,376,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000165_6.jpg 703,283,782,460,0 1171,261,1253,450,0 1113,637,1169,736,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000028_6.jpg 2387,508,2535,619,0 2819,658,3096,776,0 2496,724,2719,808,0 2396,1226,2544,1312,0 2408,1917,2558,2014,0 2783,2196,2999,2385,0 1785,853,1949,917,0 1808,1417,1958,1499,0 1819,1928,1949,2028,0 2062,2028,2249,2144,0 1692,1221,1771,1287,0 1701,1721,1780,1796,0 1728,2230,1808,2321,0 1310,827,1360,886,0 1303,1240,1357,1292,0 1321,1635,1377,1694,0 1323,2040,1381,2107,0 1519,916,1610,975,0 1557,1374,1631,1440,0 1571,1818,1638,1883,0 1577,2286,1642,2353,0 881,883,964,927,0 2135,537,2230,651,0 2162,1201,2264,1289,0 2167,1858,2262,1935,0 1758,1008,1939,1114,0 1896,421,2014,583,0 1824,1599,1969,1696,0 2049,1621,2205,1739,0 1826,2130,1976,2221,0 881,1044,947,1096,0 898,1145,960,1191,0 917,1391,977,1434,0 889,1287,943,1328,0 832,2001,877,2034,0 763,1948,802,1987,0 814,1749,854,1788,0 811,1284,852,1317,0 851,2229,887,2265,0 847,1750,890,1786,0 767,1725,804,1752,0 966,1276,1008,1313,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000004_6.jpg 284,69,331,165,0 481,64,531,158,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000129_6.jpg 80,180,109,210,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000065_6.jpg 417,237,456,317,0 640,228,676,310,0 612,405,637,450,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000110_6.jpg 210,173,235,214,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000089_6.jpg 318,71,381,177,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000052_6.jpg 267,156,294,197,0 427,159,442,197,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000130_6.jpg 573,124,606,183,0 684,121,712,179,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000046_6.jpg 1102,563,1331,969,0 2133,565,2306,814,0 3086,1629,3124,1651,0 14,1549,45,1613,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000039_6.jpg 292,68,352,173,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000001_6.jpg 21,114,77,193,0 332,10,504,229,0 322,356,334,371,0 341,357,351,370,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000014_6.jpg 345,66,401,150,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000124_6.jpg 931,378,1074,545,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000229_6.jpg 212,17,257,74,0 272,36,385,98,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000138_6.jpg 568,94,651,197,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000086_6.jpg 248,155,262,176,0 98,181,106,199,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000193_6.jpg 246,153,419,356,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000174_6.jpg 60,42,130,132,0 167,168,180,198,0 228,165,246,196,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000180_6.jpg 56,245,135,371,0 823,299,848,405,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000220_6.jpg 1269,422,1435,654,0 623,565,678,742,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000145_6.jpg 566,119,742,379,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000242_6.jpg 361,134,551,362,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000244_6.jpg 176,90,221,183,0 322,89,365,186,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000169_6.jpg 121,102,163,166,0 74,161,99,200,0 148,241,165,268,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000238_6.jpg 656,224,714,312,0 436,217,464,309,0 814,536,832,564,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000043_6.jpg 173,101,265,207,0 557,153,571,173,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000059_6.jpg 510,123,653,288,0 703,138,1060,270,0 146,679,159,695,0 360,679,373,696,0 575,679,586,694,0 798,678,809,692,0 1008,677,1020,694,0 1222,675,1234,691,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aldi/img000240_6.jpg 310,68,371,131,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aluratek/img000087_9.jpg 134,125,168,154,0 265,153,295,163,0 256,153,266,162,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aluratek/img000171_9.jpg 148,1,160,12,0 161,2,205,13,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aral/img000105_16.jpg 7,58,27,69,0 15,126,55,169,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aral/img000022_16.jpg 1043,233,1137,336,0 394,478,423,525,0 735,542,760,577,0 901,571,918,596,0 990,589,1010,608,0 1272,604,1297,636,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aral/img000059_16.jpg 133,159,184,199,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aral/img000010_16.jpg 461,166,700,430,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aral/img000104_16.jpg 216,118,503,208,0 260,792,679,1135,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aral/img000005_16.jpg 86,46,119,67,0 202,247,216,265,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aral/img000008_16.jpg 4,506,55,558,0 596,546,613,578,0 786,593,802,615,0 402,576,415,599,0 1017,34,1152,208,0 1221,598,1246,634,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aral/img000138_16.jpg 52,117,85,152,0 46,69,62,78,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aral/img000093_16.jpg 198,105,293,139,0 199,318,297,416,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aral/img000003_16.jpg 141,433,159,469,0 433,392,457,438,0 708,461,728,491,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aral/img000098_16.jpg 246,134,300,200,0 244,29,271,44,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aral/img000002_16.jpg 222,98,240,110,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aral/img000031_16.jpg 980,109,1125,282,0 920,401,971,440,0 565,587,606,608,0 682,722,701,746,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aral/img000075_16.jpg 507,373,530,403,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aral/img000134_16.jpg 20,33,674,642,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aral/img000000_16.jpg 332,600,366,633,0 739,716,762,740,0 1128,727,1157,761,0 1705,52,1908,234,0 1886,539,1941,585,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aral/img000094_16.jpg 449,827,784,1161,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/aral/img000137_16.jpg 103,208,167,285,0 109,55,132,67,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bankofamerica/img000121_23.jpg 335,258,409,302,0 279,131,380,146,0 378,143,411,162,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/corona/img000034_46.jpg 130,241,169,257,0 193,238,232,256,0 68,240,110,255,0 204,261,220,276,0 142,265,158,278,0 78,265,98,276,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/corona/img000023_46.jpg 110,150,162,174,0 128,181,148,198,0 16,149,68,171,0 30,183,53,202,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/corona/img000016_46.jpg 1,199,132,256,0 20,287,89,332,0 179,282,318,330,0 227,346,281,386,0 324,197,467,255,0 369,288,431,328,0 465,294,602,349,0 508,359,558,400,0 716,366,768,405,0 701,297,808,354,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000174_39.jpg 373,196,448,225,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000104_39.jpg 350,304,469,398,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000125_39.jpg 405,354,538,455,0 197,398,305,523,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000031_39.jpg 39,129,73,136,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000265_39.jpg 78,139,100,144,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000019_39.jpg 868,681,966,776,0 1609,558,1745,1075,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000179_39.jpg 197,262,271,274,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000026_39.jpg 269,57,313,81,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000016_39.jpg 36,128,76,138,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000000_39.jpg 253,337,419,369,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000070_39.jpg 514,755,582,841,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000060_39.jpg 36,132,78,139,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000158_39.jpg 1805,1187,1857,1470,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000062_39.jpg 42,137,82,144,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000063_39.jpg 270,336,343,350,0 1304,341,1384,355,0 780,332,863,350,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000078_39.jpg 359,381,507,459,0 172,368,263,501,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000154_39.jpg 204,206,425,250,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000053_39.jpg 361,533,447,589,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000051_39.jpg 269,221,377,264,0 134,346,189,449,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000165_39.jpg 92,152,125,159,0 276,197,331,209,0 477,139,514,148,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000166_39.jpg 2075,1146,2304,1341,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000002_39.jpg 279,319,333,329,0 185,46,429,117,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000018_39.jpg 35,122,93,133,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000004_39.jpg 203,223,254,245,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cartier/img000085_39.jpg 434,236,501,331,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allett/img000041_7.jpg 236,462,297,473,0 360,253,401,259,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allett/img000030_7.jpg 560,385,630,414,0 823,369,858,546,0 591,170,671,195,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allett/img000036_7.jpg 125,271,189,292,0 219,195,252,206,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allett/img000001_7.jpg 915,349,1041,451,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allett/img000020_7.jpg 581,3,678,29,0 843,282,1100,346,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/apc/img000036_13.jpg 309,274,343,287,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/boeing/img000004_34.jpg 734,288,819,303,0 710,283,732,315,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/boeing/img000053_34.jpg 468,311,516,343,0 450,309,469,330,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/boeing/img000052_34.jpg 1563,604,1653,632,0 1533,610,1555,646,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/boeing/img000045_34.jpg 151,132,173,148,0 142,125,152,142,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/boeing/img000020_34.jpg 410,169,622,260,0 745,141,794,191,0 84,189,109,270,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/boeing/img000046_34.jpg 383,165,437,174,0 106,112,184,185,0 334,203,351,220,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/AmericanExpress/img000075_12.jpg 109,53,518,211,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/AmericanExpress/img000115_12.jpg 152,109,433,163,0 179,254,450,292,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/AmericanExpress/img000151_12.jpg 336,279,629,300,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/AmericanExpress/img000100_12.jpg 90,35,622,168,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/AmericanExpress/img000110_12.jpg 22,173,498,238,0 91,30,533,65,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/AmericanExpress/img000034_12.jpg 440,308,504,332,0 538,309,558,332,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/AmericanExpress/img000031_12.jpg 184,9,747,148,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/AmericanExpress/img000107_12.jpg 578,79,686,252,0 257,101,446,321,0 47,120,198,319,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/AmericanExpress/img000148_12.jpg 180,88,579,152,0 118,289,535,322,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/amcrest/img000086_11.jpg 85,407,103,426,0 111,417,231,435,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/amcrest/img000053_11.jpg 335,354,344,365,0 345,326,386,357,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/amcrest/img000031_11.jpg 77,574,157,585,0 208,553,267,565,0 312,534,366,544,0 411,519,455,530,0 548,519,580,530,0 639,535,678,545,0 742,552,784,565,0 858,573,939,587,0 60,571,74,587,0 836,571,853,588,0 728,553,740,567,0 627,534,639,547,0 535,520,548,529,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/amcrest/img000008_11.jpg 351,113,378,150,0 388,127,508,164,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/amcrest/img000063_11.jpg 621,129,644,152,0 947,193,966,218,0 1282,239,1300,266,0 1586,293,1609,313,0 652,133,774,182,0 970,201,1089,247,0 1308,247,1417,293,0 1615,301,1719,341,0 698,816,724,854,0 729,824,856,848,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/amcrest/img000004_11.jpg 411,387,433,414,0 444,390,577,408,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000002_8.jpg 440,135,510,188,0 515,113,542,153,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000182_8.jpg 117,19,154,36,0 157,14,172,29,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000179_8.jpg 340,270,374,282,0 375,268,388,283,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000164_8.jpg 2045,1537,2413,1692,0 2423,1492,2586,1669,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000134_8.jpg 206,115,268,134,0 271,116,296,139,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000190_8.jpg 157,84,282,121,0 293,73,342,120,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000069_8.jpg 192,214,307,291,0 424,203,575,283,0 584,229,638,301,0 311,183,361,261,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000220_8.jpg 158,504,283,542,0 287,497,328,542,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000080_8.jpg 224,159,342,256,0 344,121,392,189,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000066_8.jpg 74,161,161,184,0 170,155,197,183,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000348_8.jpg 29,119,166,152,0 172,119,209,157,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000322_8.jpg 206,74,311,98,0 316,73,347,101,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000406_8.jpg 299,7,392,93,0 352,127,399,149,0 283,185,304,205,0 94,1,122,22,0 141,55,166,84,0 87,70,118,138,0 158,138,187,175,0 74,250,92,295,0 126,113,149,152,0 101,248,113,284,0 315,175,325,189,0 313,213,336,241,0 274,177,285,187,0 384,171,398,185,0 401,132,415,153,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000095_8.jpg 1868,474,2194,577,0 2205,479,2328,599,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000224_8.jpg 187,23,226,36,0 228,23,243,38,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000315_8.jpg 424,271,646,336,0 173,279,350,358,0 658,270,735,349,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000086_8.jpg 60,65,105,108,0 154,56,214,93,0 106,49,124,78,0 218,77,241,104,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000274_8.jpg 59,28,511,225,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000203_8.jpg 16,244,270,346,0 278,275,339,360,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000000_8.jpg 217,36,270,78,0 270,70,287,92,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000298_8.jpg 615,428,754,475,0 760,414,812,468,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000029_8.jpg 228,71,365,125,0 447,83,506,148,0 375,52,428,110,0 506,123,528,171,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000004_8.jpg 319,175,374,254,0 375,148,399,201,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000328_8.jpg 203,91,243,105,0 244,93,259,107,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000007_8.jpg 210,81,246,114,0 306,86,350,107,0 74,29,105,45,0 121,31,167,45,0 246,90,262,114,0 351,80,366,101,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000319_8.jpg 518,447,607,472,0 610,446,634,472,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000050_8.jpg 478,157,561,205,0 691,173,750,221,0 358,870,436,906,0 566,152,596,192,0 752,196,772,232,0 445,871,472,911,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000021_8.jpg 45,22,137,58,0 143,8,179,45,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000395_8.jpg 10,145,59,193,0 2,78,46,94,0 202,45,214,80,0 519,258,540,268,0 344,219,396,237,0 540,259,550,271,0 327,217,346,237,0 46,80,64,96,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000258_8.jpg 426,167,461,185,0 461,171,472,187,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000003_8.jpg 76,100,186,217,0 302,94,430,206,0 193,48,238,107,0 440,191,485,243,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000108_8.jpg 394,48,581,124,0 591,20,655,96,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/allianz/img000073_8.jpg 130,8,181,21,0 184,8,202,25,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/adidas/img000020_4.jpg 137,114,179,143,0 55,260,65,268,0 81,119,89,124,0 43,112,51,118,0 129,120,134,126,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/adidas/img000025_4.jpg 992,1831,1176,1981,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/adidas/img000335_4.jpg 231,239,256,259,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/adidas/img000461_4.jpg 216,245,300,295,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/adidas/img000019_4.jpg 26,303,64,341,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/adidas/img000049_4.jpg 400,534,481,593,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/adidas/img000098_4.jpg 813,172,933,227,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/adidas/img000266_4.jpg 261,262,294,286,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/adidas/img000003_4.jpg 243,14,327,53,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/adidas/img000117_4.jpg 1390,278,1461,329,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/adidas/img000205_4.jpg 498,180,684,341,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/adidas/img000420_4.jpg 286,285,352,305,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/adidas/img000450_4.jpg 23,173,84,216,0 221,165,270,212,0 228,810,294,880,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/adidas/img000032_4.jpg 58,43,145,57,0 79,22,121,26,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/adidas/img000102_4.jpg 33,183,45,191,0 32,193,47,197,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/adidas/img000026_4.jpg 751,3,798,46,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/adidas/img000029_4.jpg 106,13,140,38,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/adidas/img000081_4.jpg 1809,1446,1890,1524,0 1520,1453,1793,1524,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cisco/img000010_43.jpg 468,147,552,205,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cisco/img000019_43.jpg 254,203,510,343,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cisco/img000024_43.jpg 656,343,1006,563,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/cisco/img000020_43.jpg 185,65,234,109,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/accenture/img000014_3.jpg 183,75,311,161,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/accenture/img000101_3.jpg 110,127,217,193,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/accenture/img000072_3.jpg 54,53,262,123,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/accenture/img000034_3.jpg 439,185,500,206,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/accenture/img000065_3.jpg 161,335,301,379,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/accenture/img000084_3.jpg 274,246,385,273,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/accenture/img000044_3.jpg 286,117,334,130,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/accenture/img000093_3.jpg 14,72,168,134,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/accenture/img000066_3.jpg 20,21,120,50,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/accenture/img000000_3.jpg 69,27,136,58,0 337,141,362,155,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/accenture/img000069_3.jpg 37,35,193,84,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/accenture/img000060_3.jpg 702,595,846,639,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/accenture/img000061_3.jpg 16,16,79,36,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/accenture/img000047_3.jpg 148,41,247,90,0 392,235,441,252,0 327,204,382,216,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/accenture/img000063_3.jpg 344,249,456,286,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/accenture/img000059_3.jpg 84,386,404,487,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/accenture/img000073_3.jpg 474,241,631,290,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/accenture/img000009_3.jpg 182,103,230,120,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/accenture/img000070_3.jpg 40,372,269,439,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000781_44.jpg 149,193,214,240,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000256_44.jpg 347,321,399,341,0 344,209,400,227,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000368_44.jpg 28,110,82,128,0 184,211,284,244,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000034_44.jpg 35,40,76,85,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000276_44.jpg 346,250,438,286,0 55,435,98,448,0 274,246,346,281,0 145,315,194,338,0 211,310,271,335,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000619_44.jpg 89,625,265,702,0 343,426,488,552,0 632,476,742,612,0 388,183,460,210,0 123,183,186,219,0 700,187,750,210,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000578_44.jpg 31,198,138,237,0 210,221,321,264,0 387,247,443,456,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000077_44.jpg 91,148,536,290,0 525,278,691,340,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000550_44.jpg 104,407,210,727,0 697,428,799,759,0 283,456,336,742,0 912,492,1228,640,0 530,427,614,720,0 837,458,859,522,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000082_44.jpg 1311,1132,1539,1220,0 1013,1144,1236,1230,0 769,1139,974,1216,0 355,1127,518,1193,0 567,1139,725,1204,0 169,1125,306,1188,0 213,1858,380,2014,0 1639,1060,1999,1223,0 425,1886,676,2000,0 392,658,1027,862,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000093_44.jpg 636,165,696,186,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000058_44.jpg 16,41,154,85,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000774_44.jpg 588,101,727,175,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000602_44.jpg 48,197,137,222,0 169,104,205,128,0 202,325,253,360,0 288,133,385,204,0 543,261,566,271,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000797_44.jpg 393,301,440,334,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000020_44.jpg 54,53,415,212,0 416,121,497,149,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000655_44.jpg 145,368,189,397,0 192,167,233,192,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000706_44.jpg 123,34,174,140,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000440_44.jpg 309,168,362,235,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000772_44.jpg 236,169,361,221,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000505_44.jpg 274,214,343,261,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000489_44.jpg 158,314,225,407,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000324_44.jpg 36,609,165,681,0 276,315,449,395,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000717_44.jpg 46,175,100,343,0 228,289,264,306,0 66,168,99,180,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000804_44.jpg 352,34,394,64,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000383_44.jpg 107,89,128,98,0 251,42,333,100,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000119_44.jpg 174,290,222,308,0 14,176,50,194,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000401_44.jpg 254,225,324,251,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000610_44.jpg 116,47,395,225,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000144_44.jpg 58,172,520,314,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000174_44.jpg 60,112,280,196,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000591_44.jpg 169,301,282,347,0 399,345,477,574,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000048_44.jpg 75,225,186,272,0 350,83,384,101,0 320,420,363,441,0 256,385,306,396,0 273,153,323,172,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000833_44.jpg 126,408,205,435,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000631_44.jpg 154,286,246,321,0 563,283,653,320,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000013_44.jpg 57,282,214,346,0 251,149,948,380,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000418_44.jpg 538,731,583,823,0 584,371,614,453,0 449,227,496,277,0 224,476,298,510,0 469,502,510,546,0 800,577,866,646,0 189,717,222,796,0 247,654,322,726,0 1052,547,1130,605,0 1140,227,1198,286,0 990,375,1047,415,0 128,399,188,451,0 605,554,694,613,0 604,190,649,234,0 382,755,471,794,0 65,468,140,501,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000765_44.jpg 182,361,327,414,0 78,388,194,500,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000259_44.jpg 90,106,105,119,0 148,94,164,104,0 450,121,462,131,0 237,187,251,197,0 332,179,345,189,0 350,206,380,231,0 281,320,296,331,0 378,316,391,326,0 429,179,534,216,0 229,211,275,231,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000410_44.jpg 118,1001,230,1072,0 68,113,270,219,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000537_44.jpg 529,403,745,495,0 368,483,537,567,0 393,157,472,184,0 551,109,625,129,0 130,306,316,391,0 86,238,187,279,0 19,350,109,395,0 65,430,208,502,0 3,531,142,619,0 240,1,352,120,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000525_44.jpg 466,170,499,190,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000156_44.jpg 17,52,44,119,0 341,38,369,107,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000684_44.jpg 522,370,1247,726,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000313_44.jpg 10,540,214,609,0 230,373,405,445,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000357_44.jpg 1488,342,2019,510,0 563,282,1106,448,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000215_44.jpg 48,110,92,146,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000456_44.jpg 187,113,223,154,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000002_44.jpg 435,22,569,70,0 308,274,351,292,0 209,225,245,243,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000482_44.jpg 272,334,316,372,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000618_44.jpg 85,298,370,433,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000348_44.jpg 195,137,331,218,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000508_44.jpg 128,102,225,163,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000777_44.jpg 11,138,66,159,0 397,38,630,173,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000334_44.jpg 91,321,264,386,0 580,266,627,427,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000638_44.jpg 334,398,365,415,0 378,397,409,414,0 421,397,455,414,0 465,399,496,414,0 507,399,540,414,0 552,400,582,414,0 318,550,363,585,0 372,535,403,591,0 411,554,459,585,0 465,536,497,595,0 509,552,553,587,0 562,535,595,598,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000444_44.jpg 586,244,961,564,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000674_44.jpg 367,168,430,192,0 361,278,390,293,0 270,185,289,195,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000738_44.jpg 165,109,381,176,0 195,247,238,294,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000651_44.jpg 337,239,418,276,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000698_44.jpg 137,36,338,155,0 388,223,438,287,0 2,223,55,267,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000337_44.jpg 27,70,66,96,0 128,58,161,90,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000455_44.jpg 147,89,275,163,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000091_44.jpg 33,140,89,165,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000328_44.jpg 61,116,199,183,0 213,99,263,136,0 209,33,263,105,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000347_44.jpg 45,26,102,46,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000497_44.jpg 79,29,630,212,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000805_44.jpg 377,171,433,226,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000010_44.jpg 113,467,351,572,0 692,1175,846,1228,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000501_44.jpg 89,403,140,415,0 245,418,293,432,0 141,220,161,291,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000479_44.jpg 89,302,167,440,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000295_44.jpg 46,35,139,90,0 105,155,131,178,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000502_44.jpg 148,144,261,184,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000486_44.jpg 59,265,114,441,0 168,295,221,468,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000596_44.jpg 134,49,410,145,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000142_44.jpg 366,178,412,215,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000579_44.jpg 143,130,246,198,0 245,116,367,309,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000361_44.jpg 48,89,184,130,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000269_44.jpg 99,810,332,908,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000425_44.jpg 280,134,484,304,0 505,266,730,380,0 263,535,506,647,0 1,343,181,469,0 675,558,935,693,0 998,150,1125,354,0 523,715,631,866,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000327_44.jpg 332,149,454,213,0 413,215,449,239,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000028_44.jpg 1328,697,1452,821,0 190,523,282,630,0 116,188,203,284,0 396,194,447,254,0 297,338,389,438,0 253,186,354,293,0 181,331,252,438,0 46,529,139,640,0 320,513,421,625,0 500,521,565,596,0 458,308,526,414,0 556,199,618,291,0 695,155,785,252,0 823,179,893,334,0 716,361,776,457,0 572,374,660,474,0 589,532,694,612,0 722,525,832,643,0 863,591,928,654,0 813,391,871,454,0 869,690,928,716,0 59,672,111,695,0 200,664,242,688,0 338,664,389,688,0 519,671,576,692,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000606_44.jpg 636,432,732,703,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000671_44.jpg 214,249,286,288,0 592,71,669,97,0 385,102,438,140,0 311,193,325,212,0 671,366,708,403,0 452,246,486,275,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000585_44.jpg 253,114,298,166,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000683_44.jpg 439,891,495,934,0 512,862,547,948,0 556,878,608,925,0 617,854,657,934,0 665,867,713,913,0 719,841,756,922,0 438,666,479,687,0 497,665,534,687,0 549,661,583,685,0 597,661,634,684,0 647,662,678,681,0 694,662,730,682,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000454_44.jpg 310,231,465,292,0 24,85,115,124,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000104_44.jpg 247,432,457,518,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000517_44.jpg 123,240,191,302,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000211_44.jpg 44,239,862,490,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000484_44.jpg 160,312,362,396,0 255,179,365,248,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000539_44.jpg 118,407,171,444,0 222,278,388,423,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000267_44.jpg 420,167,950,939,0 1278,815,1645,932,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000850_44.jpg 262,163,328,196,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000088_44.jpg 33,219,164,275,0 311,37,427,75,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000326_44.jpg 25,867,991,1190,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000603_44.jpg 100,186,320,808,0 1017,143,1223,773,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000085_44.jpg 514,300,608,332,0 48,60,234,137,0 573,205,665,239,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/coca-cola/img000408_44.jpg 264,35,326,60,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000036_41.jpg 104,265,204,284,0 116,75,199,148,0 593,392,654,406,0 111,493,192,507,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000132_41.jpg 441,359,503,372,0 443,153,501,166,0 397,130,451,142,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000002_41.jpg 21,9,62,23,0 94,8,134,20,0 165,6,207,18,0 214,144,255,186,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000163_41.jpg 119,231,174,240,0 411,228,467,239,0 242,202,349,219,0 26,192,52,211,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000108_41.jpg 92,220,139,230,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000164_41.jpg 139,193,196,214,0 79,1,181,80,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000058_41.jpg 458,91,508,115,0 490,257,533,282,0 768,215,805,247,0 55,100,133,191,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000186_41.jpg 91,115,107,128,0 167,116,184,128,0 253,114,302,125,0 342,114,383,124,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000126_41.jpg 144,113,251,134,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000091_41.jpg 121,244,164,252,0 241,277,298,289,0 394,181,449,192,0 177,276,198,303,0 477,278,532,290,0 323,90,344,136,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000338_41.jpg 134,425,267,451,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000445_41.jpg 297,737,598,799,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000057_41.jpg 334,514,425,533,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000317_41.jpg 602,808,681,825,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000019_41.jpg 243,64,496,114,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000005_41.jpg 610,476,724,498,0 393,470,455,483,0 570,235,582,280,0 740,144,759,224,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000095_41.jpg 243,487,324,542,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000381_41.jpg 620,551,886,599,0 636,366,691,378,0 723,367,777,378,0 813,364,869,377,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000346_41.jpg 150,273,260,296,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000001_41.jpg 126,60,175,70,0 64,162,99,172,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000018_41.jpg 204,465,276,540,0 493,466,564,538,0 66,105,129,126,0 353,108,418,125,0 627,216,646,305,0 690,213,707,302,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000089_41.jpg 334,87,394,152,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000488_41.jpg 405,678,669,724,0 11,1296,1052,1478,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000023_41.jpg 21,364,82,378,0 200,364,262,378,0 377,363,439,379,0 559,358,623,374,0 853,142,865,203,0 875,221,889,285,0 112,81,167,97,0 291,78,345,97,0 470,69,526,87,0 654,63,711,81,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000512_41.jpg 1199,191,1230,300,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000179_41.jpg 207,625,258,637,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000204_41.jpg 703,662,1215,1040,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000516_41.jpg 76,213,95,238,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000294_41.jpg 25,971,785,1098,0 609,703,701,725,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000127_41.jpg 216,312,272,370,0 344,305,426,322,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000255_41.jpg 329,406,415,486,0 262,324,288,344,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000075_41.jpg 959,261,976,337,0 345,365,366,390,0 814,366,836,391,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000093_41.jpg 230,298,267,306,0 300,299,339,309,0 371,297,411,307,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000022_41.jpg 32,277,114,359,0 199,148,251,200,0 500,139,550,188,0 356,130,391,139,0 339,129,352,140,0 396,129,409,143,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000339_41.jpg 23,134,96,148,0 23,389,94,403,0 369,130,440,146,0 539,128,611,142,0 195,387,267,403,0 365,388,437,403,0 537,386,608,400,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000268_41.jpg 624,884,709,903,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000256_41.jpg 272,561,321,656,0 565,677,654,699,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000183_41.jpg 61,36,103,48,0 272,42,302,51,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000062_41.jpg 299,345,365,358,0 718,344,781,357,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000115_41.jpg 80,178,149,191,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/chanel/img000423_41.jpg 298,437,467,456,0 571,285,684,317,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/airhawk/img000029_5.jpg 662,790,895,916,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/airhawk/img000049_5.jpg 117,272,203,344,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/airhawk/img000037_5.jpg 48,180,153,205,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/airhawk/img000005_5.jpg 513,234,620,249,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/airhawk/img000013_5.jpg 54,87,107,113,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/airhawk/img000001_5.jpg 225,221,334,253,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/airhawk/img000003_5.jpg 530,448,747,521,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000355_33.jpg 430,355,476,371,0 496,254,511,268,0 413,256,443,267,0 383,169,442,198,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000207_33.jpg 1258,814,1288,834,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000149_33.jpg 316,222,345,234,0 319,233,339,241,0 710,199,727,216,0 193,267,207,273,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000467_33.jpg 323,453,343,465,0 748,542,851,580,0 241,434,481,457,0 155,610,255,628,0 444,592,529,613,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000046_33.jpg 1326,1026,1368,1045,0 1840,1408,1868,1436,0 47,1361,156,1471,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000349_33.jpg 144,161,152,167,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000384_33.jpg 172,86,184,93,0 332,222,346,239,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000308_33.jpg 479,599,531,654,0 494,355,512,365,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000256_33.jpg 414,218,430,227,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000598_33.jpg 242,167,258,182,0 514,132,533,150,0 904,110,924,131,0 181,227,188,234,0 435,209,443,215,0 819,194,828,200,0 165,369,214,381,0 407,382,467,393,0 775,387,844,401,0 756,422,872,446,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000210_33.jpg 330,414,357,446,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000272_33.jpg 943,725,997,777,0 307,358,333,372,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000180_33.jpg 425,393,451,406,0 857,600,868,623,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000026_33.jpg 1101,238,1122,264,0 1415,38,1476,101,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000344_33.jpg 1724,2283,1828,2363,0 4804,351,4996,539,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000264_33.jpg 621,635,673,666,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000278_33.jpg 390,457,403,481,0 918,479,943,495,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000511_33.jpg 1470,777,1524,800,0 1811,1164,1887,1238,0 831,938,848,962,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000082_33.jpg 386,211,415,220,0 312,340,490,367,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000175_33.jpg 1098,203,1130,233,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000567_33.jpg 402,591,435,634,0 1361,437,1404,455,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000546_33.jpg 404,260,417,272,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000484_33.jpg 380,1017,450,1087,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000338_33.jpg 1338,529,1375,553,0 852,718,880,750,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000111_33.jpg 1679,589,1720,609,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000143_33.jpg 404,174,420,190,0 621,387,646,411,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000356_33.jpg 1509,1524,1581,1592,0 4821,352,5017,544,0 265,3368,341,3452,0 897,3384,1073,3456,0 1621,3368,1689,3452,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000615_33.jpg 612,210,627,220,0 751,46,784,78,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000512_33.jpg 506,263,622,334,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000365_33.jpg 184,112,199,119,0 608,27,629,47,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000038_33.jpg 166,73,414,312,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000174_33.jpg 812,431,834,445,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000241_33.jpg 544,206,563,218,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000010_33.jpg 407,5,426,23,0 344,197,357,209,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000023_33.jpg 1471,663,1521,690,0 1792,1151,1867,1226,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000258_33.jpg 42,344,89,392,0 839,55,980,100,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000115_33.jpg 392,360,408,372,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000283_33.jpg 293,112,322,128,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000554_33.jpg 471,657,525,712,0 265,174,289,189,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000009_33.jpg 156,414,172,423,0 886,629,940,684,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000342_33.jpg 68,15,157,101,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/BMW/img000475_33.jpg 318,375,361,403,0 591,164,683,188,0 245,160,330,180,0 116,350,251,409,0 488,366,616,417,0 87,423,234,469,0 473,435,625,484,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000259_36.jpg 1577,619,2018,1983,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000215_36.jpg 301,95,398,209,0 144,254,556,389,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000051_36.jpg 21,141,248,330,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000138_36.jpg 172,68,285,427,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000165_36.jpg 29,263,212,340,0 94,441,142,496,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000012_36.jpg 88,374,215,447,0 144,135,164,172,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000044_36.jpg 492,494,1163,715,0 1183,755,1360,835,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000212_36.jpg 117,128,513,192,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000100_36.jpg 416,379,1025,593,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000129_36.jpg 392,347,894,516,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000225_36.jpg 71,17,239,95,0 292,59,317,82,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000026_36.jpg 70,82,142,551,0 180,90,217,165,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000183_36.jpg 267,162,306,388,0 217,231,262,300,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000233_36.jpg 363,231,422,242,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000195_36.jpg 86,216,229,275,0 370,128,570,267,0 98,132,117,169,0 146,137,165,171,0 188,137,205,173,0 241,141,259,174,0 106,311,121,343,0 146,320,162,350,0 193,324,208,356,0 236,330,251,358,0 229,435,276,457,0 98,182,146,204,0 147,186,190,206,0 192,189,237,211,0 238,191,284,214,0 105,357,146,381,0 147,365,189,388,0 188,373,235,395,0 235,380,282,402,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000300_36.jpg 44,26,815,242,0 299,188,376,233,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000231_36.jpg 9,81,110,118,0 206,206,242,232,0 13,264,91,295,0 336,83,433,118,0 669,82,773,118,0 667,266,766,298,0 168,3,241,34,0 321,402,359,418,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000179_36.jpg 306,269,484,333,0 365,216,431,240,0 582,235,651,269,0 327,391,379,405,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000253_36.jpg 60,86,111,106,0 230,106,261,124,0 162,91,195,110,0 117,102,149,118,0 1,98,29,116,0 41,268,126,301,0 143,265,212,298,0 204,123,229,135,0 1,267,35,301,0 72,235,105,269,0 242,243,262,271,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000217_36.jpg 68,265,127,353,0 301,284,431,381,0 198,367,484,435,0 201,127,247,148,0 253,153,315,171,0 378,152,442,171,0 313,119,344,133,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000232_36.jpg 531,348,1907,492,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000197_36.jpg 702,2015,1502,2237,0 410,2119,669,2252,0 1543,2160,1802,2252,0 950,1663,1284,2000,0 1858,504,3376,1052,0 521,1067,717,1212,0 869,356,1339,608,0 1491,1071,1699,1226,0 558,1900,676,2100,0 1543,1897,1658,2108,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000128_36.jpg 17,581,216,664,0 31,805,210,830,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000144_36.jpg 27,560,394,664,0 427,554,798,662,0 817,553,1187,670,0 1200,543,1576,663,0 1596,555,1975,674,0 138,413,294,569,0 547,408,704,562,0 943,420,1094,574,0 1308,415,1462,565,0 1696,417,1855,572,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000224_36.jpg 107,91,518,142,0 250,200,353,225,0 283,63,350,97,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000242_36.jpg 25,340,200,381,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000173_36.jpg 416,195,450,220,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000043_36.jpg 207,99,376,261,0 160,279,417,363,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000080_36.jpg 197,97,246,436,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000049_36.jpg 163,222,278,246,0 304,216,341,287,0 192,257,251,279,0 378,230,401,276,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/budweiser/img000115_36.jpg 47,146,80,180,0 96,157,135,194,0 155,169,204,211,0 231,183,295,234,0 327,206,418,262,0 448,234,558,309,0 344,290,398,314,0 464,332,527,368,0 246,261,284,278,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bellataylor/img000064_25.jpg 427,351,547,378,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bellataylor/img000020_25.jpg 412,314,514,333,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/bellataylor/img000075_25.jpg 1376,512,1480,589,0 243,479,370,512,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000444_20.jpg 662,112,728,180,0 696,290,752,353,0 258,506,342,574,0 290,129,337,188,0 461,169,536,222,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000122_20.jpg 85,95,119,114,0 81,198,94,205,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000301_20.jpg 361,300,382,308,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000012_20.jpg 372,55,442,131,0 396,167,427,194,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000407_20.jpg 718,442,851,489,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000449_20.jpg 435,294,471,306,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000029_20.jpg 358,275,391,285,0 156,258,234,287,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000014_20.jpg 465,199,597,284,0 339,200,420,285,0 344,271,412,326,0 479,269,581,322,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000404_20.jpg 242,234,308,267,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000245_20.jpg 219,110,332,143,0 205,47,351,100,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000006_20.jpg 2345,823,2525,890,0 2362,898,2512,944,0 1600,1258,1647,1281,0 1593,1237,1649,1262,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000222_20.jpg 251,200,297,221,0 139,229,175,251,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000049_20.jpg 785,841,834,861,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000408_20.jpg 201,368,243,382,0 379,115,513,165,0 194,404,224,416,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000263_20.jpg 140,144,165,152,0 128,157,173,171,0 226,173,267,188,0 46,174,82,190,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000007_20.jpg 777,306,860,423,0 832,953,880,990,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000115_20.jpg 326,253,574,339,0 606,288,753,332,0 257,728,279,736,0 463,729,484,738,0 667,729,687,738,0 861,732,883,742,0 1073,737,1096,746,0 108,674,129,682,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000295_20.jpg 60,119,91,133,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000464_20.jpg 541,229,566,242,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000108_20.jpg 377,207,520,263,0 1471,331,1644,428,0 1438,591,1490,618,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000057_20.jpg 466,76,563,114,0 526,251,566,264,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000083_20.jpg 1701,60,2094,349,0 1833,574,2008,671,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000232_20.jpg 126,235,154,243,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000396_20.jpg 1050,356,1100,378,0 1441,1048,1559,1091,0 1390,1057,1434,1074,0 193,959,229,974,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000216_20.jpg 527,438,607,466,0 469,543,665,574,0 507,187,609,202,0 565,338,596,346,0 627,577,677,591,0 373,580,384,589,0 520,386,618,404,0 696,580,764,591,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000172_20.jpg 1063,639,1153,664,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000267_20.jpg 123,96,152,113,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000070_20.jpg 192,287,253,319,0 370,291,414,308,0 131,347,140,359,0 45,320,58,339,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000376_20.jpg 163,302,464,385,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000184_20.jpg 177,145,216,159,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000101_20.jpg 637,135,667,153,0 632,111,674,137,0 477,149,499,162,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000306_20.jpg 76,287,99,295,0 251,286,274,294,0 440,287,457,292,0 632,29,691,51,0 634,53,660,64,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000017_20.jpg 168,177,194,194,0 83,2,151,47,0 338,137,400,181,0 86,36,114,52,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000356_20.jpg 217,123,314,154,0 517,121,551,153,0 622,246,671,253,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/audi/img000308_20.jpg 2286,1134,2433,1223,0 2575,1870,2807,1957,0 2480,1885,2556,1914,0 2435,568,2524,595,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/ape/img000015_14.jpg 289,329,310,387,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/ape/img000079_14.jpg 413,99,430,131,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/ape/img000097_14.jpg 65,178,85,216,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/ape/img000062_14.jpg 161,352,193,416,0 399,450,438,472,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000412_38.jpg 158,271,168,306,0 309,169,320,219,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000019_38.jpg 43,24,231,69,0 343,319,419,345,0 476,634,574,658,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000134_38.jpg 363,143,648,220,0 77,514,112,527,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000131_38.jpg 359,202,440,221,0 383,281,414,293,0 597,940,675,965,0 77,906,115,919,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000262_38.jpg 249,88,304,125,0 256,132,289,151,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000182_38.jpg 137,89,189,101,0 433,89,482,101,0 96,208,105,231,0 409,210,420,233,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000217_38.jpg 85,321,107,391,0 670,150,780,208,0 470,143,544,167,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000393_38.jpg 737,117,995,177,0 567,561,620,686,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000278_38.jpg 160,57,197,67,0 79,227,111,235,0 345,100,383,107,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000257_38.jpg 262,192,284,198,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000282_38.jpg 166,23,210,34,0 342,110,394,125,0 209,210,223,235,0 35,208,124,230,0 299,320,321,339,0 162,73,178,87,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000235_38.jpg 370,346,409,384,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000008_38.jpg 492,197,510,258,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000228_38.jpg 641,158,756,186,0 428,344,446,398,0 518,181,589,191,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000226_38.jpg 158,122,208,140,0 529,114,587,131,0 453,232,464,259,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000160_38.jpg 456,153,609,252,0 999,459,1022,548,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000266_38.jpg 356,189,370,250,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000001_38.jpg 676,33,841,68,0 138,900,189,918,0 137,1167,154,1184,0 162,1167,178,1181,0 180,1168,196,1184,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000099_38.jpg 285,163,393,256,0 1002,27,1244,79,0 1097,628,1150,639,0 1067,714,1098,738,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000167_38.jpg 1756,816,2159,924,0 1191,1716,1275,1918,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000283_38.jpg 795,915,1034,1047,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000248_38.jpg 2314,398,2795,601,0 924,1627,998,1866,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000316_38.jpg 259,68,322,85,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000211_38.jpg 212,365,455,435,0 557,369,818,436,0 248,132,353,156,0 440,97,531,121,0 592,73,672,93,0 799,108,867,128,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000214_38.jpg 91,85,183,111,0 204,208,240,246,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000032_38.jpg 89,47,136,65,0 127,456,237,481,0 160,249,191,259,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000411_38.jpg 252,43,307,56,0 250,80,277,91,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000212_38.jpg 613,239,724,267,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000188_38.jpg 375,144,504,180,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000296_38.jpg 356,342,423,384,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000216_38.jpg 81,430,130,495,0 452,148,620,199,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000192_38.jpg 213,220,260,234,0 530,26,600,43,0 471,143,487,181,0 55,329,67,361,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000024_38.jpg 2310,1472,2398,1820,0 37,32,1213,290,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000119_38.jpg 35,93,94,113,0 396,112,455,129,0 49,171,60,202,0 453,133,477,157,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000230_38.jpg 164,98,210,110,0 323,44,374,53,0 133,177,143,200,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000178_38.jpg 344,114,433,143,0 186,255,230,270,0 347,288,373,332,0
+/home/ubuntu/logohunter/data/LogosInTheWild-v2/data_cleaned/voc_format/canon/img000163_38.jpg 236,30,322,50,0 177,118,204,153,0 336,272,367,299,0
