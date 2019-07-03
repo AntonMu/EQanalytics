@@ -20,62 +20,70 @@ On a high level, the model training consists of four seperate steps:
 - Manually label houses using [VoTT](https://github.com/Microsoft/VoTT).
 - Use transfer learning to train a YOLOv3 detector.
 - Crop and save houses.
- 4. Detect Openings 
- - Train a YOLO detector based on the [CMP facade dataset].(http://cmp.felk.cvut.cz/~tylecr1/facade/)
+ 3. Detect Openings 
+ - Train a YOLO detector based on the [CMP facade dataset](http://cmp.felk.cvut.cz/~tylecr1/facade/).
  - Detect all openings in set of cropped out houses.
- 5. Compute "softness score" to classify building
+ 4. Compute "softness score" to classify building
  -  Use K-means clustering to identify number of stories.
  - Compute quotient of the total width of openings on the second story over the total width of openings on the first story.
-
-general-purpose logo detection API. To avoid re-training the network for each new company using the service, logo detection and identification are split in two logically and operationally separate parts: first, we find all logos in the image with a YOLO detector (using the Keras implementation of [keras-yolo3](https://github.com/qqwweee/keras-yolo3)), and then we check for similarity between the proposed logos and an input uploaded by the customer (for example, the company owning the logo), by computing cosine similarity between features extracted by a pre-trained Inception network.
-(using the Keras implementation of  [keras-yolo3](https://github.com/qqwweee/keras-yolo3))
-
-![pipeline](pipeline.gif)
+### Inference
+Model inference consists of four similar steps. After entering an address (or list of addresses), the corresponding street view images will be downloaded. For all images, the housing model first segments and crops one house per address. Then the opening detector labels all openings and creates a csv file with all dimensions and positions of the openings. Finally, the softness score is determined and used to classify the building as "soft", "non_soft" or "undetermined". 
 
 ## Repo structure
-+ `build`: scripts to build environment
-+ `data`: input data
-+ `notebooks`: exploratory analysis, visualization
-+ `src`: source code
++ `1_Pre_Processing`: All Preprocessing Tasks
++ `2+3_Computer_Vision`: Both Image Segmentation Tasks
++ `4_Final_Classification`: Final Classicfication Task
++ `Built`: Scripts to get started, train and evaluate
 
 ## Getting Started
 
 #### Requisites
 The code uses python 3.6, Keras with Tensorflow backend, and a conda environment to keep everything together. Training was performed on an AWS *p2.xlarge* instance (Tesla K80 GPU with 12GB memory). Inference is faster on a GPU (~5 images per second on the same setup), but also works fine on a modest CPU setup (~0.3 images per second on an AWS *t2.medium* with a 2 VCPUs and 4GB of memory).
 
-#### Installation
+#### Installation [Linux or Mac]
 
-#### Clone, setup conda environment
+##### Clone Repo and Install Requirements
 Clone this repo with:
 ```
-git clone https://github.com/ilmonteux/logohunter.git
-cd logohunter/
+git clone https://github.com/AntonMu/eqanalytics
+cd eqanalytics/
 ```
 
-Simply setup the conda environment with
+Create Virtual Environment ([Venv](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) needs to be installed on your system). 
 ```
-conda config --env --add channels conda-forge
-conda env create -f environment.yml
-source activate logohunter
+python3 -m venv env
+source env/bin/activate
 ```
-
-The `environment.yml` file was built on a AWS ubuntu machine: if the commands above don't work (e.g. it failed on my MacBook Air), the environment can be simply built with the folllowing:
-```
-conda create -n logohunter python=3.6
-conda activate logohunter
-conda install matplotlib keras=2.2.4 pillow scikit-learn
-conda install tensorflow-gpu
-conda install opencv=3.4.4
-```
-
-#### Build Environment
-
-To hit the ground running, download the pre-trained YOLOv3 model weights (235MB) and the LogosInTheWild features extracted from a pre-trained general-purpose classifier network. Two variants for the feature extractor were tried with similar results: an InceptionV3 network (156MB) and a simpler VGG16 network (26MB), so we download them both from an AWS S3 bucket (additional choices are available at run-time and will download the necessary weights if not present):
+Install required packages:
 
 ```
-bash build/build.sh
+pip3 install -r requirements.txt
 ```
 
+#### Build Environment For Inference
+
+To hit the ground running, download the pre-trained YOLOv3 model weights (235MB) for the housing detector and the pre-trained YOLOv3 weights (236MB) for the opening detector. 
+```
+bash build/build_inference.sh
+```
+#### Build Environment For Training
+To re-train the housing detector and/or opening detector follow the following steps. 
+
+##### Re-train Housing Detector
+To retrain the housing detector, either download your own street view housing image dataset or use the SF vulnerable buildings data set. Once you have created an image folder, install [VoTT](https://github.com/Microsoft/VoTT) on your local machine and segment houses. Alternatively, use the already segmented dataset. Next, download the default YOLOv3 weights to start transfer learning from.  
+```
+bash build/build_housing_detector.sh --download_images --download_segments
+```
+The flag, `download_images` indicates that the SF housing image dataset should be downloaded.  The flag, `download_segments` indicates that the manually labeled dataset with houses segmented should be downloaded.
+![VoTT Housing](/VOTT_houses.png)
+##### Re-train Opening Detector
+
+To retrain the opening detector, either download the [CMP facade dataset](http://cmp.felk.cvut.cz/~tylecr1/facade/) or provide your own data set of segmented building openings (e.g. by using [VoTT](https://github.com/Microsoft/VoTT)) . Also download the default YOLOv3 weights to start transfer learning from.   
+```
+bash build/build_opening_detector.sh --download_cmp
+```
+The flag, `download_cmp` indicates that the [CMP facade dataset](http://cmp.felk.cvut.cz/~tylecr1/facade/) should be downloaded. 
+<!-- 
 ## Usage
 The script doing the work is [logohunter.py](src/logohunter.py) in the `src/` directory. It first uses a custom-trained YOLOv3 to find logo candidates in an image, and then looks for matches between the candidates and a user input logo.
 
@@ -129,13 +137,13 @@ python train.py
 Training detail such as paths to train/text files, log directory, number of epochs, learning rates and so on are specified in `src/train.py`. The training is performed in two runs, first with all the layers except the last three frozen, and then with all layers trainable.
 
 On an AWS EC2 p2.xlarge instance, with a Tesla K-80 GPU with 11GB  of GPU memory and 64GB of RAM, training YOLOv3 for logo detection took approximately 10 hours for 50+50 epochs.
-
+ -->
 
 ## License
 
 Unless explicitly stated at the top of a file, all code is licensed under the MIT license.
 
-
+<!-- 
 The Logos In The Wild dataset (links to images, bounding box annotations, clean_dataset.py script) is licensed under the CC-by-SA 4.0 license. The images themselves were crawled from Google Images and are property of their respective copyright owners. For legal reasons, raw images other than the ones in `data/test` are not provided: while this project would fall in the "fair use" category, any commercial application would likely need to generate their own dataset.
-
+ -->
 The model files for the YOLO weights and the extracted logo features are derivative work based off of the Logos In The Wild dataset, and are therefore also licensed under the CC-by-SA 4.0 license.
