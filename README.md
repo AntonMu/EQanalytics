@@ -29,8 +29,6 @@ On a high level, the model training consists of four seperate steps:
 ### Inference
 Model inference consists of four similar steps. After entering an address (or list of addresses), the corresponding street view images will be downloaded. For all images, the housing model first segments and crops one house per address. Then the opening detector labels all openings and creates a csv file with all dimensions and positions of the openings. Finally, the softness score is determined and used to classify the building as "soft", "non_soft" or "undetermined". 
 
-![pipeline](/VOTT_houses.png)
-
 ## Repo structure
 + `1_Pre_Processing`: All Preprocessing Tasks
 + `2+3_Computer_Vision`: Both Image Segmentation Tasks
@@ -77,7 +75,7 @@ To retrain the housing detector, either download your own street view housing im
 bash build/build_housing_detector.sh --download_images --download_segments
 ```
 The flag, `download_images` indicates that the SF housing image dataset should be downloaded.  The flag, `download_segments` indicates that the manually labeled dataset with houses segmented should be downloaded.
-
+![VoTT Housing](/VOTT_houses.png)
 ##### Re-train Opening Detector
 
 To retrain the opening detector, either download the [CMP facade dataset](http://cmp.felk.cvut.cz/~tylecr1/facade/) or provide your own data set of segmented building openings (e.g. by using [VoTT](https://github.com/Microsoft/VoTT)) . Also download the default YOLOv3 weights to start transfer learning from.   
