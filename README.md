@@ -1,4 +1,5 @@
 
+
 # EQanalytics: Detection of Vulnerable Buildings
 
 Machine learning project developed at Insight Data Science, 2019 AI session.
@@ -15,24 +16,27 @@ In this project, I built an application that uses Google Street View images and 
 On a high level, the model training consists of four seperate steps:
 
  1. Obtain Training Images
- - Download Street View images from all buildings in the [San Francisco soft story property list](https://sfdbi.org/soft-story-properties-list).
- 2. Detect Houses 
-- Manually label houses using [VoTT](https://github.com/Microsoft/VoTT).
-- Use transfer learning to train a YOLOv3 detector.
-- Crop and save houses.
- 3. Detect Openings 
- - Train a YOLO detector based on the [CMP facade dataset](http://cmp.felk.cvut.cz/~tylecr1/facade/).
- - Detect all openings in set of cropped out houses.
+	 - Download Street View images from all buildings in the [San Francisco soft story property list](https://sfdbi.org/soft-story-properties-list).
+ 2. Object Segmentation
+ 
+	 2.1 Detect Houses
+	- Manually label houses using [VoTT](https://github.com/Microsoft/VoTT).
+	- Use transfer learning to train a YOLOv3 detector.
+	- Crop and save houses.
+
+    2.2 Detect Openings 
+	 - Train a YOLO detector based on the [CMP facade dataset](http://cmp.felk.cvut.cz/~tylecr1/facade/).
+	 - Detect all openings in set of cropped out houses.
  4. Compute "softness score" to classify building
- -  Use K-means clustering to identify number of stories.
- - Compute quotient of the total width of openings on the second story over the total width of openings on the first story.
+	 -  Use K-means clustering to identify number of stories.
+	 - Compute quotient of the total width of openings on the second story over the total width of openings on the first story.
 ### Inference
 Model inference consists of four similar steps. After entering an address (or list of addresses), the corresponding street view images will be downloaded. For all images, the housing model first segments and crops one house per address. Then the opening detector labels all openings and creates a csv file with all dimensions and positions of the openings. Finally, the softness score is determined and used to classify the building as "soft", "non_soft" or "undetermined". 
 
 ## Repo structure
 + `1_Pre_Processing`: All Preprocessing Tasks
-+ `2+3_Computer_Vision`: Both Image Segmentation Tasks
-+ `4_Final_Classification`: Final Classicfication Task
++ `2_Computer_Vision`: Both Image Segmentation Tasks
++ `3_Final_Classification`: Final Classicfication Task
 + `Built`: Scripts to get started, train and evaluate
 
 ## Getting Started
