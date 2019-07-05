@@ -76,13 +76,13 @@ if __name__ == '__main__':
     )
 
     parser.add_argument(
-        "--output", type=str, default=houses_result_folder,
+        "--output", type=str, default=result_folder,
         help = "Output path for detection results."
     )
 
     parser.add_argument(
         "--detection_mode", type=str, default='houses',
-        help = "If set to openings, use the pre-trained weights for openings. Otherwise use the pre-trained weights for houses. This overrides all other settings."
+        help = "If set to openings, use the pre-trained weights for openings. Otherwise use the pre-trained weights for houses."
     )
 
     parser.add_argument(
@@ -92,7 +92,7 @@ if __name__ == '__main__':
 
     parser.add_argument(
         '--yolo_model', type=str, dest='model_path', default = houses_weights,
-        help='Use your own pre-trained weights. This option does NOT overide the --model_type flag setting.'
+        help='Use your own pre-trained weights. This option overides the --model_type flag.'
     )
 
     parser.add_argument(
@@ -128,30 +128,60 @@ if __name__ == '__main__':
 
     FLAGS = parser.parse_args()
 
-
-
-    if FLAGS.detection_mode == 'openings' or FLAGS.detection_mode == 'opening':
-    	FLAGS.model_path = openings_weights
-    	FLAGS.classes_path = openings_classes
-    	FLAGS.output = openings_result_folder
-    	FLAGS.box = openings_result_file
-    	FLAGS.postfix = '_opening'
-
-
     if FLAGS.test:
         test.test(FLAGS.features)
         exit()
 
 
-    save_img_logo, save_img_match = not FLAGS.no_save_img, not FLAGS.no_save_img
+    # save_img_logo, save_img_match = not FLAGS.no_save_img, not FLAGS.no_save_img
 
-    input_image_paths = GetFileList(FLAGS.input_images)
-    print('Found {} input images: {}...'.format(len(input_image_paths), [ os.path.basename(f) for f in input_image_paths[:5]]))
+    # if FLAGS.input_brands == 'input':
+    #     print('Input logos to search for in images: (file-by-file or entire directory)')
+
+    #     FLAGS.input_brands = parse_input()
+
+    # elif os.path.isfile(FLAGS.input_brands):
+    #     print("Loading input brands from text file: reading "+FLAGS.input_brands)
+    #     if FLAGS.input_brands.endswith('.txt'):
+    #         with open(FLAGS.input_brands, 'r') as file:
+    #             FLAGS.input_brands = [os.path.abspath(f) for f in file.read().splitlines()]
+
+    #     else:
+    #         FLAGS.input_brands = [ os.path.abspath(FLAGS.input_brands)  ]
+
+    # elif os.path.isdir(FLAGS.input_brands):
+    #     FLAGS.input_brands = [ os.path.abspath(os.path.join(FLAGS.input_brands, f)) for f in os.listdir(FLAGS.input_brands) if f.endswith(('.jpg', '.png')) ]
+    # else:
+    #     exit('Error: path not found:{}'.format(FLAGS.input_brands))
+
+
+    # if FLAGS.input_images.endswith('.txt'):
+    #     print("Batch image detection mode: reading "+FLAGS.input_images)
+    #     output_txt = FLAGS.input_images.split('.txt')[0]+'_pred.txt'
+    #     FLAGS.save_to_txt = True
+    #     with open(FLAGS.input_images, 'r') as file:
+    #         file_list = [line.split(' ')[0] for line in file.read().splitlines()]
+    #     FLAGS.input_images = [os.path.abspath(f) for f in file_list]
+
+
+    # elif FLAGS.input_images == 'input':
+    #     print('Input images to be scanned for logos: (file-by-file or entire directory)')
+    #     FLAGS.input_images = parse_input()
+
+    # elif os.path.isdir(FLAGS.input_images):
+    #     FLAGS.input_images = [ os.path.abspath(os.path.join(FLAGS.input_images, f)) for f in os.listdir(FLAGS.input_images) if f.endswith(('.jpg', '.png')) ]
+    # elif os.path.isfile(FLAGS.input_images):
+    #     FLAGS.input_images = [ os.path.abspath(FLAGS.input_images)  ]
+    # else:
+    #     exit('Error: path not found: {}'.format(FLAGS.input_images))
+
+
+    # print('Found {} input brands: {}...'.format(len(FLAGS.input_brands), [ os.path.basename(f) for f in FLAGS.input_brands[:5]]))
+    print('Found {} input images: {}...'.format(len(FLAGS.input_images), [ os.path.basename(f) for f in FLAGS.input_images[:5]]))
 
     output_path = FLAGS.output
     if not os.path.exists(output_path):
         os.makedirs(output_path)
-
 
     # define YOLO logo detector
     yolo = YOLO(**{"model_path": FLAGS.model_path,
@@ -165,29 +195,61 @@ if __name__ == '__main__':
 
     # Make a dataframe for the prediction outputs
     out_df = pd.DataFrame(columns=['image', 'xmin', 'ymin', 'xmax', 'ymax', 'label','confidence','x_size','y_size'])
+    
+    # input_paths = sorted(FLAGS.input_brands)
+    
+    # labels to draw on images - could also be read from filename
+    input_labels = [ os.path.basename(s).split('test_')[-1].split('.')[0] for s in input_paths]
 
-    # labels to draw on images
-    class_file = open(FLAGS.classes_path, 'r')
-    input_labels = [line.rstrip('\n') for line in class_file.readlines()]
-    print('Found {} input labels: {}...'.format(len(input_labels), input_labels))
+    # get Inception/VGG16 model and flavor from filename
+    # model_name, flavor = model_flavor_from_name(FLAGS.features)
+    ## load pre-processed LITW features database
+    # features, brand_map, input_shape = load_features(FLAGS.features)
 
+    ## load inception model
+    # model, preprocess_input, input_shape = load_extractor_model(model_name, flavor)
+    # my_preprocess = lambda x: preprocess_input(utils.pad_image(x, input_shape))
 
+    # compute cosine similarity between input brand images and all LogosInTheWild logos
+    # ( img_input, feat_input, sim_cutoff, (bins, cdf_list)
+    # ) = load_brands_compute_cutoffs(input_paths, (model, my_preprocess), features, sim_threshold)
 
     start = timer()
+    # cycle trough input images, look for logos and then match them against inputs
     text_out = ''
-
-    for i, img_path in enumerate(input_image_paths):
+    for i, img_path in enumerate(FLAGS.input_images):
         text = img_path
-        print(text)
         prediction, image = detect_logo(yolo, img_path, save_img = save_img_logo,
                                           save_img_path = FLAGS.output,
                                           postfix=FLAGS.postfix)
+
+        # text = match_logo(image, prediction, (model, my_preprocess), text,
+        #           (feat_input, sim_cutoff, bins, cdf_list, input_labels),
+        #           save_img = save_img_match, save_img_path=FLAGS.output)
+        
+        # print(text)
         y_size,x_size,_ = np.array(image).shape
         for single_prediction in prediction:
-
+#                 row = [text]
+#                 row.append(prediction)
+#                 print('row',row)
+#                 print(type(prediction))
+#                 print([text]+single_prediction)
             out_df=out_df.append(pd.DataFrame([[text[:-1]]+single_prediction + [y_size,x_size]],columns=['image', 'xmin', 'ymin', 'xmax', 'ymax', 'label','confidence','x_size','y_size']))
-    end = timer()
-    print('Processed {} images in {:.1f}sec - {:.1f}FPS'.format(
-         len(FLAGS.input_images), end-start, len(FLAGS.input_images)/(end-start)
-         ))
-    out_df.to_csv(FLAGS.box,index=False)
+#             print(prediction)
+        # text_out += (text)
+
+        # if FLAGS.save_to_txt:
+        #     with open(output_txt,'w') as txtfile:
+        #         txtfile.write(text_out)
+
+        end = timer()
+        print('Processed {} images in {:.1f}sec - {:.1f}FPS'.format(
+             len(FLAGS.input_images), end-start, len(FLAGS.input_images)/(end-start)
+             ))
+        out_df.to_csv(FLAGS.box,index=False)
+
+    # video mode
+    # # elif FLAGS.video:
+    # else:
+    #     print("Must specify either --image or --video.  See usage with --help.")

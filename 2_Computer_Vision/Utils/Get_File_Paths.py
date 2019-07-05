@@ -4,7 +4,7 @@ import os
 For the given path, get the List of all files in the directory tree 
 https://thispointer.com/python-how-to-get-list-of-files-in-directory-and-sub-directories/
 '''
-def getListOfFiles(dirName,ending='.jpg'):
+def GetFileList(dirName,ending='.jpg'):
     # create a list of file and sub directories 
     # names in the given directory 
     listOfFile = os.listdir(dirName)
@@ -15,10 +15,10 @@ def getListOfFiles(dirName,ending='.jpg'):
         fullPath = os.path.join(dirName, entry)
         # If entry is a directory then get the list of files in this directory 
         if os.path.isdir(fullPath):
-            allFiles = allFiles + getListOfFiles(fullPath)
+            allFiles = allFiles + GetFileList(fullPath)
         else:
-        	if entry.endswith(ending):
-	            allFiles.append(fullPath)
+            if entry.endswith(ending):
+                allFiles.append(fullPath)
                 
     return allFiles        
  
