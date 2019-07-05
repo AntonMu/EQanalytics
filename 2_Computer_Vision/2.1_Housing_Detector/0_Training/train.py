@@ -40,14 +40,14 @@ def _main():
     log_dir = os.path.join(Data_Folder,'Model_weights','Houses')
     classes_path = YOLO_classname
     anchors_path = os.path.join(keras_path,'model_data','yolo_anchors.txt') # 'keras_yolo3.model_data/yolo-tiny_anchors.txt's
-    weights_path = os.path.join(keras_path,'keras_yolo3','model_data','yolo.h5') # 'keras_yolo3/model_data/yolo-tiny.h5'
+    weights_path = os.path.join(keras_path,'model_data','yolo.h5') # 'keras_yolo3/model_data/yolo-tiny.h5'
     class_names = get_classes(classes_path)
     num_classes = len(class_names)
     anchors = get_anchors(anchors_path)
 
 
     input_shape = (640, 640) # multiple of 32, hw
-    epoch1, epoch2 = 5, 5
+    epoch1, epoch2 = 51, 51
 
     is_tiny_version = (len(anchors)==6) # default setting
     if is_tiny_version:
@@ -58,7 +58,7 @@ def _main():
             freeze_body=2, weights_path = weights_path) # make sure you know what you freeze
 
     logging = TensorBoard(log_dir=log_dir)
-    checkpoint = ModelCheckpoint(log_dir + 'checkpoint.h5',
+    checkpoint = ModelCheckpoint(os.path.join(log_dir,'checkpoint.h5'),
         monitor='val_loss', save_weights_only=True, save_best_only=True, period=5)
     reduce_lr = ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=3, verbose=1)
     early_stopping = EarlyStopping(monitor='val_loss', min_delta=0, patience=10, verbose=1)
