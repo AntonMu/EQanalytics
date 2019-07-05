@@ -16,14 +16,14 @@ Under export settings, as `Provider` chose `Comma Seperated Values (CSV)`. Then 
 
 #### Labeling
 Now start labeling all houses. One class called `house` is enough for this task. I recommend to label at least 300 images. The more the better!
-![VoTT Housing](/VoTT_Houses.png)
+![VoTT Housing](/2_Computer_Vision/2.1_Housing_Detector/VoTT_Houses.png)
 
  Once you are done, export the project. 
-![VoTT Housing](/VoTT_Save.png)
+![VoTT Housing](/2_Computer_Vision/2.1_Housing_Detector/VoTT_Save.png)
 
 #### Collecting the Result
 You should see a folder called `vott-csv-export` which contains all segmented images and a `*.csv` file called `Houses-export.csv`. Please the content of this folder under `EQanalytics\Data\vott-csv-export`. 
-![VoTT Housing](/VoTT_Export.png)
+![VoTT Housing](/2_Computer_Vision/2.1_Housing_Detector/VoTT_Export.png)
 
 #### Convert to Yolo Format
 As a final step, we convert the `VoTT csv` format to the `YOLOv3` format. 
