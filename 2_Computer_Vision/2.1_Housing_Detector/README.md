@@ -21,12 +21,12 @@ Now start labeling all houses. One class called `house` is enough for this task.
 
  Once you are done, export the project. 
  
-![VoTT Saving](/2_Computer_Vision/2.1_Housing_Detector/VoTT_Save.png)
+![VoTT Saving](/2_Computer_Vision/2.1_Housing_Detector/VoTT_Save.jpg)
 
 #### Collecting the Result
 You should see a folder called `vott-csv-export` which contains all segmented images and a `*.csv` file called `Houses-export.csv`. Copy the content of this folder to `EQanalytics/Data/vott-csv-export`. 
 
-![VoTT Folder](/2_Computer_Vision/2.1_Housing_Detector/VoTT_Export.jpg)
+![VoTT Folder](/2_Computer_Vision/2.1_Housing_Detector/VoTT_Export.png)
 
 #### Convert to Yolo Format
 As a final step, we convert the `VoTT csv` format to the `YOLOv3` format. 
