@@ -2,7 +2,8 @@
 MODIFIED FROM keras-yolo3 PACKAGE, https://github.com/qqwweee/keras-yolo3
 Retrain the YOLO model for your own dataset.
 """
-
+# OSError: Unable to open file (unable to open file: name = '/home/ubuntu/EQanalytics/2_Computer_Vision/src/keras_yolo3/keras_yolo3/model_data/yolo.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+    
 import numpy as np
 import os
 import sys
@@ -13,8 +14,8 @@ def get_parent_dir(n=1):
     for k in range(n):
         current_path = os.path.dirname(current_path)
     return current_path
-keras_path = os.path.join(get_parent_dir(2),'src','keras_yolo3')
-sys.path.append(keras_path)
+src_path = os.path.join(get_parent_dir(2),'src')
+sys.path.append(src_path)
 
 import keras.backend as K
 from keras.layers import Input, Lambda
@@ -27,6 +28,7 @@ from keras_yolo3.yolo3.utils import get_random_data
 
 from PIL import Image
 
+keras_path = os.path.join(src_path,'keras_yolo3')
 Data_Folder = os.path.join(get_parent_dir(3),'Data')
 VoTT_Folder = os.path.join(Data_Folder,'vott-csv-export')
 YOLO_filename = os.path.join(VoTT_Folder,'data_train.txt')
