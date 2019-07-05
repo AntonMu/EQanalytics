@@ -38,7 +38,7 @@ def _main():
     log_dir = os.path.join(Data_Folder,'Model_weights','Houses')
     classes_path = YOLO_classname
     anchors_path = os.path.join(keras_path,'model_data','yolo_anchors.txt') # 'keras_yolo3.model_data/yolo-tiny_anchors.txt's
-    weights_path = os.path.join(keras_path,'keras_yolo3','model_data/yolo.h5') # 'keras_yolo3/model_data/yolo-tiny.h5'
+    weights_path = os.path.join(keras_path,'keras_yolo3','model_data','yolo.h5') # 'keras_yolo3/model_data/yolo-tiny.h5'
     class_names = get_classes(classes_path)
     num_classes = len(class_names)
     anchors = get_anchors(anchors_path)
@@ -86,7 +86,7 @@ def _main():
                 epochs=epoch1,
                 initial_epoch=0,
                 callbacks=[logging, checkpoint])
-        model.save_weights(log_dir + 'trained_weights_stage_1.h5')
+        model.save_weights(os.path.join(log_dir,'trained_weights_stage_1.h5'))
 
     # Unfreeze and continue training, to fine-tune.
     # Train longer if the result is not good.
@@ -94,7 +94,7 @@ def _main():
         for i in range(len(model.layers)):
             model.layers[i].trainable = True
         model.compile(optimizer=Adam(lr=1e-4), loss={'yolo_loss': lambda y_true, y_pred: y_pred}) # recompile to apply the change
-        print('Unfreeze all of the layers.')
+        print('Unfreeze all layers.')
 
         batch_size = 4 # note that more GPU memory is required after unfreezing the body
         print('Train on {} samples, val on {} samples, with batch size {}.'.format(num_train, num_val, batch_size))
@@ -105,7 +105,7 @@ def _main():
             epochs=epoch1+epoch2,
             initial_epoch=epoch1,
             callbacks=[logging, checkpoint, reduce_lr, early_stopping])
-        model.save_weights(log_dir + 'trained_weights_final.h5')
+        model.save_weights(os.path.join(log_dir,'trained_weights_final.h5'))
 
     # Further training if needed.
 
