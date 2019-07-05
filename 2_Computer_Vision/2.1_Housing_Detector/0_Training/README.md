@@ -27,7 +27,7 @@ You should see a folder called `vott-csv-export` which contains all segmented im
 ![VoTT Folder](/2_Computer_Vision/2.1_Housing_Detector/0_Training/Screenshots/VoTT_Export.png)
 
 #### Convert to Yolo Format
-As a final step, we convert the `VoTT csv` format to the `YOLOv3` format. To do so, run the `Prepare_Houses_for_Yolo.py` script with:
+As a final step, we convert the `VoTT` format to the `YOLOv3` format. To do so, run the `Prepare_Houses_for_Yolo.py` script with:
 
 ```
 python Prepare_Houses_for_Yolo.py
