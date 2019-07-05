@@ -48,4 +48,6 @@ Now, navigate back to `EQanalytics/2_Computer_Vision/2.1_Housing_Detector/0_Trai
 ```
 python Train.py
 ```
-Wait until training finishes. All trained weights are saved in `EQanalytics/Data/Model_weights/Houses`.
+Wait until training finishes. All trained weights are saved in `EQanalytics/Data/Model_Weights/Houses`.
+
+## That's it - we have succesfully trained our housing detector

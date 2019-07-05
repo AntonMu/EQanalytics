@@ -4,9 +4,10 @@ Retrain the YOLO model for your own dataset.
 """
 # OSError: Unable to open file (unable to open file: name = '/home/ubuntu/EQanalytics/2_Computer_Vision/src/keras_yolo3/keras_yolo3/model_data/yolo.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
     
-import numpy as np
+
 import os
 import sys
+
 def get_parent_dir(n=1):
     """ returns the n-th parent dicrectory of the current
     working directory """
@@ -14,18 +15,18 @@ def get_parent_dir(n=1):
     for k in range(n):
         current_path = os.path.dirname(current_path)
     return current_path
+
 src_path = os.path.join(get_parent_dir(2),'src')
 sys.path.append(src_path)
 
+import numpy as np
 import keras.backend as K
 from keras.layers import Input, Lambda
 from keras.models import Model
 from keras.optimizers import Adam
 from keras.callbacks import TensorBoard, ModelCheckpoint, ReduceLROnPlateau, EarlyStopping
-
 from keras_yolo3.yolo3.model import preprocess_true_boxes, yolo_body, tiny_yolo_body, yolo_loss
 from keras_yolo3.yolo3.utils import get_random_data
-
 from PIL import Image
 
 keras_path = os.path.join(src_path,'keras_yolo3')

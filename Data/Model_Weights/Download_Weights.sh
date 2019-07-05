@@ -1,0 +1,2 @@
+python Download_Weights.py 1aPCwYXFAOmklmNMLMh81Yduw5UrbHqkN Houses/trained_weights_final.h5
+python Download_Weights.py 1FbvHzQWCjucXPbTbI4S1MnBLkAi58Mxv Openings/trained_weights_final.h5
