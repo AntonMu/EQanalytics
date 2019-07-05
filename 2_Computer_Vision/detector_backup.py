@@ -2,6 +2,7 @@
 # SCRIPT TO DETECT HOUSES IN IMAGES AND RETURN A CSV FILE WITH BOUDING BOXES
 #
 
+
 import os
 import sys
 
@@ -70,9 +71,14 @@ if __name__ == '__main__':
         help = "Path to image directory. All subdirectories will be included."
     )
 
+    # parser.add_argument(
+    #     "--input_brands", type=str, default='input',
+    #     help = "path to directory with all brand logos to find in input images"
+    # )
+
     parser.add_argument(
         '--test', default=False, action="store_true",
-        help='Test routine: run on few images in /Data/Street_View_Images'
+        help='Test routine: run on few images in /data/test/ directory'
     )
 
     parser.add_argument(
@@ -81,8 +87,13 @@ if __name__ == '__main__':
     )
 
     parser.add_argument(
-        "--detection_mode", type=str, default='houses',
+        "--detectiont_mode", type=str, default='houses',
         help = "If set to openings, use the pre-trained weights for openings. Otherwise use the pre-trained weights for houses."
+    )
+
+    parser.add_argument(
+        "--outtxt", default=False, dest='save_to_txt', action="store_true",
+        help = "save text file with inference results"
     )
 
     parser.add_argument(
@@ -114,16 +125,23 @@ if __name__ == '__main__':
         '--confidence', type=float, dest = 'score', default = 0.1,
         help='YOLO object confidence threshold above which to show predictions'
     )
+
+    # parser.add_argument(# good default choices: inception_logo_features_200_trunc2, vgg16_logo_features_128
+    #     '--features', type=str, dest='features', default = 'inception_logo_features_200_trunc2.hdf5',
+    #     help='path to LogosInTheWild logos features extracted by InceptionV3/VGG16'
+    # )
+
+    # parser.add_argument(
+    #     '--fpr', type=float, dest = 'fpr', default = 0.95,
+    #     help='False positive rate target to define similarity cutoffs'
+    # )
+    
     
     parser.add_argument(
         '--box_file', type=str, dest = 'box', default = houses_result_file,
         help='Specify the destination to save bounding boxes'
     )
     
-    parser.add_argument(
-        '--postfix', type=str, dest = 'postfix', default = '_house',
-        help='Specify the postfix for images with bounding boxes'
-    )
     
 
     FLAGS = parser.parse_args()
@@ -135,48 +153,48 @@ if __name__ == '__main__':
 
     # save_img_logo, save_img_match = not FLAGS.no_save_img, not FLAGS.no_save_img
 
-    # if FLAGS.input_brands == 'input':
-    #     print('Input logos to search for in images: (file-by-file or entire directory)')
+    if FLAGS.input_brands == 'input':
+        print('Input logos to search for in images: (file-by-file or entire directory)')
 
-    #     FLAGS.input_brands = parse_input()
+        FLAGS.input_brands = parse_input()
 
-    # elif os.path.isfile(FLAGS.input_brands):
-    #     print("Loading input brands from text file: reading "+FLAGS.input_brands)
-    #     if FLAGS.input_brands.endswith('.txt'):
-    #         with open(FLAGS.input_brands, 'r') as file:
-    #             FLAGS.input_brands = [os.path.abspath(f) for f in file.read().splitlines()]
+    elif os.path.isfile(FLAGS.input_brands):
+        print("Loading input brands from text file: reading "+FLAGS.input_brands)
+        if FLAGS.input_brands.endswith('.txt'):
+            with open(FLAGS.input_brands, 'r') as file:
+                FLAGS.input_brands = [os.path.abspath(f) for f in file.read().splitlines()]
 
-    #     else:
-    #         FLAGS.input_brands = [ os.path.abspath(FLAGS.input_brands)  ]
+        else:
+            FLAGS.input_brands = [ os.path.abspath(FLAGS.input_brands)  ]
 
-    # elif os.path.isdir(FLAGS.input_brands):
-    #     FLAGS.input_brands = [ os.path.abspath(os.path.join(FLAGS.input_brands, f)) for f in os.listdir(FLAGS.input_brands) if f.endswith(('.jpg', '.png')) ]
-    # else:
-    #     exit('Error: path not found:{}'.format(FLAGS.input_brands))
-
-
-    # if FLAGS.input_images.endswith('.txt'):
-    #     print("Batch image detection mode: reading "+FLAGS.input_images)
-    #     output_txt = FLAGS.input_images.split('.txt')[0]+'_pred.txt'
-    #     FLAGS.save_to_txt = True
-    #     with open(FLAGS.input_images, 'r') as file:
-    #         file_list = [line.split(' ')[0] for line in file.read().splitlines()]
-    #     FLAGS.input_images = [os.path.abspath(f) for f in file_list]
+    elif os.path.isdir(FLAGS.input_brands):
+        FLAGS.input_brands = [ os.path.abspath(os.path.join(FLAGS.input_brands, f)) for f in os.listdir(FLAGS.input_brands) if f.endswith(('.jpg', '.png')) ]
+    else:
+        exit('Error: path not found:{}'.format(FLAGS.input_brands))
 
 
-    # elif FLAGS.input_images == 'input':
-    #     print('Input images to be scanned for logos: (file-by-file or entire directory)')
-    #     FLAGS.input_images = parse_input()
-
-    # elif os.path.isdir(FLAGS.input_images):
-    #     FLAGS.input_images = [ os.path.abspath(os.path.join(FLAGS.input_images, f)) for f in os.listdir(FLAGS.input_images) if f.endswith(('.jpg', '.png')) ]
-    # elif os.path.isfile(FLAGS.input_images):
-    #     FLAGS.input_images = [ os.path.abspath(FLAGS.input_images)  ]
-    # else:
-    #     exit('Error: path not found: {}'.format(FLAGS.input_images))
+    if FLAGS.input_images.endswith('.txt'):
+        print("Batch image detection mode: reading "+FLAGS.input_images)
+        output_txt = FLAGS.input_images.split('.txt')[0]+'_pred.txt'
+        FLAGS.save_to_txt = True
+        with open(FLAGS.input_images, 'r') as file:
+            file_list = [line.split(' ')[0] for line in file.read().splitlines()]
+        FLAGS.input_images = [os.path.abspath(f) for f in file_list]
 
 
-    # print('Found {} input brands: {}...'.format(len(FLAGS.input_brands), [ os.path.basename(f) for f in FLAGS.input_brands[:5]]))
+    elif FLAGS.input_images == 'input':
+        print('Input images to be scanned for logos: (file-by-file or entire directory)')
+        FLAGS.input_images = parse_input()
+
+    elif os.path.isdir(FLAGS.input_images):
+        FLAGS.input_images = [ os.path.abspath(os.path.join(FLAGS.input_images, f)) for f in os.listdir(FLAGS.input_images) if f.endswith(('.jpg', '.png')) ]
+    elif os.path.isfile(FLAGS.input_images):
+        FLAGS.input_images = [ os.path.abspath(FLAGS.input_images)  ]
+    else:
+        exit('Error: path not found: {}'.format(FLAGS.input_images))
+
+
+    print('Found {} input brands: {}...'.format(len(FLAGS.input_brands), [ os.path.basename(f) for f in FLAGS.input_brands[:5]]))
     print('Found {} input images: {}...'.format(len(FLAGS.input_images), [ os.path.basename(f) for f in FLAGS.input_images[:5]]))
 
     output_path = FLAGS.output
@@ -196,23 +214,23 @@ if __name__ == '__main__':
     # Make a dataframe for the prediction outputs
     out_df = pd.DataFrame(columns=['image', 'xmin', 'ymin', 'xmax', 'ymax', 'label','confidence','x_size','y_size'])
     
-    # input_paths = sorted(FLAGS.input_brands)
+    input_paths = sorted(FLAGS.input_brands)
     
     # labels to draw on images - could also be read from filename
     input_labels = [ os.path.basename(s).split('test_')[-1].split('.')[0] for s in input_paths]
 
     # get Inception/VGG16 model and flavor from filename
-    # model_name, flavor = model_flavor_from_name(FLAGS.features)
+    model_name, flavor = model_flavor_from_name(FLAGS.features)
     ## load pre-processed LITW features database
-    # features, brand_map, input_shape = load_features(FLAGS.features)
+    features, brand_map, input_shape = load_features(FLAGS.features)
 
     ## load inception model
-    # model, preprocess_input, input_shape = load_extractor_model(model_name, flavor)
-    # my_preprocess = lambda x: preprocess_input(utils.pad_image(x, input_shape))
+    model, preprocess_input, input_shape = load_extractor_model(model_name, flavor)
+    my_preprocess = lambda x: preprocess_input(utils.pad_image(x, input_shape))
 
     # compute cosine similarity between input brand images and all LogosInTheWild logos
-    # ( img_input, feat_input, sim_cutoff, (bins, cdf_list)
-    # ) = load_brands_compute_cutoffs(input_paths, (model, my_preprocess), features, sim_threshold)
+    ( img_input, feat_input, sim_cutoff, (bins, cdf_list)
+    ) = load_brands_compute_cutoffs(input_paths, (model, my_preprocess), features, sim_threshold)
 
     start = timer()
     # cycle trough input images, look for logos and then match them against inputs
@@ -221,13 +239,13 @@ if __name__ == '__main__':
         text = img_path
         prediction, image = detect_logo(yolo, img_path, save_img = save_img_logo,
                                           save_img_path = FLAGS.output,
-                                          postfix=FLAGS.postfix)
+                                          postfix='_houses')
 
-        # text = match_logo(image, prediction, (model, my_preprocess), text,
-        #           (feat_input, sim_cutoff, bins, cdf_list, input_labels),
-        #           save_img = save_img_match, save_img_path=FLAGS.output)
+        text = match_logo(image, prediction, (model, my_preprocess), text,
+                  (feat_input, sim_cutoff, bins, cdf_list, input_labels),
+                  save_img = save_img_match, save_img_path=FLAGS.output)
         
-        # print(text)
+        print(text)
         y_size,x_size,_ = np.array(image).shape
         for single_prediction in prediction:
 #                 row = [text]
@@ -237,11 +255,11 @@ if __name__ == '__main__':
 #                 print([text]+single_prediction)
             out_df=out_df.append(pd.DataFrame([[text[:-1]]+single_prediction + [y_size,x_size]],columns=['image', 'xmin', 'ymin', 'xmax', 'ymax', 'label','confidence','x_size','y_size']))
 #             print(prediction)
-        # text_out += (text)
+        text_out += (text)
 
-        # if FLAGS.save_to_txt:
-        #     with open(output_txt,'w') as txtfile:
-        #         txtfile.write(text_out)
+        if FLAGS.save_to_txt:
+            with open(output_txt,'w') as txtfile:
+                txtfile.write(text_out)
 
         end = timer()
         print('Processed {} images in {:.1f}sec - {:.1f}FPS'.format(
@@ -250,6 +268,6 @@ if __name__ == '__main__':
         out_df.to_csv(FLAGS.box,index=False)
 
     # video mode
-    # # elif FLAGS.video:
-    # else:
-    #     print("Must specify either --image or --video.  See usage with --help.")
+    # elif FLAGS.video:
+    else:
+        print("Must specify either --image or --video.  See usage with --help.")
