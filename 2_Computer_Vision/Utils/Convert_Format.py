@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import re
 import os
-
+from PIL import Image
 
 def get_files(directory,ending='.jpg'):
     result=[]
@@ -26,7 +26,7 @@ def convert_vott_csv_to_yolo(vott_df,labeldict,path='',target_name='data_all_tra
 
     for index,row in vott_df.iterrows():
         if not last_image == row['image']:
-            txt_file +='\n'+path+row['image'] + ' '
+            txt_file +='\n'+os.path.join(path,row['image']) + ' '
             txt_file += ','.join([str(x) for x in (row[['xmin', 'ymin', 'xmax', 'ymax','code']].tolist())])
         else:
             txt_file += ' '
@@ -78,17 +78,17 @@ def csv_from_xml(directory,path_name=''):
     cols = [cols[-1]] + cols[:-1]
     result_df = result_df[cols]
     return result_df
+if __name__ == '__main__':
+    #Prepare the houses dataset for YOLO
+    labeldict = dict(zip(['house'],[0,]))
+    multi_df = pd.read_csv('C:/Users/Anton/Documents/Insight/eq/EQ_new/Train_Housing_detector/2/vott-csv-export/Housing_cropping-export.csv')
+    multi_df.drop_duplicates(subset=None, keep='first', inplace=True)
+    convert_vott_csv_to_yolo(multi_df,labeldict,path = '/home/ubuntu/logohunter/data/houses/',target_name='data_train.txt')
 
-#Prepare the houses dataset for YOLO
-labeldict = dict(zip(['house'],[0,]))
-multi_df = pd.read_csv('C:/Users/Anton/Documents/Insight/eq/EQ_new/Train_Housing_detector/2/vott-csv-export/Housing_cropping-export.csv')
-multi_df.drop_duplicates(subset=None, keep='first', inplace=True)
-convert_vott_csv_to_yolo(multi_df,labeldict,path = '/home/ubuntu/logohunter/data/houses/',target_name='data_train.txt')
+    #Prepare the windows dataset for YOLO
+    path = 'C:/Users/Anton/Documents/Insight/eq/EQ_new/Train_Window_Detector/base'
+    csv_from_xml(path,'/home/ubuntu/logohunter/data/windows').to_csv('C:/Users/Anton/Documents/Insight/eq/EQ_new/Train_Window_Detector/base/annotations.csv')   
 
-#Prepare the windows dataset for YOLO
-path = 'C:/Users/Anton/Documents/Insight/eq/EQ_new/Train_Window_Detector/base'
-csv_from_xml(path,'/home/ubuntu/logohunter/data/windows').to_csv('C:/Users/Anton/Documents/Insight/eq/EQ_new/Train_Window_Detector/base/annotations.csv')   
-
-label_names = ['background', 'facade', 'molding', 'cornice', 'pillar', 'window', 'door', 'sill', 'blind', 'balcony', 'shop', 'deco']
-labeldict = dict(zip(label_names,list(range(12))))
-convert_vott_csv_to_yolo(csv_from_xml(path,'/home/ubuntu/logohunter/data/windows'),labeldict)
+    label_names = ['background', 'facade', 'molding', 'cornice', 'pillar', 'window', 'door', 'sill', 'blind', 'balcony', 'shop', 'deco']
+    labeldict = dict(zip(label_names,list(range(12))))
+    convert_vott_csv_to_yolo(csv_from_xml(path,'/home/ubuntu/logohunter/data/windows'),labeldict)

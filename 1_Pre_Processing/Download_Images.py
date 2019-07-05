@@ -2,10 +2,11 @@
 # MASTER SCRIPT TO CLEAN UP ADDRESS FILE AND DOWNLOAD IMAGES VIA GOOGLE API
 # for each adress in the address list we download the google street view images
 #
-
+import sys
+sys.path.insert(0, './Utils')
 import argparse
 import os
-from Location_Utils import get_parent_dir, ignore_non_int, seperate_house_numbers,tidy_split,find_similar_clusters,download_images
+from Location import get_parent_dir, ignore_non_int, seperate_house_numbers,tidy_split,find_similar_clusters,download_images
 import pandas as pd
 pd.options.mode.chained_assignment = None  # default='warn'
 
