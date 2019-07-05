@@ -45,7 +45,7 @@ def _main():
 
 
     input_shape = (640, 640) # multiple of 32, hw
-    epoch1, epoch2 = 101, 101
+    epoch1, epoch2 = 5, 5
 
     is_tiny_version = (len(anchors)==6) # default setting
     if is_tiny_version:
