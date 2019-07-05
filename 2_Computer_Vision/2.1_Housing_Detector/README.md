@@ -12,7 +12,7 @@ After installing VoTT, connect the local database to a selection of images from 
 #### Settings
 Under export settings, as `Provider` chose `Comma Seperated Values (CSV)`. Then hit `Save Export Settings`. Make sure the `Include Images` checkbox is checked.
 
- ![VoTT Settings](2_Computer_Vision/2.1_Housing_Detector/VoTT_Export_Settings.png)
+ ![VoTT Settings](/2_Computer_Vision/2.1_Housing_Detector/VoTT_Export_Settings.png)
 
 #### Labeling
 Now start labeling all houses. One class called `house` is enough for this task. I recommend to label at least 300 images. The more the better!
