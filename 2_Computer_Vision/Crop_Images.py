@@ -1,67 +1,82 @@
 from PIL import Image
 from os import path, makedirs
+import os
 import re 
 import pandas as pd
+import sys
+import argparse
 
-def crop_and_save(image_df,source_path = '',target_path = 'cropped', one =True):
-    """Takes a vott_csv file with image names, labels and crop_boxes
-    and crops the images accordingly
+def get_parent_dir(n=1):
+    """ returns the n-th parent dicrectory of the current
+    working directory """
+    current_path = os.getcwd()
+    for k in range(n):
+        current_path = os.path.dirname(current_path)
+    return current_path
+
+utils_path = os.path.join(os.getcwd(),'Utils')
+sys.path.append(utils_path)
+
+from Get_File_Paths import GetFileList,ChangeToLocalMachine
+from Convert_Format import crop_and_save
+
+data_folder = os.path.join(get_parent_dir(n=1),'Data')
+
+houses_file =  os.path.join(data_folder,'House_Detection_Results', 'Housing_Results.csv')
+
+cropping_result_folder = os.path.join(data_folder,'House_Cropping_Results') 
+cropping_result_file = os.path.join(data_folder,'House_Cropping_Results','Cropping_Results.csv') 
+
+houses_classes = os.path.join(data_folder,'Model_Weights','Houses','data_classes.txt')
+
+
+FLAGS = None
+
+
+if __name__ == '__main__':
+    # Delete all default flags
+    parser = argparse.ArgumentParser(argument_default=argparse.SUPPRESS)
+    '''
+    Command line options
+    '''
+
+    parser.add_argument(
+        "--input_file", type=str, default=houses_file,
+        help = "Path to *.csv with YOLO detection results."
+    )
+
+    parser.add_argument(
+        "--output_folder", type=str, default=cropping_result_folder,
+        help = "Output folder for cropped images."
+    )
+
+    parser.add_argument(
+        "--output_file", type=str, default=cropping_result_file,
+        help = "Output file with list of file paths for all cropped images."
+    )
     
-    Input csv file format:
+    parser.add_argument(
+        '--postfix', type=str, dest = 'postfix', default = 'cropped',
+        help='Specify the postfix to attach to cropped images'
+    )
+
+    parser.add_argument(
+        '--classes', type=str, dest='classes_path', default = houses_classes,
+        help='path to YOLO class specifications'
+    )
+
+    parser.add_argument(
+        '--one', type=bool, default = True,
+        help='If True, then for each input image only the most central object will be cropped and saved.'
+    )
     
-    image   xmin ymin xmax ymax label
-    im.jpg  0    10   100  500  house
 
-    
-    Parameters
-    ----------
-    df : pd.Dataframe 
-        The input dataframe with file_names, bounding box info
-        and label
-    source_path : str
-        Path of source images
-    target_path : str, optional
-        Path to save cropped images
-    one : boolean, optional
-        if True, only the most central house will be returned
+    FLAGS = parser.parse_args()
 
-    Returns
-    -------
-    True if completed succesfully
-    """
-    target_path = os.path.join(os.getcwd(), target_path)
-    if not path.isdir(target_path):
-        makedirs(target_path)
-    source_path = os.path.join(os.getcwd(),source_path)
-    previous_name = ''
-    counter = 0
-    def find_rel_position(row):
-        current_name = row['image']
-        x_size,_ = (Image.open(os.path.join(source_path, current_name)).size)
-        x_centrality = abs((row['xmin']+ row['xmax'])/2/x_size-.5)
-        return x_centrality        
-    if one:
-        centrality = []
-        for index, row in image_df.iterrows():
-            centrality.append(find_rel_position(row))
-        image_df['x_centrality'] = pd.Series(centrality)
-        image_df.sort_values(['image','x_centrality'], inplace = True) 
-        image_df.drop_duplicates(subset ="image", keep = 'first', inplace = True) 
-        
-    for index, row in image_df.iterrows():
-        current_name = row['image']
-        if current_name == previous_name:
-            counter+=1
-        else:
-            counter =0
-        image_path = os.path.join(source_path, current_name)
-        imageObject  = Image.open(image_path)
-        cropped = imageObject.crop((row['xmin'],row['ymin'],row['xmax'],row['ymax']))
-        image_name_cropped = '_'.join([current_name[:-4],'cropped',row['label'],str(counter)])+'.jpg'
+    class_file = open(FLAGS.classes_path, 'r')
+    input_labels = [line.rstrip('\n') for line in class_file.readlines()]
+    label_dict = dict(zip(list(range(len(input_labels))),input_labels))
 
-        cropped.save(os.path.join(target_path,image_name_cropped))
-        previous_name = current_name
-    return True
 
-image_df = pd.read_csv("./vott-csv-export/Houses-export.csv")
-crop_and_save(image_df,source_path = 'vott-csv-export',target_path = 'cropped_one')            
+    image_df = pd.read_csv(FLAGS.input_file)
+    crop_and_save(image_df,target_path = FLAGS.output_folder, target_file= FLAGS.output_file, label_dict = label_dict, postfix=FLAGS.postfix, one = FLAGS.one)       

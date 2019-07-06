@@ -46,6 +46,7 @@ model_folder =  os.path.join(data_folder,'Model_Weights')
 houses_weights = os.path.join(model_folder,'Houses','trained_weights_final.h5')
 houses_classes = os.path.join(model_folder,'Houses','data_classes.txt')
 
+openings_input_folder = os.path.join(data_folder,'House_Cropping_Results')
 openings_weights = os.path.join(model_folder,'Openings','trained_weights_final.h5')
 openings_classes = os.path.join(model_folder,'Openings','data_all_classes.txt')
 
@@ -124,18 +125,19 @@ if __name__ == '__main__':
 
 
     if FLAGS.detection_mode == 'openings' or FLAGS.detection_mode == 'opening':
-    	FLAGS.model_path = openings_weights
-    	FLAGS.classes_path = openings_classes
-    	FLAGS.output = openings_result_folder
-    	FLAGS.box = openings_result_file
-    	FLAGS.postfix = '_opening'
+        FLAGS.input_images = openings_input_folder
+        FLAGS.model_path = openings_weights
+        FLAGS.classes_path = openings_classes
+        FLAGS.output = openings_result_folder
+        FLAGS.box = openings_result_file
+        FLAGS.postfix = '_opening'
 
     save_img = not FLAGS.no_save_img
 
     if FLAGS.test:
-    	input_image_paths = random.choices(GetFileList(image_folder),k=10)
+        input_image_paths = random.choices(GetFileList(image_folder),k=10)
     else:
-	    input_image_paths = GetFileList(FLAGS.input_images)
+        input_image_paths = GetFileList(FLAGS.input_images)
 
     print('Found {} input images: {}...'.format(len(input_image_paths), [ os.path.basename(f) for f in input_image_paths[:5]]))
 
