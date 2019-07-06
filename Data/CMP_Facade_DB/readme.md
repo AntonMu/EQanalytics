@@ -6,29 +6,29 @@ Website: [cmp.felk.cvut.cz/~tylecr1/facade](cmp.felk.cvut.cz/~tylecr1/facade)
 
 ## Content 
 
-CMP-extended dataset, 228 images
-CMP-base dataset, 378 images
-Image data: `*.jpg`
-Object annotation: `*.xml`
-Pixelwise labels: `*.png`
-Label definition: label_names.txt
-  - line format: _label_id_ _class_name_ _label_z_order_
+ - CMP-extended dataset, 228 images
+ - CMP-base dataset, 378 images
+ - Image data: `*.jpg`
+ - Object annotation: `*.xml`
+ - Pixelwise labels: `*.png`
+ - Label definition: `label_names.txt`
+ - line format: `label_id` `class_name` `label_z_order`
 
 ## Documentation 
 
 Data origin, format and processing, annotation principles for 12 classes are specified in the report on the website. 
 
-facade 
-molding
-cornice
-pillar
-window
-door
-sill
-blind
-balcony
-shop
-deco
+facade  
+molding  
+cornice  
+pillar  
+window  
+door  
+sill  
+blind  
+balcony  
+shop  
+deco  
 background
 
 ## Citation 
