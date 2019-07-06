@@ -155,7 +155,7 @@ if __name__ == '__main__':
                )
 
     # Make a dataframe for the prediction outputs
-    out_df = pd.DataFrame(columns=['image', 'xmin', 'ymin', 'xmax', 'ymax', 'label','confidence','x_size','y_size'])
+    out_df = pd.DataFrame(columns=['image', 'image_path','xmin', 'ymin', 'xmax', 'ymax', 'label','confidence','x_size','y_size'])
 
     # labels to draw on images
     class_file = open(FLAGS.classes_path, 'r')
@@ -168,15 +168,13 @@ if __name__ == '__main__':
     text_out = ''
 
     for i, img_path in enumerate(input_image_paths):
-        text = img_path
-        print(text)
+        print(img_path)
         prediction, image = detect_logo(yolo, img_path, save_img = save_img,
                                           save_img_path = FLAGS.output,
                                           postfix=FLAGS.postfix)
         y_size,x_size,_ = np.array(image).shape
         for single_prediction in prediction:
-
-            out_df=out_df.append(pd.DataFrame([[text[:-1]]+single_prediction + [y_size,x_size]],columns=['image', 'xmin', 'ymin', 'xmax', 'ymax', 'label','confidence','x_size','y_size']))
+            out_df=out_df.append(pd.DataFrame([[os.path.basename(img_path.rstrip('\n')),img_path.rstrip('\n')]+single_prediction + [y_size,x_size]],columns=['image','image_path', 'xmin', 'ymin', 'xmax', 'ymax', 'label','confidence','x_size','y_size']))
     end = timer()
     print('Processed {} images in {:.1f}sec - {:.1f}FPS'.format(
          len(input_image_paths), end-start, len(input_image_paths)/(end-start)
