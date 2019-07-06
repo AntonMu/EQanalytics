@@ -1,2 +1,2 @@
 import subprocess
-subprocess.call('python detector.py --opening', shell=True)
+subprocess.call('python detector.py --detection_mode opening', shell=True)
