@@ -10,21 +10,21 @@ After installing VoTT, connect the local database to a selection of images from 
 #### Settings
 Under export settings, as `Provider` chose `Comma Seperated Values (CSV)`. Then hit `Save Export Settings`. Make sure the `Include Images` checkbox is checked.
 
-![VoTT Settings](/2_Computer_Vision/2.1_Housing_Detector/0_Training/Screenshots/VoTT_Export_Settings.png)
+![VoTT Settings](/2_Computer_Vision/Housing_Detector_Training/Screenshots/VoTT_Export_Settings.png)
 
 #### Labeling
 Now start labeling all houses. One class called `house` is enough for this task. I recommend to label at least 300 images. The more the better!
 
-![VoTT Houses](/2_Computer_Vision/2.1_Housing_Detector/0_Training/Screenshots/VoTT_Houses.png)
+![VoTT Houses](/2_Computer_Vision/Housing_Detector_Training/Screenshots/VoTT_Houses.png)
 
  Once you are done, export the project. 
  
-![VoTT Saving](/2_Computer_Vision/2.1_Housing_Detector/0_Training/Screenshots/VoTT_Save.jpg)
+![VoTT Saving](/2_Computer_Vision/Housing_Detector_Training/Screenshots/VoTT_Save.jpg)
 
 #### Collecting the Result
 You should see a folder called `vott-csv-export` which contains all segmented images and a `*.csv` file called `Houses-export.csv`. Copy the content of this folder to `EQanalytics/Data/vott-csv-export`. 
 
-![VoTT Folder](/2_Computer_Vision/2.1_Housing_Detector/0_Training/Screenshots/VoTT_Export.png)
+![VoTT Folder](/2_Computer_Vision/Housing_Detector_Training/Screenshots/VoTT_Export.png)
 
 #### Convert to Yolo Format
 As a final step, we convert the `VoTT` format to the `YOLOv3` format. To do so, run the `Prepare_Houses_for_Yolo.py` script with:
