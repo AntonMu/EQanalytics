@@ -34,6 +34,7 @@ background
 ## Citation 
 
 Please use the following reference to cite the dataset:
+```
 @INPROCEEDINGS{Tylecek13,
   author = {Radim Tyle{\v c}ek, Radim {\v S}{\' a}ra},
   title = {Spatial Pattern Templates for Recognition of Objects with Regular Structure},
@@ -41,7 +42,7 @@ Please use the following reference to cite the dataset:
   year = {2013},
   address = {Saarbrucken, Germany},
 }
-
+```
 ## Contact 
 
 Maintained by Radim Tylecek tylecr1@cmp.felk.cvut.cz
