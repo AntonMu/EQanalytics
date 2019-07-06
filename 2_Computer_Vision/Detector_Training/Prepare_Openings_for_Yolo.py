@@ -58,6 +58,8 @@ if __name__ == '__main__':
     FLAGS = parser.parse_args()
 
     df_csv = csv_from_xml(CMP_Folder)
+    # Make sure the min label code is 0 
+    df_csv['code'] = df_csv['code'].astype(int)-min(df_csv['code'].astype(int).values)
     if FLAGS.AWS:
         df_csv['image_path']=ChangeToOtherMachine(df_csv['image_path'].values,remote_machine=AWS_path)
     df_csv.to_csv(CSV_filename,index=False)
