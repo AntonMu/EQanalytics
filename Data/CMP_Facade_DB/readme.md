@@ -1,21 +1,21 @@
-==========================
-  CMP Facade Database
-==========================
+#  CMP Facade Database
+
 We present a dataset of facade images assembled at the Center for Machine Perception, which includes 600 rectified images of facades from various sources, which have been manually annotated. The facades are from different cities around the world and diverse architectural styles. 
 
-Website: cmp.felk.cvut.cz/~tylecr1/facade
+Website: [cmp.felk.cvut.cz/~tylecr1/facade](cmp.felk.cvut.cz/~tylecr1/facade)
 
-* Content *
------------
+## Content 
+
 CMP-extended dataset, 228 images
-Image data: *.jpg
-Object annotation: *.xml
-Pixelwise labels: *.png
+CMP-base dataset, 378 images
+Image data: `*.jpg`
+Object annotation: `*.xml`
+Pixelwise labels: `*.png`
 Label definition: label_names.txt
-  - line format: [label_id] [class_name] [label_z_order]
+  - line format: _label_id_ _class_name_ _label_z_order_
 
-* Documentation *
-------------------
+## Documentation 
+
 Data origin, format and processing, annotation principles for 12 classes are specified in the report on the website. 
 
 facade 
@@ -31,8 +31,8 @@ shop
 deco
 background
 
-* Citation *
--------------
+## Citation 
+
 Please use the following reference to cite the dataset:
 @INPROCEEDINGS{Tylecek13,
   author = {Radim Tyle{\v c}ek, Radim {\v S}{\' a}ra},
@@ -42,7 +42,7 @@ Please use the following reference to cite the dataset:
   address = {Saarbrucken, Germany},
 }
 
-* Contact *
------------
+## Contact 
+
 Maintained by Radim Tylecek tylecr1@cmp.felk.cvut.cz
 Last Update: 16.9.2013   
