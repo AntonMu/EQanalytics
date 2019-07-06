@@ -16,7 +16,7 @@ def get_parent_dir(n=1):
         current_path = os.path.dirname(current_path)
     return current_path
 
-src_path = os.path.join(get_parent_dir(2),'src')
+src_path = os.path.join(get_parent_dir(1),'src')
 sys.path.append(src_path)
 
 import numpy as np
@@ -30,7 +30,7 @@ from keras_yolo3.yolo3.utils import get_random_data
 from PIL import Image
 
 keras_path = os.path.join(src_path,'keras_yolo3')
-Data_Folder = os.path.join(get_parent_dir(3),'Data')
+Data_Folder = os.path.join(get_parent_dir(2),'Data')
 VoTT_Folder = os.path.join(Data_Folder,'vott-csv-export')
 YOLO_filename = os.path.join(VoTT_Folder,'data_train.txt')
 YOLO_classname = os.path.join(VoTT_Folder,'classes.txt')

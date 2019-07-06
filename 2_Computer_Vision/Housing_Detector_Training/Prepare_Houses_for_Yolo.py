@@ -12,16 +12,16 @@ def get_parent_dir(n=1):
     for k in range(n):
         current_path = os.path.dirname(current_path)
     return current_path
-sys.path.append(os.path.join(get_parent_dir(2),'Utils'))
+sys.path.append(os.path.join(get_parent_dir(1),'Utils'))
 from Convert_Format import convert_vott_csv_to_yolo
-Data_Folder = os.path.join(get_parent_dir(3),'Data')
+Data_Folder = os.path.join(get_parent_dir(2),'Data')
 VoTT_Folder = os.path.join(Data_Folder,'vott-csv-export')
 VoTT_csv =  os.path.join(VoTT_Folder,'Houses-export.csv')
 YOLO_filename = os.path.join(VoTT_Folder,'data_train.txt')
 AWS_path = '/home/ubuntu/eqanalytics/Data/vott-csv-export/'
 
 if __name__ == '__main__':
-# surpress any inhereted default values
+    # surpress any inhereted default values
     parser = argparse.ArgumentParser(argument_default=argparse.SUPPRESS)
     '''
     Command line options
