@@ -29,9 +29,7 @@ import utils
 import pandas as pd
 import numpy as np
 from Get_File_Paths import GetFileList
-
-sim_threshold = 0.95
-output_txt = 'out.txt'
+import random
 
 data_folder = os.path.join(get_parent_dir(n=1),'Data')
 image_folder = os.path.join(data_folder,'Street_View_Images')
@@ -54,16 +52,11 @@ openings_classes = os.path.join(model_folder,'Openings','data_all_classes.txt')
 FLAGS = None
 
 if __name__ == '__main__':
-    # class YOLO defines the default value, so suppress any default here
+    # Delete all default flags
     parser = argparse.ArgumentParser(argument_default=argparse.SUPPRESS)
     '''
     Command line options
     '''
-
-    # parser.add_argument(
-    #     '--image', default=False, action="store_true",
-    #     help='Image detection mode'
-    # )
 
     parser.add_argument(
         "--input_images", type=str, default=image_folder,
@@ -72,7 +65,7 @@ if __name__ == '__main__':
 
     parser.add_argument(
         '--test', default=False, action="store_true",
-        help='Test routine: run on few images in /Data/Street_View_Images'
+        help='Test routine on 10 images in /Data/Street_View_Images'
     )
 
     parser.add_argument(
@@ -137,15 +130,13 @@ if __name__ == '__main__':
     	FLAGS.box = openings_result_file
     	FLAGS.postfix = '_opening'
 
+    save_img = not FLAGS.no_save_img
 
     if FLAGS.test:
-        test.test(FLAGS.features)
-        exit()
+    	input_image_paths = random.choices(GetFileList(image_folder),k=10)
+    else:
+	    input_image_paths = GetFileList(FLAGS.input_images)
 
-
-    save_img_logo, save_img_match = not FLAGS.no_save_img, not FLAGS.no_save_img
-
-    input_image_paths = GetFileList(FLAGS.input_images)
     print('Found {} input images: {}...'.format(len(input_image_paths), [ os.path.basename(f) for f in input_image_paths[:5]]))
 
     output_path = FLAGS.output
@@ -179,7 +170,7 @@ if __name__ == '__main__':
     for i, img_path in enumerate(input_image_paths):
         text = img_path
         print(text)
-        prediction, image = detect_logo(yolo, img_path, save_img = save_img_logo,
+        prediction, image = detect_logo(yolo, img_path, save_img = save_img,
                                           save_img_path = FLAGS.output,
                                           postfix=FLAGS.postfix)
         y_size,x_size,_ = np.array(image).shape
@@ -188,6 +179,6 @@ if __name__ == '__main__':
             out_df=out_df.append(pd.DataFrame([[text[:-1]]+single_prediction + [y_size,x_size]],columns=['image', 'xmin', 'ymin', 'xmax', 'ymax', 'label','confidence','x_size','y_size']))
     end = timer()
     print('Processed {} images in {:.1f}sec - {:.1f}FPS'.format(
-         len(FLAGS.input_images), end-start, len(FLAGS.input_images)/(end-start)
+         len(input_image_paths), end-start, len(input_image_paths)/(end-start)
          ))
     out_df.to_csv(FLAGS.box,index=False)
