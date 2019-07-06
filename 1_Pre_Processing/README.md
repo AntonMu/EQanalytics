@@ -1,6 +1,6 @@
 
 # EQanalytics: Pre-Processing
-This step obtains street view images for a provided `*.csv` file of buildings addresses such as the one from the [San Francisco soft story property list](https://sfdbi.org/soft-story-properties-list). Note that the `*.csv` file must contain a `PROPERTY` and `STATUS` column. Entries in the `PROPERTY` column must be of the form `house number␣street name`.
+This step obtains street view images for a provided `*.csv` file of buildings addresses such as the one from the [San Francisco soft story property list](https://sfdbi.org/soft-story-properties-list). Note that the `*.csv` file must contain a `PROPERTY` and `STATUS` column. Entries in the `PROPERTY` column must be of the form `house_number␣street_name`.
 
 ## Usage
 To run the script you first need to obtain a Google Street View Static API key on the [gcp](https://console.cloud.google.com/) website. To start downloading street view images run:
