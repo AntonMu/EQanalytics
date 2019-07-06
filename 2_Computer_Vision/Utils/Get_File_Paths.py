@@ -22,34 +22,29 @@ def GetFileList(dirName,ending='.jpg'):
                 
     return allFiles        
  
- 
-# def main():
-    
-#     dirName = os.path.join(os.getcwd(),'vulnerable')
-    
-#     # Get the list of all files in directory tree at given path
-#     listOfFiles = getListOfFiles(dirName)
+def Change_Local_Machine(filelist,repo='EQanalytics'):
+    '''
+    Takes a list of file_names located in a repo and changes it to the local machines file names. File must be executed from withing the repository
 
-#     print(listOfFiles)
+    Example:
+
+    '/home/ubuntu/EQanalytics/Data/Street_View_Images/vulnerable/test.jpg'
+
+    Get's converted to
     
-#     # # Print the files
-#     # for elem in listOfFiles:
-#     #     print(elem)
- 
-#     # print ("****************")
-    
-#     # # Get the list of all files in directory tree at given path
-#     # listOfFiles = list()
-#     # for (dirpath, dirnames, filenames) in os.walk(dirName):
-#     #     listOfFiles += [os.path.join(dirpath, file) for file in filenames]
-        
-        
-#     # # Print the files    
-#     # for elem in listOfFiles:
-#     #     print(elem)    
-        
-        
+    'C:/Users/Anton/EQanalytics/Data/Street_View_Images/vulnerable/test.jpg'
+
+    '''
+    current_directory = os.getcwd()
+    home_folder = os.getcwd().split(repo)[0]
+    print(home_folder)
+    new_list = []
+
+    for file in filelist:
+        print(file.split(repo))
         
         
 if __name__ == '__main__':
-    main()
+    filelist = ['/home/ubuntu/EQanalytics/Data/Street_View_Images/vulnerable/test.jpg', '/home/ubuntu/EQanalytics/Data/Street_View_Images/vulnerable/test1.jpg']
+
+    Change_Local_Machine(filelist)
