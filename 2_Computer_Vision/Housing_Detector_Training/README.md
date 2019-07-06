@@ -43,7 +43,7 @@ Before getting started we need to download the pre-trained YOLOv3 weights. To do
 wget https://pjreddie.com/media/files/yolov3.weights
 python convert.py yolov3.cfg yolov3.weights model_data/yolo.h5
 ```
-Now, navigate back to `EQanalytics/2_Computer_Vision/2.1_Housing_Detector/0_Training` and run
+Now, navigate back to `EQanalytics/2_Computer_Vision/Housing_Detector_Training` and run
 
 ```
 python Train.py
