@@ -4,7 +4,7 @@ import numpy as np
 import re
 import os
 from PIL import Image
-
+from Get_File_Paths import GetFileList,ChangeToLocalMachine
 def get_files(directory,ending='.jpg'):
     result=[]
     for file in os.listdir(directory):
@@ -78,6 +78,73 @@ def csv_from_xml(directory,path_name=''):
     cols = [cols[-1]] + cols[:-1]
     result_df = result_df[cols]
     return result_df
+
+def crop_and_save(image_df,target_path, target_file ,one =True,label_dict = {0:'house'},postfix='cropped'):
+    """Takes a vott_csv file with image names, labels and crop_boxes
+    and crops the images accordingly
+    
+    Input csv file format:
+    
+    image   xmin ymin xmax ymax label
+    im.jpg  0    10   100  500  house
+
+    
+    Parameters
+    ----------
+    df : pd.Dataframe 
+        The input dataframe with file_names, bounding box info
+        and label
+    source_path : str
+        Path of source images
+    target_path : str, optional
+        Path to save cropped images
+    one : boolean, optional
+        if True, only the most central house will be returned
+
+    Returns
+    -------
+    True if completed succesfully
+    """
+    if not path.isdir(target_path):
+        makedirs(target_path)
+
+    previous_name = ''
+    counter = 0
+    image_df.dropna(inplace=True)
+    image_df['image_path'] = ChangeToLocalMachine(image_df['image_path'].values)
+    def find_rel_position(row):
+        current_name = row['image_path']
+        x_size,_ = (Image.open(current_name).size)
+        x_centrality = abs((row['xmin']+ row['xmax'])/2/x_size-.5)
+        return x_centrality        
+    if one:
+        centrality = []
+        for index, row in image_df.iterrows():
+            centrality.append(find_rel_position(row))
+        image_df['x_centrality'] = pd.Series(centrality)
+        image_df.sort_values(['image','x_centrality'], inplace = True) 
+        image_df.drop_duplicates(subset ="image", keep = 'first', inplace = True) 
+    new_paths = []
+    for index, row in image_df.iterrows():
+        current_name = row['image_path']
+        if current_name == previous_name:
+            counter+=1
+        else:
+            counter =0
+        imageObject  = Image.open(current_name)
+        cropped = imageObject.crop((row['xmin'],row['ymin'],row['xmax'],row['ymax']))
+        label = row['label']
+        if type(label)==int:
+            label = label_dict[label]
+        image_name_cropped = '_'.join([row['image'][:-4],postfix,label,str(counter)])+'.jpg'
+        new_path = os.path.join(target_path,image_name_cropped)
+        cropped.save(new_path)
+        new_paths.append(new_path.replace("\\","/"))
+        previous_name = current_name
+    pd.DataFrame(new_paths,columns = ['image_path']).to_csv(target_file)
+    return True
+
+
 if __name__ == '__main__':
     #Prepare the houses dataset for YOLO
     labeldict = dict(zip(['house'],[0,]))
