@@ -1,9 +1,7 @@
 """
 MODIFIED FROM keras-yolo3 PACKAGE, https://github.com/qqwweee/keras-yolo3
 Retrain the YOLO model for your own dataset.
-"""
-# OSError: Unable to open file (unable to open file: name = '/home/ubuntu/EQanalytics/2_Computer_Vision/src/keras_yolo3/keras_yolo3/model_data/yolo.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
-    
+"""    
 
 import os
 import sys
@@ -31,14 +29,14 @@ from PIL import Image
 
 keras_path = os.path.join(src_path,'keras_yolo3')
 Data_Folder = os.path.join(get_parent_dir(2),'Data')
-VoTT_Folder = os.path.join(Data_Folder,'vott-csv-export')
-YOLO_filename = os.path.join(VoTT_Folder,'data_train.txt')
-YOLO_classname = os.path.join(VoTT_Folder,'classes.txt')
+VoTT_Folder = os.path.join(Data_Folder,'CMP_Facade_DB')
+YOLO_filename = os.path.join(VoTT_Folder,'data_all_train.txt')
+YOLO_classname = os.path.join(VoTT_Folder,'data_all_classes.txt')
 
 
 def _main():
     annotation_path = YOLO_filename
-    log_dir = os.path.join(Data_Folder,'Model_weights','Houses')
+    log_dir = os.path.join(Data_Folder,'Model_weights','Openings')
     classes_path = YOLO_classname
     anchors_path = os.path.join(keras_path,'model_data','yolo_anchors.txt') # 'keras_yolo3.model_data/yolo-tiny_anchors.txt's
     weights_path = os.path.join(keras_path,'model_data','yolo.h5') # 'keras_yolo3/model_data/yolo-tiny.h5'
