@@ -13,12 +13,16 @@ def get_parent_dir(n=1):
         current_path = os.path.dirname(current_path)
     return current_path
 sys.path.append(os.path.join(get_parent_dir(1),'Utils'))
-from Convert_Format import convert_vott_csv_to_yolo
+from Convert_Format import convert_vott_csv_to_yolo, csv_from_xml
+from Get_File_Paths import ChangeToOtherMachine
+
 Data_Folder = os.path.join(get_parent_dir(2),'Data')
-VoTT_Folder = os.path.join(Data_Folder,'vott-csv-export')
-VoTT_csv =  os.path.join(VoTT_Folder,'Houses-export.csv')
-YOLO_filename = os.path.join(VoTT_Folder,'data_train.txt')
-AWS_path = '/home/ubuntu/eqanalytics/Data/vott-csv-export/'
+CMP_Folder = os.path.join(Data_Folder,'CMP_Facade_DB')
+CSV_filename = os.path.join(CMP_Folder,'Annotations.csv')
+labels_filename = os.path.join(CMP_Folder,'label_names.txt')
+classes_filename = os.path.join(CMP_Folder,'data_all_classes.txt')
+YOLO_filename = os.path.join(CMP_Folder,'data_all_train.txt')
+AWS_path = '/home/ubuntu/'
 
 if __name__ == '__main__':
     # surpress any inhereted default values
@@ -26,46 +30,49 @@ if __name__ == '__main__':
     '''
     Command line options
     '''
-    parser.add_argument(
-        "--VoTT_Folder", type=str, default=VoTT_Folder,
-        help = "absolute path to the exported files from the image tagging step with VoTT."
-    )
+    # parser.add_argument(
+    #     "--VoTT_Folder", type=str, default=VoTT_Folder,
+    #     help = "absolute path to the exported files from the image tagging step with VoTT."
+    # )
 
-    parser.add_argument(
-        "--VoTT_csv", type=str, default=VoTT_csv,
-        help = "absolute path to the *.csv file exported from VoTT. The default name is 'Houses-export.csv'."
-    )
+    # parser.add_argument(
+    #     "--VoTT_csv", type=str, default=VoTT_csv,
+    #     help = "absolute path to the *.csv file exported from VoTT. The default name is 'Houses-export.csv'."
+    # )
     parser.add_argument(
         "--YOLO_filename", type=str, default=YOLO_filename,
         help = "absolute path to the file where the annotations in YOLO format should be saved. The default name is 'data_train.txt' and is saved in the VoTT folder."
     )
 
-    parser.add_argument(
-        "--item_name", type=str, default='house',
-        help = "The name of the annotated item. The default is 'house'."
-    )
+    # parser.add_argument(
+    #     "--item_name", type=str, default='house',
+    #     help = "The name of the annotated item. The default is 'house'."
+    # )
 
 
     parser.add_argument(
-        '--AWS', default=False, action="store_true",
+        '--AWS', default=True, action="store_true",
         help='Enable this flag if you plan to train on AWS but did your pre-processing on a local machine.'
     )
 
     FLAGS = parser.parse_args()
 
-    #Prepare the houses dataset for YOLO
-    labeldict = dict(zip([FLAGS.item_name],[0,]))
-    multi_df = pd.read_csv(FLAGS.VoTT_csv)
-    multi_df.drop_duplicates(subset=None, keep='first', inplace=True)
+    df_csv = csv_from_xml(CMP_Folder)
     if FLAGS.AWS:
-        train_path = AWS_path
-    else:
-        train_path = FLAGS.VoTT_Folder
-    convert_vott_csv_to_yolo(multi_df,labeldict,path = train_path,target_name=FLAGS.YOLO_filename)
-    # Make classes file
+        df_csv['image_path']=ChangeToOtherMachine(df_csv['image_path'].values,remote_machine=AWS_path)
+    df_csv.to_csv(CSV_filename,index=False)
 
-    file = open(os.path.join(VoTT_Folder,'classes.txt'),"w") 
-    file.write(FLAGS.item_name) 
-    file.close() 
+    #Get label names and sort 
+    file = open(labels_filename,"r")
+    label_df = pd.read_csv(labels_filename,sep=' ',header=None)
+    labellist = sorted(zip(label_df.iloc[:,2].values,label_df.iloc[:,1].values))
+    sorted_names = [x[1] for x in labellist]
+
+    #Write sorted names to file to make classes file
+    with open(classes_filename, 'w') as f:
+        for name in sorted_names:
+            f.write("%s\n" % name)
+    # Convert Vott csv format to YOLO format
+    convert_vott_csv_to_yolo(df_csv,abs_path = True,target_name=FLAGS.YOLO_filename)
 
 

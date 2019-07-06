@@ -4,18 +4,13 @@ import numpy as np
 import re
 import os
 from PIL import Image
-from Get_File_Paths import GetFileList,ChangeToLocalMachine
-def get_files(directory,ending='.jpg'):
-    result=[]
-    for file in os.listdir(directory):
-        if file.endswith(ending):
-            result.append(file)
-    return result
+from Get_File_Paths import GetFileList,ChangeToOtherMachine
 
-def convert_vott_csv_to_yolo(vott_df,labeldict,path='',target_name='data_all_train.txt'):
+def convert_vott_csv_to_yolo(vott_df,labeldict=dict(zip(['house'],[0])),path='',target_name='data_train.txt',abs_path=False):
     
-    #Encode labels according to labeldict 
-    vott_df['code']=vott_df['label'].apply(lambda x: labeldict[x])
+    #Encode labels according to labeldict if code's don't exist
+    if not 'code' in vott_df.columns:
+        vott_df['code']=vott_df['label'].apply(lambda x: labeldict[x])
     #Round float to ints
     for col in vott_df[['xmin', 'ymin', 'xmax', 'ymax']]:
         vott_df[col]=(vott_df[col]).apply(lambda x: round(x))
@@ -26,7 +21,10 @@ def convert_vott_csv_to_yolo(vott_df,labeldict,path='',target_name='data_all_tra
 
     for index,row in vott_df.iterrows():
         if not last_image == row['image']:
-            txt_file +='\n'+os.path.join(path,row['image']) + ' '
+            if abs_path:
+                txt_file +='\n'+row['image_path'] + ' '
+            else:
+                txt_file +='\n'+os.path.join(path,row['image']) + ' '
             txt_file += ','.join([str(x) for x in (row[['xmin', 'ymin', 'xmax', 'ymax','code']].tolist())])
         else:
             txt_file += ' '
@@ -39,18 +37,18 @@ def convert_vott_csv_to_yolo(vott_df,labeldict,path='',target_name='data_all_tra
 
 
 def csv_from_xml(directory,path_name=''):
-    #First get all images and xml files from path
-    image_paths=get_files(directory,'.jpg')
-    xml_paths=get_files(directory,'.xml')
+    #First get all images and xml files from path and its subfolders
+    image_paths=GetFileList(directory,'.jpg')
+    xml_paths=GetFileList(directory,'.xml')
     result_df = pd.DataFrame()
     if not len(image_paths)==len(xml_paths):
         print('number of annotations doesnt match number of images')
         return False
     for image in image_paths:
-        target_filename = path_name + '/'+image if path_name else image
-        source_filename = directory + '/'+image
+        target_filename = os.path.join(path_name,image)if path_name else image
+        source_filename = os.path.join(directory,image)
         y_size,x_size,_ = np.array(Image.open(source_filename)).shape
-        source_xml = directory + '/'+image.replace('.jpg','.xml')
+        source_xml =image.replace('.jpg','.xml')
         txt= open(source_xml,"r").read()
         y_vals = re.findall(r'(?:x>\n)(.*)(?:\n</)',txt)
         ymin_vals = y_vals[::2]
@@ -70,8 +68,9 @@ def csv_from_xml(directory,path_name=''):
         df['ymax']=ymax_vals
         df['ymax']= df['ymax'].astype(float)*y_size
         df['label']=label_name_vals
-        df['label_id']=label_vals
-        df['image']=target_filename
+        df['code']=label_vals
+        df['image_path']=target_filename
+        df['image']=os.path.basename(target_filename)
         result_df=result_df.append(df)
 #     Bring image column first
     cols = list(df.columns)
@@ -111,7 +110,7 @@ def crop_and_save(image_df,target_path, target_file ,one =True,label_dict = {0:'
     previous_name = ''
     counter = 0
     image_df.dropna(inplace=True)
-    image_df['image_path'] = ChangeToLocalMachine(image_df['image_path'].values)
+    image_df['image_path'] = ChangeToOtherMachine(image_df['image_path'].values)
     def find_rel_position(row):
         current_name = row['image_path']
         x_size,_ = (Image.open(current_name).size)

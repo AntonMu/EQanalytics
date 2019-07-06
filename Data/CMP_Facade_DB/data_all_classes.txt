@@ -1,0 +1,12 @@
+background
+facade
+sill
+balcony
+door
+blind
+molding
+deco
+shop
+window
+cornice
+pillar
