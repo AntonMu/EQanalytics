@@ -5,12 +5,12 @@
 Machine learning project developed at Insight Data Science, 2019 AI session.
 
 ## Project description
-In August 2018, [AB-2681 Seismic safety: potentially vulnerable buildings]([https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201720180AB2681](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201720180AB2681)) was passed. This bill requires the state of California to identify all potentially vulnerable buildings before Jan 1, 2021. 
+In August 2018, [**AB-2681 Seismic safety: potentially vulnerable buildings**]([https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201720180AB2681](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201720180AB2681)) was passed. This bill requires the state of California to identify all potentially vulnerable buildings before Jan 1, 2021. 
 
 ### Soft Story Buildings
 One important type of vulnerable buildings are those with soft stories. A [soft story](https://en.wikipedia.org/wiki/Soft_story_building) is classified as a level that is less than 70% as stiff as the floor immediately above it.
 
-In this project, I built an application that uses Google Street View images and computer vision techniques as well as classical machine learning to determine whether a given building address has a soft story building. 
+In this project, I built an application that uses Google Street View images and computer vision techniques as well as classical machine learning to determine whether a given building address has a soft story. 
 
 ### Training
 On a high level, the model training consists of four seperate steps:
