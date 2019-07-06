@@ -22,7 +22,7 @@ def GetFileList(dirName,ending='.jpg'):
                 
     return allFiles        
  
-def ChangeToLocalMachine(filelist,repo='EQanalytics'):
+def ChangeToOtherMachine(filelist,repo='EQanalytics',remote_machine =''):
     '''
     Takes a list of file_names located in a repo and changes it to the local machines file names. File must be executed from withing the repository
 
@@ -35,9 +35,13 @@ def ChangeToLocalMachine(filelist,repo='EQanalytics'):
     'C:/Users/Anton/EQanalytics/Data/Street_View_Images/vulnerable/test.jpg'
 
     '''
+    filelist = [x.replace("\\","/") for x in filelist]
     if repo[-1]=='/':
     	repo=repo[:-1]
-    prefix = ((os.getcwd().split(repo))[0]).replace("\\","/")
+    if remote_machine:
+        prefix = remote_machine.replace("\\","/")
+    else:
+        prefix = ((os.getcwd().split(repo))[0]).replace("\\","/")
     new_list = []
 
     for file in filelist:
