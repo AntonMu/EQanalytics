@@ -37,7 +37,7 @@ YOLO_classname = os.path.join(VoTT_Folder,'classes.txt')
 
 def _main():
     annotation_path = YOLO_filename
-    log_dir = os.path.join(Data_Folder,'Model_weights','Houses')
+    log_dir = os.path.join(Data_Folder,'Model_Weights','Houses')
     classes_path = YOLO_classname
     anchors_path = os.path.join(keras_path,'model_data','yolo_anchors.txt') # 'keras_yolo3.model_data/yolo-tiny_anchors.txt's
     weights_path = os.path.join(keras_path,'model_data','yolo.h5') # 'keras_yolo3/model_data/yolo-tiny.h5'

@@ -20,7 +20,10 @@ Data_Folder = os.path.join(get_parent_dir(2),'Data')
 CMP_Folder = os.path.join(Data_Folder,'CMP_Facade_DB')
 CSV_filename = os.path.join(CMP_Folder,'Annotations.csv')
 labels_filename = os.path.join(CMP_Folder,'label_names.txt')
-classes_filename = os.path.join(CMP_Folder,'data_all_classes.txt')
+
+model_folder =  os.path.join(Data_Folder,'Model_Weights')
+classes_filename = os.path.join(model_folder,'Openings','data_all_classes.txt')
+
 YOLO_filename = os.path.join(CMP_Folder,'data_all_train.txt')
 AWS_path = '/home/ubuntu/'
 
@@ -58,6 +61,8 @@ if __name__ == '__main__':
     FLAGS = parser.parse_args()
 
     df_csv = csv_from_xml(CMP_Folder)
+    # Make sure the min label code is 0 
+    df_csv['code'] = df_csv['code'].astype(int)-min(df_csv['code'].astype(int).values)
     if FLAGS.AWS:
         df_csv['image_path']=ChangeToOtherMachine(df_csv['image_path'].values,remote_machine=AWS_path)
     df_csv.to_csv(CSV_filename,index=False)

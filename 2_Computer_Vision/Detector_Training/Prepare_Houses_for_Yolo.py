@@ -18,7 +18,14 @@ Data_Folder = os.path.join(get_parent_dir(2),'Data')
 VoTT_Folder = os.path.join(Data_Folder,'vott-csv-export')
 VoTT_csv =  os.path.join(VoTT_Folder,'Houses-export.csv')
 YOLO_filename = os.path.join(VoTT_Folder,'data_train.txt')
+
+model_folder =  os.path.join(Data_Folder,'Model_Weights')
+classes_filename = os.path.join(model_folder,'Houses','data_classes.txt')
+
 AWS_path = '/home/ubuntu/eqanalytics/Data/vott-csv-export/'
+
+
+
 
 if __name__ == '__main__':
     # surpress any inhereted default values
@@ -64,7 +71,7 @@ if __name__ == '__main__':
     convert_vott_csv_to_yolo(multi_df,labeldict,path = train_path,target_name=FLAGS.YOLO_filename)
     # Make classes file
 
-    file = open(os.path.join(VoTT_Folder,'classes.txt'),"w") 
+    file = open(classes_filename,"w") 
     file.write(FLAGS.item_name) 
     file.close() 
 
