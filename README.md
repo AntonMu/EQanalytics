@@ -79,7 +79,7 @@ To retrain the housing detector, either download your own street view housing im
 bash build/build_housing_detector.sh --download_images --download_segments
 ```
 The flag, `download_images` indicates that the SF housing image dataset should be downloaded.  The flag, `download_segments` indicates that the manually labeled dataset with houses segmented should be downloaded.
-![VoTT Housing](/VOTT_houses.png)
+
 ##### Re-train Opening Detector
 
 To retrain the opening detector, either download the [CMP facade dataset](http://cmp.felk.cvut.cz/~tylecr1/facade/) or provide your own data set of segmented building openings (e.g. by using [VoTT](https://github.com/Microsoft/VoTT)) . Also download the default YOLOv3 weights to start transfer learning from.   
