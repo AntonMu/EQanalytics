@@ -126,3 +126,33 @@ def data_generator_wrapper(annotation_lines, batch_size, input_shape, anchors, n
     n = len(annotation_lines)
     if n==0 or batch_size<=0: return None
     return data_generator(annotation_lines, batch_size, input_shape, anchors, num_classes)
+
+
+def ChangeToOtherMachine(filelist,repo='EQanalytics',remote_machine =''):
+    '''
+    Takes a list of file_names located in a repo and changes it to the local machines file names. File must be executed from withing the repository
+
+    Example:
+
+    '/home/ubuntu/EQanalytics/Data/Street_View_Images/vulnerable/test.jpg'
+
+    Get's converted to
+    
+    'C:/Users/Anton/EQanalytics/Data/Street_View_Images/vulnerable/test.jpg'
+
+    '''
+    filelist = [x.replace("\\","/") for x in filelist]
+    if repo[-1]=='/':
+        repo=repo[:-1]
+    if remote_machine:
+        prefix = remote_machine.replace("\\","/")
+    else:
+        prefix = ((os.getcwd().split(repo))[0]).replace("\\","/")
+    new_list = []
+
+    for file in filelist:
+        suffix = (file.split(repo))[1]
+        if suffix[0]=='/':
+            suffix = suffix[1:]
+        new_list.append(os.path.join(prefix,repo+'/',suffix).replace("\\","/"))
+    return new_list

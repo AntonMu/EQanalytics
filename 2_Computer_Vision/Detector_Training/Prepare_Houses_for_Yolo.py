@@ -22,7 +22,7 @@ YOLO_filename = os.path.join(VoTT_Folder,'data_train.txt')
 model_folder =  os.path.join(Data_Folder,'Model_Weights')
 classes_filename = os.path.join(model_folder,'Houses','data_classes.txt')
 
-AWS_path = '/home/ubuntu/eqanalytics/Data/vott-csv-export/'
+AWS_path = '/home/ubuntu/EQanalytics/Data/vott-csv-export/'
 
 
 
