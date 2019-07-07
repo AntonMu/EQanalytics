@@ -20,7 +20,10 @@ Data_Folder = os.path.join(get_parent_dir(2),'Data')
 CMP_Folder = os.path.join(Data_Folder,'CMP_Facade_DB')
 CSV_filename = os.path.join(CMP_Folder,'Annotations.csv')
 labels_filename = os.path.join(CMP_Folder,'label_names.txt')
-classes_filename = os.path.join(CMP_Folder,'data_all_classes.txt')
+
+model_folder =  os.path.join(Data_Folder,'Model_Weights')
+classes_filename = os.path.join(model_folder,'Openings','data_all_classes.txt')
+
 YOLO_filename = os.path.join(CMP_Folder,'data_all_train.txt')
 AWS_path = '/home/ubuntu/'
 
