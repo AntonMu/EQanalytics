@@ -11,6 +11,7 @@ import re
 import pandas as pd
 from sklearn.cluster import KMeans
 from PIL import Image, ImageFont, ImageDraw, ImageEnhance
+from sympy import Interval, Union
 
 def ChangeToOtherMachine(filelist,repo='EQanalytics',remote_machine =''):
     '''
@@ -63,6 +64,26 @@ def get_features(df, label_dict, label_names = ['door', 'window', 'blind', 'shop
     df.loc[:,'rel_y_center']=(df['ymin']+df['ymax'])/2/df['y_size']
     df.loc[:,'area']=df['x_len']*df['y_len']
     return df[df['label_name'].isin(['door', 'window', 'blind', 'shop'])]
+
+def get_intervall_union(data):
+    """
+    Given a list of intervals, i.e. a = [(7, 10), (11, 13), (11, 15), (14, 20), (23, 39)],
+    this function return the length of the interval union. In the example it takes the union 
+    as [Interval(7, 10), Interval(11, 20), Interval(23, 39)] and computes the length as 28
+    """
+    #Convert to list of tuples if the input is list of list:
+    if type(data[0])==type([]):
+        data = [tuple(l) for l in data]
+    intervals = [Interval(begin, end) for (begin, end) in data]
+    u = Union(*intervals)
+    union_list =  [list(u.args[:2])] if isinstance(u, Interval) else list(u.args)
+    length=0
+    if type(union_list[0])==type([]):
+        union_list = [tuple(l) for l in union_list]
+        union_list = [Interval(begin, end) for (begin, end) in union_list]
+    for item in union_list:
+        length+=item.end- item.start
+    return length
 
 def get_iou(re1, re2):
     """
@@ -175,7 +196,15 @@ def calcuate_softness(df,metric='x_len'):
     result_df = pd.DataFrame(columns = ['image','score'])
     for image_name in image_names:
         current_df = df[df['image']==image_name].copy()
-        result_df=result_df.append(pd.DataFrame([[image_name,sum(current_df[current_df['level']==2][metric])/sum(current_df[current_df['level']==1][metric])]], columns = ['image','score']))
+        if metric == 'area':
+            result_df=result_df.append(pd.DataFrame([[image_name,sum(current_df[current_df['level']==2]['area'])/sum(current_df[current_df['level']==1]['area'])]], columns = ['image','score']))
+        else:
+            #In this case we take the interval union of all x-widths
+            scores=[]
+            for level in [1,2]:
+                #metric[0]+'min' equals xmin for metric = 'x_len' and ymin for metric = 'y_len'
+                scores.append(get_intervall_union(list(zip(current_df[current_df['level']==level][metric[0]+'min'].values,current_df[current_df['level']==level][metric[0]+'max'].values))))
+            result_df=result_df.append(pd.DataFrame([[image_name,float(scores[1])/float(scores[0])]], columns = ['image','score']))
     result_df.reset_index(inplace=True,drop=True)
     result_df['type'] = result_df['score'].apply(lambda x: 'soft' if x<.75 else 'unknown' if x>1.5 else 'non_soft')
     return result_df
