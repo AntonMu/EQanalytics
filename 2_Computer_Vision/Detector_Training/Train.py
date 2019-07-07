@@ -6,7 +6,7 @@ Retrain the YOLO model for your own dataset.
 
 import os
 import sys
-
+import argparse
 
 def get_parent_dir(n=1):
     """ returns the n-th parent dicrectory of the current
@@ -18,7 +18,6 @@ def get_parent_dir(n=1):
 
 src_path = os.path.join(get_parent_dir(1),'src')
 sys.path.append(src_path)
-
 
 utils_path = os.path.join(os.getcwd(),'Utils')
 sys.path.append(utils_path)
@@ -33,7 +32,7 @@ from keras_yolo3.yolo3.model import preprocess_true_boxes, yolo_body, tiny_yolo_
 from keras_yolo3.yolo3.utils import get_random_data
 from PIL import Image
 
-from Train_Utils import get_classes, get_anchors, create_model, create_tiny_model, data_generator, data_generator_wrapper
+from Train_Utils import get_classes, get_anchors, create_model, create_tiny_model, data_generator, data_generator_wrapper, ChangeToOtherMachine
 
 
 keras_path = os.path.join(src_path,'keras_yolo3')
@@ -56,11 +55,11 @@ if __name__ == '__main__':
     '''
 
     parser.add_argument(
-        "--annotation_path", type=str, default=YOLO_filename,
+        "--annotation_file", type=str, default=YOLO_filename,
         help = "Path to annotation file for Yolo. "
         )
     parser.add_argument(
-        "--classes_path", type=str, default=YOLO_classname,
+        "--classes_file", type=str, default=YOLO_classname,
         help = "Path to YOLO classnames. "
         )
 
@@ -83,7 +82,7 @@ if __name__ == '__main__':
         help = "Percentage of training to be used for validation."
         )
     parser.add_argument(
-        "--is_tiny", type=bool, default=False,  action="store_true",
+        "--is_tiny", default=False,  action="store_true",
         help = "Use the tiny Yolo version for better performance and less accuracy."
         )
 
@@ -92,7 +91,7 @@ if __name__ == '__main__':
 
     log_dir = FLAGS.log_dir
 
-    class_names = get_classes(FLAGS.classes_path)
+    class_names = get_classes(FLAGS.classes_file)
     num_classes = len(class_names)
     anchors = get_anchors(FLAGS.anchors_path)
     weights_path = FLAGS.weights_path
@@ -102,7 +101,7 @@ if __name__ == '__main__':
     epoch1, epoch2 = 51, 51
 
     is_tiny_version = (len(anchors)==6) # default setting
-    if FLAG.is_tiny:
+    if FLAGS.is_tiny:
         model = create_tiny_model(input_shape, anchors, num_classes,
             freeze_body=2, weights_path = weights_path)
     else:
@@ -116,8 +115,9 @@ if __name__ == '__main__':
     early_stopping = EarlyStopping(monitor='val_loss', min_delta=0, patience=10, verbose=1)
 
     val_split = FLAGS.val_split
-    with open(FLAGS.annotation_path) as f:
+    with open(FLAGS.annotation_file) as f:
         lines = f.readlines()
+    lines  = ChangeToOtherMachine(lines)
     np.random.seed(42)
     np.random.shuffle(lines)
     np.random.seed(None)
