@@ -12,27 +12,38 @@ One important type of vulnerable buildings are those with soft stories. A [soft 
 
 In this project, I built an application that uses Google Street View images and computer vision techniques as well as classical machine learning to determine whether a given building address has a soft story. 
 
-### Training
+### Model Overview
 On a high level, the model training consists of four seperate steps:
 
- 1. Obtain Training Images
+ 1. [Obtain Training Images](/1_Pre_Processing/)
 	 - Download Street View images from all buildings in the [San Francisco soft story property list](https://sfdbi.org/soft-story-properties-list).
- 2. Object Segmentation
+ 2. [Object Segmentation](/2_Computer_Vision/)
+ 	- Detect Houses
+ 	- Isolate Houses
+ 	- Detect Openings
+ 3. [Classification](/3_Classification/)
+ 	- Identify number of stories
+ 	- Compute softness-score as the quotient of the total width of openings on the second story over the total width of openings on the first story.
  
-	 2.1 Detect Houses
-	- Manually label houses using [VoTT](https://github.com/Microsoft/VoTT).
-	- Use transfer learning to train a YOLOv3 detector.
-	- Crop and save houses.
+Based on the softness-score buildings are either classified as "soft", "non_soft" or "undetermined". A buildings score could be "undertermined" if for instance the house is blocked by a car or tree or if the image segmentation fails for other reasons.  
 
-    2.2 Detect Openings 
-	 - Train a YOLO detector based on the [CMP facade dataset](http://cmp.felk.cvut.cz/~tylecr1/facade/).
-	 - Detect all openings in set of cropped out houses.
- 4. Compute "softness score" to classify building
-	 -  Use K-means clustering to identify number of stories.
-	 - Compute quotient of the total width of openings on the second story over the total width of openings on the first story.
+### Model Training
+The model uses two supervised image detection deep learning approaches (both based on YOLOv3). 
+
+ 1. Train House Identifier
+ 	- Manually label houses using [VoTT](https://github.com/Microsoft/VoTT).
+	- Use transfer learning to train a YOLOv3 detector.
+ 2. Train Opening Identifier
+ 	- Use the [CMP facade dataset](http://cmp.felk.cvut.cz/~tylecr1/facade/).
+ 	- Use transfer learning to train a YOLOv3 detector.
+
+For further information navigate to [Detector_Training](/2_Computer_Vision/Detector_Training/).
+
+The model also uses un-supervised K-means clustering in the final classification step. 
+<!-- 
 ### Inference
 Model inference consists of four similar steps. After entering an address (or list of addresses), the corresponding street view images will be downloaded. For all images, the housing model first segments and crops one house per address. Then the opening detector labels all openings and creates a csv file with all dimensions and positions of the openings. Finally, the softness score is determined and used to classify the building as "soft", "non_soft" or "undetermined". 
-
+ -->
 ## Repo structure
 + `1_Pre_Processing`: All Preprocessing Tasks
 + `2_Computer_Vision`: Both Image Segmentation Tasks
@@ -58,12 +69,25 @@ Create Virtual Environment ([Venv](https://packaging.python.org/guides/installin
 python3 -m venv env
 source env/bin/activate
 ```
-Install required packages:
+
+If you are a conda user, create your virtual environment with:
+```
+conda create -n EQanalytics
+source activate EQanalytics
+```
+
+Next, install required packages:
 
 ```
 pip3 install -r requirements.txt
 ```
 
+## Quick Start
+To get started on a minimal example located in [`Data/Minimal_Test`](Data/Minimal_Test/`) simply run the `Minimal_Test.py` script with:
+
+```
+python Minimal_Test.py
+```
 #### Build Environment For Inference
 
 To hit the ground running, download the pre-trained YOLOv3 model weights (235MB) for the housing detector and the pre-trained YOLOv3 weights (236MB) for the opening detector. 

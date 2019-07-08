@@ -14,8 +14,8 @@ def get_parent_dir(n=1):
 Data_Folder = os.path.join(get_parent_dir(2),'Data')
 Facade_Folder = os.path.join(Data_Folder,'CMP_Facade_DB')
 YOLO_filename = os.path.join(Facade_Folder,'data_all_train.txt')
-YOLO_classname = os.path.join(Facade_Folder,'data_all_classes.txt')
 log_dir = os.path.join(Data_Folder,'Model_Weights','Openings')
+YOLO_classname = os.path.join(log_dir,'data_all_classes.txt')
 
 def make_call_string(arglist):
 	result_string = ''

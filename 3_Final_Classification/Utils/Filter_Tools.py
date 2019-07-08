@@ -63,7 +63,7 @@ def get_features(df, label_dict, label_names = ['door', 'window', 'blind', 'shop
     df.loc[:,'y_len']=(df['ymax']-df['ymin'])
     df.loc[:,'rel_y_center']=(df['ymin']+df['ymax'])/2/df['y_size']
     df.loc[:,'area']=df['x_len']*df['y_len']
-    return df[df['label_name'].isin(['door', 'window', 'blind', 'shop'])]
+    return df[df['label_name'].isin(label_names)]
 
 def get_intervall_union(data):
     """
