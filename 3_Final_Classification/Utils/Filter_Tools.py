@@ -72,6 +72,8 @@ def get_intervall_union(data):
     as [Interval(7, 10), Interval(11, 20), Interval(23, 39)] and computes the length as 28
     """
     #Convert to list of tuples if the input is list of list:
+    if not data:
+        return 0
     if type(data[0])==type([]):
         data = [tuple(l) for l in data]
     intervals = [Interval(begin, end) for (begin, end) in data]
@@ -186,7 +188,7 @@ def draw_levels(df, target_path, colors = ['#fdfe02','#0bff01','#fe0000','#fe00f
         for level in levels:
             for index,row in current_df[current_df['level']==level].iterrows():
                 draw.rectangle(((row['xmin'], row['ymin']), (row['xmax'], row['ymax'])),outline=colors[level%len(colors)],width = 2)
-                draw.text((row['xmin']+2, row['ymin']), str(level),fill=colors[level%len(colors)],font=ImageFont.truetype('arial',16 ))
+                draw.text((row['xmin']+2, row['ymin']), str(level),fill=colors[level%len(colors)],font=ImageFont.truetype(os.path.join(os.getcwd(),'Utils','arial.ttf'),16 ))
         source_img.convert("RGB").save(os.path.join(target_path,''.join([os.path.basename(image_name)[:-4],suffix,".jpg"])), "JPEG")
     return True
 
@@ -215,10 +217,3 @@ def get_address(df,column = 'image'):
     cols = [cols[-1]] + cols[:-1]
     df = df[cols]
     return df
-
-
-# df_path = 'multi.csv'
-# file_path = 'Selection/'
-# label_names = ['background', 'facade', 'molding', 'cornice', 'pillar', 'window', 'door', 'sill', 'blind', 'balcony', 'shop', 'deco']
-# label_dict = dict(zip(list(range(12)),label_names))
-# # calcuate_softness(add_levels(remove_overlaps(prepare_df(remove_overlaps(prepare_df(prepare_df(load_and_filter_df(df_path,file_path,label_dict)))))).sort_values('image'))).to_csv('Softness_Results.csv',index=False)

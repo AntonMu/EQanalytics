@@ -49,13 +49,13 @@ The code uses python 3.6, Keras with Tensorflow backend, and a conda environment
 ##### Clone Repo and Install Requirements
 Clone this repo with:
 ```
-git clone https://github.com/AntonMu/eqanalytics
-cd eqanalytics/
+git clone https://github.com/AntonMu/EQanalytics
+cd EQanalytics/
 ```
 
 Create Virtual Environment ([Venv](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) needs to be installed on your system). 
 ```
-python3 -m venv env
+python -m venv env
 source env/bin/activate
 ```
 Install required packages:
@@ -151,3 +151,13 @@ Unless explicitly stated at the top of a file, all code is licensed under the MI
 The Logos In The Wild dataset (links to images, bounding box annotations, clean_dataset.py script) is licensed under the CC-by-SA 4.0 license. The images themselves were crawled from Google Images and are property of their respective copyright owners. For legal reasons, raw images other than the ones in `data/test` are not provided: while this project would fall in the "fair use" category, any commercial application would likely need to generate their own dataset.
  -->
 The model files for the YOLO weights and the extracted logo features are derivative work based off of the Logos In The Wild dataset, and are therefore also licensed under the CC-by-SA 4.0 license.
+
+## Common Issues
+
+If you are having trouble with getting cv2 to run, try:
+
+```
+apt-get update
+apt-get install -y libsm6 libxext6 libxrender-dev
+pip install opencv-python
+```
