@@ -81,7 +81,7 @@ pip3 install -r requirements.txt
 ```
 
 ## Quick Start
-To get started on a minimal example located in [`Data/Minimal_Test`](Data/Minimal_Test/`) simply run the `Minimal_Test.py` script with:
+To get started on a minimal example located in [`Data/Minimal_Test`](/Data/Minimal_Test/`) simply run the `Minimal_Test.py` script with:
 
 ```
 python Minimal_Test.py

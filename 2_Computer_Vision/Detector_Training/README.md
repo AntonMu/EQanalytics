@@ -35,7 +35,7 @@ python Prepare_Houses_for_Yolo.py
 
 If you have completed all previous steps on your local machine but want to train on AWS, use the flag `--AWS` so the file paths are updated correctly. If you are doing all steps on the same machine, no flags are needed. 
 
-## Starting the Training
+## Starting the Training [downloadweights]
 
 Before getting started we need to download the pre-trained YOLOv3 weights. To do so, navigate to `EQanalytics/2_Computer_Vision/src/keras_yolo3`. Next, download the weights and convert them to Keras format:
 
@@ -51,3 +51,15 @@ python Train.py
 Wait until training finishes. Trained weights are saved in `EQanalytics/Data/Model_Weights/Houses`. That's it - we have succesfully trained our housing detector!
 
 # EQanalytics: Opening Detector Training
+To train an opening detector, we use the [CMP facade dataset](http://cmp.felk.cvut.cz/~tylecr1/facade/). This dataset contains 606 images of building facades and 51769 annotated objects. 
+
+![Annotated Opening Folder](/2_Computer_Vision/Detector_Training/Screenshots/Opening.jpg)
+
+#### Convert to Yolo Format
+The first step is to convert the annotations provided in individual `*.xml` files to YOLO format.
+
+```
+python Prepare_Openings_for_Yolo.py
+```
+## Starting the Training
+If you haven't already downloaded the pre-trained YOLOv3 weights, navigate to the previous (section)[downloadweights]
