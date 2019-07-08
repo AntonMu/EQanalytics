@@ -62,14 +62,12 @@ The first step is to convert the annotations provided in individual `*.xml` file
 python Prepare_Openings_for_Yolo.py
 ```
 ## Starting the Training
-If you haven't already downloaded the pre-trained YOLOv3 weights, follow the instructions under [Starting the Training](#Starting-the-Training). 
-
-To start the training, run
+If you haven't already downloaded the pre-trained YOLOv3 weights, follow the instructions under [Starting the Training](#Starting-the-Training). To start the training, run
 
 ```
 python Train_Opening_detector.py
 ```
 
-This python script is a wrapper to call the `Train.py` script with the correct arguments. It uses the prepared YOLOv3 training file `/Data/CMP_Facade_DB/data_all_train.txt` for annotations, the file `/Data/Model_Weights/Openings/data_all_classes.txt` for class names and the folder `/Data/Model_Weights/Openings` to save the trained weights to (along with some log files). 
+This python script is a wrapper to call the `Train.py` script with the correct arguments. It uses the prepared YOLOv3 training file `EQanalytics/Data/CMP_Facade_DB/data_all_train.txt` for annotations, the file `EQanalytics/Data/Model_Weights/Openings/data_all_classes.txt` for class names and the folder `EQanalytics/Data/Model_Weights/Openings` to save the trained weights to (along with some log files). 
 
 Wait until training finishes. Trained weights are saved in `EQanalytics/Data/Model_Weights/Openings` as `trained_weights_final.h5`. That's it - we have succesfully trained our opening detector!
