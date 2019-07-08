@@ -66,36 +66,36 @@ def load_extractor_model(model_name='InceptionV3', flavor=1):
     return model_out, preprocess_input, input_shape
 
 
-def model_flavor_from_name(path):
-    """ Return model name (InceptionV3 or VGG16) and model variant from HDF5 filename.
-    """
-    filename = os.path.basename(path)
-    if filename.startswith('inception'):
-        model_name = 'InceptionV3'
-        if filename == 'inception_logo_features.hdf5':
-            flavor = 0
-        elif filename == 'inception_logo_features_200_trunc1.hdf5':
-            flavor = 1
-        elif filename == 'inception_logo_features_200_trunc2.hdf5':
-            flavor = 2
-        elif filename == 'inception_logo_features_200_trunc3.hdf5':
-            flavor = 3
-        elif filename == 'inception_logo_features_200.hdf5':
-            flavor = 4
-        else:
-            raise Exception(f'Model not recognized: {path}')
-    elif filename.startswith('vgg16'):
-        model_name = 'VGG16'
-        length = int(filename.split('_')[3].split('.')[0]) #vgg16_logo_features_NNN.hdf5
-        flavor = [224,128,64].index(length)
-    else:
-        raise Exception(f'Model not recognized as InceptionV3 or VGG16 from filename: {path}')
+# def model_flavor_from_name(path):
+#     """ Return model name (InceptionV3 or VGG16) and model variant from HDF5 filename.
+#     """
+#     filename = os.path.basename(path)
+#     if filename.startswith('inception'):
+#         model_name = 'InceptionV3'
+#         if filename == 'inception_logo_features.hdf5':
+#             flavor = 0
+#         elif filename == 'inception_logo_features_200_trunc1.hdf5':
+#             flavor = 1
+#         elif filename == 'inception_logo_features_200_trunc2.hdf5':
+#             flavor = 2
+#         elif filename == 'inception_logo_features_200_trunc3.hdf5':
+#             flavor = 3
+#         elif filename == 'inception_logo_features_200.hdf5':
+#             flavor = 4
+#         else:
+#             raise Exception(f'Model not recognized: {path}')
+#     elif filename.startswith('vgg16'):
+#         model_name = 'VGG16'
+#         length = int(filename.split('_')[3].split('.')[0]) #vgg16_logo_features_NNN.hdf5
+#         flavor = [224,128,64].index(length)
+#     else:
+#         raise Exception(f'Model not recognized as InceptionV3 or VGG16 from filename: {path}')
 
-    if not os.path.exists(path):
-        print(f'Features not found on local disk! Downloading from AWS S3 bucket, logohunters3.s3-us-west-2.amazonaws.com/{filename} \n')
-        os.system(f'wget  logohunters3.s3-us-west-2.amazonaws.com/{filename}')
+#     if not os.path.exists(path):
+#         print(f'Features not found on local disk! Downloading from AWS S3 bucket, logohunters3.s3-us-west-2.amazonaws.com/{filename} \n')
+#         os.system(f'wget  logohunters3.s3-us-west-2.amazonaws.com/{filename}')
 
-    return model_name, flavor
+#     return model_name, flavor
 
 
 def chunks(l, n, preprocessing_function = None):
@@ -333,10 +333,10 @@ def draw_annotated_box(image, box_list_list, label_list, color_list):
 
 
 
-def main():
-    print('Nothing to do here...')
+# def main():
+#     print('Nothing to do here...')
 
 
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()

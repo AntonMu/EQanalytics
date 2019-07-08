@@ -55,7 +55,7 @@ cd EQanalytics/
 
 Create Virtual Environment ([Venv](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) needs to be installed on your system). 
 ```
-python -m venv env
+python3 -m venv env
 source env/bin/activate
 ```
 Install required packages:
