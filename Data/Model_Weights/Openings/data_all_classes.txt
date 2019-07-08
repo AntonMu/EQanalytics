@@ -1,12 +1,11 @@
-background
 facade
-molding
-cornice
-pillar
 window
 door
+cornice
 sill
-blind
 balcony
-shop
+blind
 deco
+molding
+pillar
+shop

@@ -19,7 +19,6 @@ from Get_File_Paths import ChangeToOtherMachine
 Data_Folder = os.path.join(get_parent_dir(2),'Data')
 CMP_Folder = os.path.join(Data_Folder,'CMP_Facade_DB')
 CSV_filename = os.path.join(CMP_Folder,'Annotations.csv')
-labels_filename = os.path.join(CMP_Folder,'label_names.txt')
 
 model_folder =  os.path.join(Data_Folder,'Model_Weights')
 classes_filename = os.path.join(model_folder,'Openings','data_all_classes.txt')
@@ -63,20 +62,21 @@ if __name__ == '__main__':
     df_csv = csv_from_xml(CMP_Folder)
     # Make sure the min label code is 0 
     df_csv['code'] = df_csv['code'].astype(int)-min(df_csv['code'].astype(int).values)
+
+
     if FLAGS.AWS:
         df_csv['image_path']=ChangeToOtherMachine(df_csv['image_path'].values,remote_machine=AWS_path)
     df_csv.to_csv(CSV_filename,index=False)
 
     #Get label names and sort 
-    file = open(labels_filename,"r")
-    label_df = pd.read_csv(labels_filename,sep=' ',header=None)
-    labellist = sorted(zip(label_df.iloc[:,2].values,label_df.iloc[:,1].values))
-    sorted_names = [x[1] for x in labellist]
+
+    sorted_names = ((df_csv.drop_duplicates(subset = ['code','label'])[['code','label']].sort_values(by = ['code']))['label']).values
 
     #Write sorted names to file to make classes file
     with open(classes_filename, 'w') as f:
-        for name in sorted_names:
+        for name in sorted_names[:-1]:
             f.write("%s\n" % name)
+        f.write("%s" % sorted_names[-1])
     # Convert Vott csv format to YOLO format
     convert_vott_csv_to_yolo(df_csv,abs_path = True,target_name=FLAGS.YOLO_filename)
 
