@@ -35,7 +35,7 @@ python Prepare_Houses_for_Yolo.py
 
 If you have completed all previous steps on your local machine but want to train on AWS, use the flag `--AWS` so the file paths are updated correctly. If you are doing all steps on the same machine, no flags are needed. 
 
-## Starting the Training [downloadweights]
+## Starting the Training
 
 Before getting started we need to download the pre-trained YOLOv3 weights. To do so, navigate to `EQanalytics/2_Computer_Vision/src/keras_yolo3`. Next, download the weights and convert them to Keras format:
 
@@ -62,4 +62,8 @@ The first step is to convert the annotations provided in individual `*.xml` file
 python Prepare_Openings_for_Yolo.py
 ```
 ## Starting the Training
-If you haven't already downloaded the pre-trained YOLOv3 weights, navigate to the previous (section)[downloadweights]
+If you haven't already downloaded the pre-trained YOLOv3 weights, navigate to the previous [Starting the Training](#-Starting-the-Training)
+
+[Starting the Training](#Starting-the-Training)
+
+[Starting the Training](Starting-the-Training)
