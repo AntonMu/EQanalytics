@@ -22,13 +22,13 @@ On a high level, the model training consists of four seperate steps:
  	- Isolate Houses
  	- Detect Openings
  3. [Classification](/3_Classification/)
- 	- Identify number of stories
+ 	- Identify number of stories via K-means clustering
  	- Compute softness-score as the quotient of the total width of openings on the second story over the total width of openings on the first story.
  
-Based on the softness-score buildings are either classified as "soft", "non_soft" or "undetermined". A buildings score could be "undertermined" if for instance the house is blocked by a car or tree or if the image segmentation fails for other reasons.  
+Based on the softness-score, buildings are either classified as *soft*, *non_soft* or *undetermined*. A building score could be *undertermined* if the street view image is heavily obstructed or if the image segmentation fails for other reasons.  
 
 ### Model Training
-The model uses two supervised image detection deep learning approaches (both based on YOLOv3). 
+The model uses two supervised image detection deep learning approaches (both based on YOLOv3) located in [Detector_Training](/2_Computer_Vision/Detector_Training/).
 
  1. Train House Identifier
  	- Manually label houses using [VoTT](https://github.com/Microsoft/VoTT).
@@ -37,27 +37,25 @@ The model uses two supervised image detection deep learning approaches (both bas
  	- Use the [CMP facade dataset](http://cmp.felk.cvut.cz/~tylecr1/facade/).
  	- Use transfer learning to train a YOLOv3 detector.
 
-For further information navigate to [Detector_Training](/2_Computer_Vision/Detector_Training/).
-
 The model also uses un-supervised K-means clustering in the final classification step. 
 <!-- 
 ### Inference
 Model inference consists of four similar steps. After entering an address (or list of addresses), the corresponding street view images will be downloaded. For all images, the housing model first segments and crops one house per address. Then the opening detector labels all openings and creates a csv file with all dimensions and positions of the openings. Finally, the softness score is determined and used to classify the building as "soft", "non_soft" or "undetermined". 
  -->
 ## Repo structure
-+ `1_Pre_Processing`: All Preprocessing Tasks
-+ `2_Computer_Vision`: Both Image Segmentation Tasks
-+ `3_Final_Classification`: Final Classicfication Task
++ [`1_Pre_Processing`](/1_Pre_Processing/): All Preprocessing Tasks
++ [`2_Computer_Vision`](/2_Computer_Vision/): Both Image Segmentation Tasks
++ [`3_Classification`](/3_Classification/): Final Classicfication Task
 + `Built`: Scripts to get started, train and evaluate
 
 ## Getting Started
 
-#### Requisites
-The code uses python 3.6, Keras with Tensorflow backend, and a conda environment to keep everything together. Training was performed on an AWS *p2.xlarge* instance (Tesla K80 GPU with 12GB memory). Inference is faster on a GPU (~5 images per second on the same setup), but also works fine on a modest CPU setup (~0.3 images per second on an AWS *t2.medium* with a 2 VCPUs and 4GB of memory).
+### Requisites
+The code uses python 3.6, Keras with Tensorflow backend. Training was performed on an AWS *p2.xlarge* instance (Tesla K80 GPU with 12GB memory). Inference is faster on a GPU (~5 images per second on the same setup), but also works fine on a modest CPU setup (~0.3 images per second on an AWS *t2.medium* with a 2 VCPUs and 4GB of memory). To run this code on AWS, it is recommended to use the `Deep Learning AMI` (this makes sure that all GPU drivers are working).
 
-#### Installation [Linux or Mac]
+### Installation [Linux or Mac]
 
-##### Clone Repo and Install Requirements
+#### Clone Repo and Install Requirements
 Clone this repo with:
 ```
 git clone https://github.com/AntonMu/EQanalytics
@@ -76,7 +74,7 @@ conda create -n EQanalytics
 source activate EQanalytics
 ```
 
-Next, install required packages:
+Next, install all required packages:
 
 ```
 pip3 install -r requirements.txt
@@ -88,6 +86,9 @@ To get started on a minimal example located in [`Data/Minimal_Test`](Data/Minima
 ```
 python Minimal_Test.py
 ```
+To run a full model, follow the individual instructions located in [1_Pre_Processing](/1_Pre_Processing/), [2_Computer_Vision](/2_Computer_Vision/) and [3_Classification](/3_Classification/), respectively. To retrain detectors navigate to [Detector_Training](/2_Computer_Vision/Detector_Training/).
+
+
 #### Build Environment For Inference
 
 To hit the ground running, download the pre-trained YOLOv3 model weights (235MB) for the housing detector and the pre-trained YOLOv3 weights (236MB) for the opening detector. 
