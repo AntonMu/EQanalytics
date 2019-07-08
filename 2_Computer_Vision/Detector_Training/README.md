@@ -46,7 +46,7 @@ python convert.py yolov3.cfg yolov3.weights model_data/yolo.h5
 Now, navigate back to `EQanalytics/2_Computer_Vision/Housing_Detector_Training` and run
 
 ```
-python Train_Houses.py
+python Train.py
 ```
 Wait until training finishes. Trained weights are saved in `EQanalytics/Data/Model_Weights/Houses`. That's it - we have succesfully trained our housing detector!
 
