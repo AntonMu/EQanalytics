@@ -209,7 +209,7 @@ def download_images(df,filelist_df, api_key='', dir_path ='images',class_name = 
             pass
         file_name = ('_').join([title,
                                 class_name,
-                                str(int(time.time())),
+                                # str(int(time.time())),
                                 str(pitch),
                                 str(tier),
                                 address_str

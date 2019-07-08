@@ -17,7 +17,7 @@ def get_parent_dir(n=1):
 utils_path = os.path.join(os.getcwd(),'Utils')
 sys.path.append(utils_path)
 
-from Get_File_Paths import GetFileList,ChangeToLocalMachine
+from Get_File_Paths import GetFileList
 from Convert_Format import crop_and_save
 
 data_folder = os.path.join(get_parent_dir(n=1),'Data')
