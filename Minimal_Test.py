@@ -44,7 +44,7 @@ anchors = os.path.join(root_folder,'2_Computer_Vision','src','keras_yolo3','mode
 arglist = [['input_images',street_view_folder],['classes',houses_classes],['output',test_folder],['yolo_model',houses_weights],['box_file',houses_result_file],['anchors',anchors]]
 call_string = ' '.join(['python', detector_script,make_call_string(arglist)])
 
-print('Detecting Houses by calling \n', call_string)
+print('Detecting Houses by calling \n\n', call_string,'\n')
 start = time.time()
 subprocess.call(call_string, shell=True)
 end = time.time()
@@ -62,7 +62,7 @@ arglist = [['input_file',houses_result_file],['classes',houses_classes],['output
 
 call_string = ' '.join(['python', cropping_script,make_call_string(arglist)])
 
-print('Cropping Houses by calling \n', call_string)
+print('Cropping Houses by calling \n\n', call_string,'\n')
 start = time.time()
 subprocess.call(call_string, shell=True)
 end = time.time()
@@ -80,7 +80,7 @@ openings_result_file =  os.path.join(test_folder, 'Opening_Results.csv')
 arglist = [['input_images',cropped_folder],['classes',opening_classes],['output',test_folder],['yolo_model',opening_weights],['box_file',openings_result_file],['anchors',anchors],['postfix','_opening']]
 call_string = ' '.join(['python', detector_script,make_call_string(arglist)])
 
-print('Detecting Openings by calling \n', call_string)
+print('Detecting Openings by calling \n\n', call_string,'\n')
 start = time.time()
 subprocess.call(call_string, shell=True)
 end = time.time()
@@ -98,7 +98,7 @@ arglist = [['output_file',softness_score_file],['input_file',openings_result_fil
 call_string = ' '.join(['python', classifier_script,make_call_string(arglist)])
 
 
-print('Calculating Softness Scores by calling \n', call_string)
+print('Calculating Softness Scores by calling \n\n', call_string,'\n')
 start = time.time()
 subprocess.call(call_string, shell=True)
 end = time.time()
