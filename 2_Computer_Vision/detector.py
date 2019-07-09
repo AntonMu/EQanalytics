@@ -100,6 +100,12 @@ if __name__ == '__main__':
     )
 
     parser.add_argument(
+        '--confidence', type=float, dest = 'score', default = 0.1,
+        help='YOLO object confidence threshold above which to show predictions'
+    )
+
+
+    parser.add_argument(
         '--box_file', type=str, dest = 'box', default = houses_result_file,
         help='Specify the destination to save bounding boxes'
     )
