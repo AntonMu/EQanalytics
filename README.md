@@ -82,14 +82,14 @@ pip3 install -r requirements.txt
 ```
 
 ## Quick Start
-To get started on a minimal example on two images located in [`Data/Minimal_Test`](/Data/Minimal_Test/) run the `Minimal_Test.py` script.
+To get started on a [minimal example on two images](https://docs.google.com/presentation/d/1tJNnS9jaWtCXk3s1T_jZcwygjJv0KPZYK-7gcffLXKo/edit#slide=id.p) located in [`Data/Minimal_Test`](/Data/Minimal_Test/) run the `Minimal_Test.py` script.
 
 ```
 python Minimal_Test.py
 ```
 To run a full model, follow the individual instructions located in [1_Pre_Processing](/1_Pre_Processing/), [2_Computer_Vision](/2_Computer_Vision/) and [3_Classification](/3_Classification/), respectively. To retrain detectors navigate to [2_Computer_Vision/Detector_Training](/2_Computer_Vision/Detector_Training/).
 
-
+<!-- 
 #### Build Environment For Inference
 
 To hit the ground running, download the pre-trained YOLOv3 model weights (235MB) for the housing detector and the pre-trained YOLOv3 weights (236MB) for the opening detector. 
@@ -112,7 +112,7 @@ To retrain the opening detector, either download the [CMP facade dataset](http:/
 ```
 bash build/build_opening_detector.sh --download_cmp
 ```
-The flag, `download_cmp` indicates that the [CMP facade dataset](http://cmp.felk.cvut.cz/~tylecr1/facade/) should be downloaded. 
+The flag, `download_cmp` indicates that the [CMP facade dataset](http://cmp.felk.cvut.cz/~tylecr1/facade/) should be downloaded.  -->
 <!-- 
 ## Usage
 The script doing the work is [logohunter.py](src/logohunter.py) in the `src/` directory. It first uses a custom-trained YOLOv3 to find logo candidates in an image, and then looks for matches between the candidates and a user input logo.
@@ -176,8 +176,16 @@ Unless explicitly stated at the top of a file, all code is licensed under the MI
 <!-- 
 The Logos In The Wild dataset (links to images, bounding box annotations, clean_dataset.py script) is licensed under the CC-by-SA 4.0 license. The images themselves were crawled from Google Images and are property of their respective copyright owners. For legal reasons, raw images other than the ones in `data/test` are not provided: while this project would fall in the "fair use" category, any commercial application would likely need to generate their own dataset.
  -->
-The model files for the YOLO weights and the extracted logo features are derivative work based off of the Logos In The Wild dataset, and are therefore also licensed under the CC-by-SA 4.0 license.
+<!-- The model files for the YOLO weights and the extracted logo features are derivative work based off of the Logos In The Wild dataset, and are therefore also licensed under the CC-by-SA 4.0 license. -->
 
+This repo makes use of 
+```
+[**ilmonteux/logohunter**](https://github.com/ilmonteux/logohunter)
+```
+which is based on
+```
+[**qqwweee/keras-yolo3**](https://github.com/qqwweee/keras-yolo3)
+```
 ## Common Issues
 
 If you are having trouble with getting cv2 to run, try:
