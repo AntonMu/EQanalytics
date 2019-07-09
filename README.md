@@ -13,7 +13,7 @@ One important type of vulnerable buildings are those with soft stories. A [soft 
 In this project, I built an application that uses Google Street View images and computer vision techniques as well as classical machine learning to determine whether a given building address has a soft story. 
 
 ### Model Overview
-On a high level, the model training consists of four seperate steps:
+On a high level, the model training consists of three separate steps:
 
  1. [Obtain Training Images](/1_Pre_Processing/)
 	 - Download Street View images from all buildings in the [San Francisco soft story property list](https://sfdbi.org/soft-story-properties-list).
@@ -25,7 +25,7 @@ On a high level, the model training consists of four seperate steps:
  	- Identify number of stories via K-means clustering
  	- Compute softness-score as the quotient of the total width of openings on the second story over the total width of openings on the first story.
  
-Based on the softness-score, buildings are either classified as *soft*, *non_soft* or *undetermined*. A building score could be *undertermined* if the street view image is heavily obstructed or if the image segmentation fails for other reasons.  
+Based on the softness-score, buildings are either classified as *soft*, *non_soft* or *undetermined*. A building score could be *undetermined* if the street view image is heavily obstructed or if the image segmentation fails for other reasons.  
 
 ### Model Training
 The model uses two supervised image detection deep learning approaches (both based on YOLOv3) located in [Detector_Training](/2_Computer_Vision/Detector_Training/).
@@ -45,8 +45,9 @@ Model inference consists of four similar steps. After entering an address (or li
 ## Repo structure
 + [`1_Pre_Processing`](/1_Pre_Processing/): All Preprocessing Tasks
 + [`2_Computer_Vision`](/2_Computer_Vision/): Both Image Segmentation Tasks
-+ [`3_Classification`](/3_Classification/): Final Classicfication Task
-+ `Built`: Scripts to get started, train and evaluate
++ [`3_Classification`](/3_Classification/): Final Classification Task
++ [`Data`](/Data/): Input Data, Output Data and Results
+<!-- + `Built`: Scripts to get started, train and evaluate -->
 
 ## Getting Started
 
@@ -81,12 +82,12 @@ pip3 install -r requirements.txt
 ```
 
 ## Quick Start
-To get started on a minimal example located in [`Data/Minimal_Test`](Data/Minimal_Test/`) simply run the `Minimal_Test.py` script with:
+To get started on a minimal example on two images located in [`Data/Minimal_Test`](/Data/Minimal_Test/) run the `Minimal_Test.py` script.
 
 ```
 python Minimal_Test.py
 ```
-To run a full model, follow the individual instructions located in [1_Pre_Processing](/1_Pre_Processing/), [2_Computer_Vision](/2_Computer_Vision/) and [3_Classification](/3_Classification/), respectively. To retrain detectors navigate to [Detector_Training](/2_Computer_Vision/Detector_Training/).
+To run a full model, follow the individual instructions located in [1_Pre_Processing](/1_Pre_Processing/), [2_Computer_Vision](/2_Computer_Vision/) and [3_Classification](/3_Classification/), respectively. To retrain detectors navigate to [2_Computer_Vision/Detector_Training](/2_Computer_Vision/Detector_Training/).
 
 
 #### Build Environment For Inference
@@ -98,7 +99,7 @@ bash build/build_inference.sh
 #### Build Environment For Training
 To re-train the housing detector and/or opening detector follow the following steps. 
 
-##### Re-train Housing Detector
+##### Retrain Housing Detector
 To retrain the housing detector, either download your own street view housing image dataset or use the SF vulnerable buildings data set. Once you have created an image folder, install [VoTT](https://github.com/Microsoft/VoTT) on your local machine and segment houses. Alternatively, use the already segmented dataset. Next, download the default YOLOv3 weights to start transfer learning from.  
 ```
 bash build/build_housing_detector.sh --download_images --download_segments
