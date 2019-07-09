@@ -41,7 +41,7 @@ def ChangeToOtherMachine(filelist,repo='EQanalytics',remote_machine =''):
     if remote_machine:
         prefix = remote_machine.replace("\\","/")
     else:
-        prefix = ((os.getcwd().split(repo))[0]).replace("\\","/")
+        prefix = ((os.path.dirname(os.path.abspath(__file__)).split(repo))[0]).replace("\\","/")
     new_list = []
 
     for file in filelist:

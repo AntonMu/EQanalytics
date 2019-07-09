@@ -11,7 +11,7 @@ import argparse
 def get_parent_dir(n=1):
     """ returns the n-th parent dicrectory of the current
     working directory """
-    current_path = os.getcwd()
+    current_path = os.path.dirname(os.path.abspath(__file__))
     for k in range(n):
         current_path = os.path.dirname(current_path)
     return current_path
@@ -19,7 +19,7 @@ def get_parent_dir(n=1):
 src_path = os.path.join(get_parent_dir(1),'src')
 sys.path.append(src_path)
 
-utils_path = os.path.join(os.getcwd(),'Utils')
+utils_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),'Utils')
 sys.path.append(utils_path)
 
 import numpy as np
