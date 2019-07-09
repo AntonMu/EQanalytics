@@ -188,7 +188,8 @@ def draw_levels(df, target_path, colors = ['#fdfe02','#0bff01','#fe0000','#fe00f
         for level in levels:
             for index,row in current_df[current_df['level']==level].iterrows():
                 draw.rectangle(((row['xmin'], row['ymin']), (row['xmax'], row['ymax'])),outline=colors[level%len(colors)],width = 2)
-                draw.text((row['xmin']+2, row['ymin']), str(level),fill=colors[level%len(colors)],font=ImageFont.truetype(os.path.join(os.path.dirname(os.path.abspath(__file__)),'Utils','arial.ttf'),16 ))
+                # draw.text((row['xmin']+2, row['ymin']), str(level),fill=colors[level%len(colors)],font=ImageFont.truetype(os.path.join(os.path.dirname(os.path.abspath(__file__)),'Utils','arial.ttf'),16 ))
+                draw.text((row['xmin']+2, row['ymin']), str(level),fill=colors[level%len(colors)])
         source_img.convert("RGB").save(os.path.join(target_path,''.join([os.path.basename(image_name)[:-4],suffix,".jpg"])), "JPEG")
     return True
 

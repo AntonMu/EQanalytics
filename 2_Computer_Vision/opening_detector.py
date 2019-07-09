@@ -1,4 +1,22 @@
 import subprocess
-call_string = 'python detector.py --detection_mode opening'
-print('Calling', call_string)
+
+openings_input_folder = os.path.join(data_folder,'House_Cropping_Results')
+openings_weights = os.path.join(model_folder,'Openings','trained_weights_final.h5')
+openings_classes = os.path.join(model_folder,'Openings','data_all_classes.txt')
+openings_result_folder = os.path.join(data_folder,'Opening_Detection_Results') 
+openings_result_file =  os.path.join(openings_result_folder, 'Opening_Results.csv')
+anchors = os.path.join(root_folder,'2_Computer_Vision','src','keras_yolo3','model_data','yolo_anchors.txt')
+
+postfix = '_opening'
+
+def make_call_string(arglist):
+    result_string = ''
+    for arg in arglist:
+        result_string+= ''.join(['--',arg[0],' ', arg[1],' '])
+    return result_string
+
+arglist = [['input_images',openings_input_folder],['classes',openings_classes],['output',openings_result_folder],['yolo_model',openings_weights],['box_file',openings_result_file],['anchors',anchors]]
+call_string = ' '.join(['python', detector_script,make_call_string(arglist)])
+
+print('Running Openings Detector by calling', call_string)
 subprocess.call(call_string, shell=True)

@@ -35,6 +35,9 @@ import numpy as np
 from Get_File_Paths import GetFileList
 import random
 
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
+
+
 data_folder = os.path.join(get_parent_dir(n=1),'Data')
 image_folder = os.path.join(data_folder,'Street_View_Images')
 
