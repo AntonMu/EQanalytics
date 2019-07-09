@@ -44,18 +44,11 @@ image_folder = os.path.join(data_folder,'Street_View_Images')
 houses_result_folder = os.path.join(data_folder,'House_Detection_Results') 
 houses_result_file =  os.path.join(houses_result_folder, 'Housing_Results.csv')
 
-openings_result_folder = os.path.join(data_folder,'Opening_Detection_Results') 
-openings_result_file =  os.path.join(openings_result_folder, 'Opening_Results.csv')
-
-
 model_folder =  os.path.join(data_folder,'Model_Weights')
 
 houses_weights = os.path.join(model_folder,'Houses','trained_weights_final.h5')
 houses_classes = os.path.join(model_folder,'Houses','data_classes.txt')
 
-openings_input_folder = os.path.join(data_folder,'House_Cropping_Results')
-openings_weights = os.path.join(model_folder,'Openings','trained_weights_final.h5')
-openings_classes = os.path.join(model_folder,'Openings','data_all_classes.txt')
 
 FLAGS = None
 
@@ -79,11 +72,6 @@ if __name__ == '__main__':
     parser.add_argument(
         "--output", type=str, default=houses_result_folder,
         help = "Output path for detection results."
-    )
-
-    parser.add_argument(
-        "--detection_mode", type=str, default='houses',
-        help = "If set to openings, use the pre-trained weights for openings. Otherwise use the pre-trained weights for houses. This overrides all other settings."
     )
 
     parser.add_argument(
@@ -128,16 +116,6 @@ if __name__ == '__main__':
     
 
     FLAGS = parser.parse_args()
-
-
-
-    if FLAGS.detection_mode == 'openings' or FLAGS.detection_mode == 'opening':
-        FLAGS.input_images = openings_input_folder
-        FLAGS.model_path = openings_weights
-        FLAGS.classes_path = openings_classes
-        FLAGS.output = openings_result_folder
-        FLAGS.box = openings_result_file
-        FLAGS.postfix = '_opening'
 
     save_img = not FLAGS.no_save_img
 
