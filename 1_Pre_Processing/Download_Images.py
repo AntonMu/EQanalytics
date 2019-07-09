@@ -12,8 +12,8 @@ pd.options.mode.chained_assignment = None  # default='warn'
 
 result_folder = os.path.join(get_parent_dir(n=1),'Data','Street_View_Images')
 result_file = os.path.join(result_folder,'results.csv')
-address_file = os.path.join(os.getcwd(),'Locations','SF.csv')
-test_address_file = os.path.join(os.getcwd(),'Locations','Test_SF.csv')
+address_file = os.path.join(os.path.dirname(os.path.abspath(__file__)),'Locations','SF.csv')
+test_address_file = os.path.join(os.path.dirname(os.path.abspath(__file__)),'Locations','Test_SF.csv')
 FLAGS = None
 
 if __name__ == '__main__':
