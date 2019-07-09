@@ -1,5 +1,5 @@
 # EQanalytics: Computer Vision
-In this step, we process our previously downloaded training images (`EQanalytics/Data/Street_View_Images`) .
+In this step, we process our previously downloaded training images (`EQanalytics/Data/Street_View_Images`).
 
 ## House Segmentation
 To segment houses, we run the housing detector script.
