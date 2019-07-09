@@ -178,14 +178,8 @@ The Logos In The Wild dataset (links to images, bounding box annotations, clean_
  -->
 <!-- The model files for the YOLO weights and the extracted logo features are derivative work based off of the Logos In The Wild dataset, and are therefore also licensed under the CC-by-SA 4.0 license. -->
 
-This repo makes use of 
-```
-[**ilmonteux/logohunter**](https://github.com/ilmonteux/logohunter)
-```
-which is based on
-```
-[**qqwweee/keras-yolo3**](https://github.com/qqwweee/keras-yolo3)
-```
+This repo makes use of [**ilmonteux/logohunter**](https://github.com/ilmonteux/logohunter) which itself is inspired by [**qqwweee/keras-yolo3**](https://github.com/qqwweee/keras-yolo3).
+
 ## Common Issues
 
 If you are having trouble with getting cv2 to run, try:
