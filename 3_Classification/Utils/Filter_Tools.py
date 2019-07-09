@@ -188,13 +188,23 @@ def draw_levels(df, target_path, colors = ['#fdfe02','#0bff01','#fe0000','#fe00f
         for level in levels:
             for index,row in current_df[current_df['level']==level].iterrows():
                 draw.rectangle(((row['xmin'], row['ymin']), (row['xmax'], row['ymax'])),outline=colors[level%len(colors)],width = 2)
-                # draw.text((row['xmin']+2, row['ymin']), str(level),fill=colors[level%len(colors)],font=ImageFont.truetype(os.path.join(os.path.dirname(os.path.abspath(__file__)),'Utils','arial.ttf'),16 ))
-                draw.text((row['xmin']+2, row['ymin']), str(level),fill=colors[level%len(colors)])
+                try:
+                    #There are some issues with loading fonts
+                    draw.text((row['xmin']+2, row['ymin']), str(level),fill=colors[level%len(colors)],font=ImageFont.truetype(os.path.join(os.path.dirname(os.path.abspath(__file__)),'Utils','arial.ttf'),16 ))
+                except:
+                    draw.text((row['xmin']+2, row['ymin']), str(level),fill=colors[level%len(colors)])
         source_img.convert("RGB").save(os.path.join(target_path,''.join([os.path.basename(image_name)[:-4],suffix,".jpg"])), "JPEG")
     return True
 
 # Calculate soft score
 def calcuate_softness(df,metric='x_len'):
+    def score(x):
+        if x>1.5 or x<.3:
+            return 'undetermined'
+        elif x>.75:
+            return 'non_soft'
+        else:
+            return 'soft'
     image_names = df['image'].unique()
     result_df = pd.DataFrame(columns = ['image','score'])
     for image_name in image_names:
@@ -209,7 +219,7 @@ def calcuate_softness(df,metric='x_len'):
                 scores.append(get_intervall_union(list(zip(current_df[current_df['level']==level][metric[0]+'min'].values,current_df[current_df['level']==level][metric[0]+'max'].values))))
             result_df=result_df.append(pd.DataFrame([[image_name,float(scores[1])/float(scores[0])]], columns = ['image','score']))
     result_df.reset_index(inplace=True,drop=True)
-    result_df['type'] = result_df['score'].apply(lambda x: 'soft' if x<.75 else 'unknown' if x>1.5 else 'non_soft')
+    result_df['type'] = result_df['score'].apply(lambda x: score(x))
     return result_df
 
 def get_address(df,column = 'image'):
