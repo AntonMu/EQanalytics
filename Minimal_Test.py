@@ -14,8 +14,7 @@ model_folder = os.path.join(data_folder,'Model_Weights')
 test_folder =  os.path.join(data_folder,'Minimal_Test')
 cropped_folder = os.path.join(test_folder,'Cropped')
 street_view_folder = os.path.join(test_folder,'Street_View')
-if not os.path.exists(cropped_folder):
-    os.mkdir(cropped_folder)
+
     
 #First download the pre-trained weights
 download_script = os.path.join(model_folder,'Download_Weights.py')
@@ -56,6 +55,8 @@ cropping_script = os.path.join(root_folder,'2_Computer_Vision','Crop_Images.py')
 
 cropping_result_file = os.path.join(test_folder,'Cropping_Results.csv') 
 
+if not os.path.exists(cropped_folder):
+    os.mkdir(cropped_folder)
 
 arglist = [['input_file',houses_result_file],['classes',houses_classes],['output_folder',cropped_folder],['output_file',cropping_result_file]]
 
