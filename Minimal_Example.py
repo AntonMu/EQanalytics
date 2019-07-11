@@ -11,7 +11,7 @@ def make_call_string(arglist):
 root_folder = os.path.dirname(os.path.abspath(__file__))
 data_folder = os.path.join(root_folder,'Data')
 model_folder = os.path.join(data_folder,'Model_Weights')
-test_folder =  os.path.join(data_folder,'Minimal_Test')
+test_folder =  os.path.join(data_folder,'Minimal_Example')
 cropped_folder = os.path.join(test_folder,'Cropped')
 street_view_folder = os.path.join(test_folder,'Street_View')
 if not os.path.exists(cropped_folder):

@@ -199,9 +199,7 @@ def draw_levels(df, target_path, colors = ['#fdfe02','#0bff01','#fe0000','#fe00f
 # Calculate soft score
 def calcuate_softness(df,metric='x_len'):
     def score(x):
-        if x>1.5 or x<.3:
-            return 'undetermined'
-        elif x>.75:
+        if x>.75:
             return 'non_soft'
         else:
             return 'soft'
@@ -216,8 +214,8 @@ def calcuate_softness(df,metric='x_len'):
             scores=[]
             for level in [1,2]:
                 #metric[0]+'min' equals xmin for metric = 'x_len' and ymin for metric = 'y_len'
-                scores.append(get_intervall_union(list(zip(current_df[current_df['level']==level][metric[0]+'min'].values,current_df[current_df['level']==level][metric[0]+'max'].values))))
-            result_df=result_df.append(pd.DataFrame([[image_name,float(scores[1])/float(scores[0])]], columns = ['image','score']))
+                scores.append(current_df[metric[0]+'_size'].iloc[0]-get_intervall_union(list(zip(current_df[current_df['level']==level][metric[0]+'min'].values,current_df[current_df['level']==level][metric[0]+'max'].values))))
+            result_df=result_df.append(pd.DataFrame([[image_name,float(scores[0])/float(scores[1])]], columns = ['image','score']))
     result_df.reset_index(inplace=True,drop=True)
     result_df['type'] = result_df['score'].apply(lambda x: score(x))
     return result_df

@@ -156,7 +156,7 @@ if __name__ == '__main__':
                                           postfix=FLAGS.postfix)
         y_size,x_size,_ = np.array(image).shape
         for single_prediction in prediction:
-            out_df=out_df.append(pd.DataFrame([[os.path.basename(img_path.rstrip('\n')),img_path.rstrip('\n')]+single_prediction + [y_size,x_size]],columns=['image','image_path', 'xmin', 'ymin', 'xmax', 'ymax', 'label','confidence','x_size','y_size']))
+            out_df=out_df.append(pd.DataFrame([[os.path.basename(img_path.rstrip('\n')),img_path.rstrip('\n')]+single_prediction + [x_size,y_size]],columns=['image','image_path', 'xmin', 'ymin', 'xmax', 'ymax', 'label','confidence','x_size','y_size']))
     end = timer()
     print('Processed {} images in {:.1f}sec - {:.1f}FPS'.format(
          len(input_image_paths), end-start, len(input_image_paths)/(end-start)
