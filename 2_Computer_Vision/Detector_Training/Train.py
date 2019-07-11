@@ -31,6 +31,7 @@ from keras.callbacks import TensorBoard, ModelCheckpoint, ReduceLROnPlateau, Ear
 from keras_yolo3.yolo3.model import preprocess_true_boxes, yolo_body, tiny_yolo_body, yolo_loss
 from keras_yolo3.yolo3.utils import get_random_data
 from PIL import Image
+from time import time
 
 from Train_Utils import get_classes, get_anchors, create_model, create_tiny_model, data_generator, data_generator_wrapper, ChangeToOtherMachine
 
@@ -108,7 +109,7 @@ if __name__ == '__main__':
         model = create_model(input_shape, anchors, num_classes,
             freeze_body=2, weights_path = weights_path) # make sure you know what you freeze
 
-    logging = TensorBoard(log_dir=log_dir)
+    logging = TensorBoard(log_dir=os.path.join(log_dir,'{}'.format(time())))
     checkpoint = ModelCheckpoint(os.path.join(log_dir,'checkpoint.h5'),
         monitor='val_loss', save_weights_only=True, save_best_only=True, period=5)
     reduce_lr = ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=3, verbose=1)
