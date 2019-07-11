@@ -32,6 +32,7 @@ from keras_yolo3.yolo3.model import preprocess_true_boxes, yolo_body, tiny_yolo_
 from keras_yolo3.yolo3.utils import get_random_data
 from PIL import Image
 from time import time
+import pickle
 
 from Train_Utils import get_classes, get_anchors, create_model, create_tiny_model, data_generator, data_generator_wrapper, ChangeToOtherMachine
 
@@ -98,8 +99,8 @@ if __name__ == '__main__':
     weights_path = FLAGS.weights_path
 
 
-    input_shape = (640, 640) # multiple of 32, hw
-    epoch1, epoch2 = 2, 2
+    input_shape = (416, 416) # multiple of 32, hw
+    epoch1, epoch2 = 51, 51
 
     is_tiny_version = (len(anchors)==6) # default setting
     if FLAGS.is_tiny:
@@ -145,10 +146,21 @@ if __name__ == '__main__':
         model.save_weights(os.path.join(log_dir,'trained_weights_stage_1.h5'))
 
         step1_train_loss = history.history['loss']
-        step1_val_loss = history.history['val_loss']
-        np.save(os.path.join(log_dir_time,'step1_loss.npy'), step1_train_loss)
-        np.save(os.path.join(log_dir_time,'step1_val_loss.npy'), step1_val_loss)
-
+        
+        file = open(os.path.join(log_dir_time,'step1_loss.npy'), "w")
+        with open(os.path.join(log_dir_time,'step1_loss.npy'), 'w') as f:
+            for item in step1_train_loss:
+                f.write("%s\n" % item) 
+        file.close()
+        
+        step1_val_loss = np.array(history.history['val_loss'])
+        
+        file = open(os.path.join(log_dir_time,'step1_val_loss.npy'), "w")
+        with open(os.path.join(log_dir_time,'step1_val_loss.npy'), 'w') as f:
+            for item in step1_val_loss:
+                f.write("%s\n" % item) 
+        file.close()
+        
     # Unfreeze and continue training, to fine-tune.
     # Train longer if the result is not good.
     if True:
@@ -168,6 +180,17 @@ if __name__ == '__main__':
             callbacks=[logging, checkpoint, reduce_lr, early_stopping])
         model.save_weights(os.path.join(log_dir,'trained_weights_final.h5'))
         step2_train_loss = history.history['loss']
-        step2_val_loss = history.history['val_loss']
-        np.save(os.path.join(log_dir_time,'step2_loss.npy'), step2_train_loss)
-        np.save(os.path.join(log_dir_time,'step2_val_loss.npy'), step2_val_loss)
+        
+        file = open(os.path.join(log_dir_time,'step2_loss.npy'), "w")
+        with open(os.path.join(log_dir_time,'step2_loss.npy'), 'w') as f:
+            for item in step2_train_loss:
+                f.write("%s\n" % item) 
+        file.close()
+        
+        step2_val_loss = np.array(history.history['val_loss'])
+        
+        file = open(os.path.join(log_dir_time,'step2_val_loss.npy'), "w")
+        with open(os.path.join(log_dir_time,'step2_val_loss.npy'), 'w') as f:
+            for item in step2_val_loss:
+                f.write("%s\n" % item) 
+        file.close()
