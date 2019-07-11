@@ -27,7 +27,7 @@ def _main():
     anchors = get_anchors(anchors_path)
 
 
-    input_shape = (640, 640) # multiple of 32, hw
+    input_shape = (416, 416) # multiple of 32, hw
     epoch1, epoch2 = 101, 101
 
     is_tiny_version = (len(anchors)==6) # default setting

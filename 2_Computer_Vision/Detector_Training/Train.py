@@ -32,6 +32,7 @@ from keras_yolo3.yolo3.model import preprocess_true_boxes, yolo_body, tiny_yolo_
 from keras_yolo3.yolo3.utils import get_random_data
 from PIL import Image
 from time import time
+import pickle
 
 from Train_Utils import get_classes, get_anchors, create_model, create_tiny_model, data_generator, data_generator_wrapper, ChangeToOtherMachine
 
@@ -98,7 +99,7 @@ if __name__ == '__main__':
     weights_path = FLAGS.weights_path
 
 
-    input_shape = (640, 640) # multiple of 32, hw
+    input_shape = (416, 416) # multiple of 32, hw
     epoch1, epoch2 = 51, 51
 
     is_tiny_version = (len(anchors)==6) # default setting
@@ -109,7 +110,8 @@ if __name__ == '__main__':
         model = create_model(input_shape, anchors, num_classes,
             freeze_body=2, weights_path = weights_path) # make sure you know what you freeze
 
-    logging = TensorBoard(log_dir=os.path.join(log_dir,'{}'.format(time())))
+    log_dir_time = os.path.join(log_dir,'{}'.format(int(time())))
+    logging = TensorBoard(log_dir=log_dir_time)
     checkpoint = ModelCheckpoint(os.path.join(log_dir,'checkpoint.h5'),
         monitor='val_loss', save_weights_only=True, save_best_only=True, period=5)
     reduce_lr = ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=3, verbose=1)
@@ -134,7 +136,7 @@ if __name__ == '__main__':
 
         batch_size = 32
         print('Train on {} samples, val on {} samples, with batch size {}.'.format(num_train, num_val, batch_size))
-        model.fit_generator(data_generator_wrapper(lines[:num_train], batch_size, input_shape, anchors, num_classes),
+        history = model.fit_generator(data_generator_wrapper(lines[:num_train], batch_size, input_shape, anchors, num_classes),
                 steps_per_epoch=max(1, num_train//batch_size),
                 validation_data=data_generator_wrapper(lines[num_train:], batch_size, input_shape, anchors, num_classes),
                 validation_steps=max(1, num_val//batch_size),
@@ -143,6 +145,22 @@ if __name__ == '__main__':
                 callbacks=[logging, checkpoint])
         model.save_weights(os.path.join(log_dir,'trained_weights_stage_1.h5'))
 
+        step1_train_loss = history.history['loss']
+        
+        file = open(os.path.join(log_dir_time,'step1_loss.npy'), "w")
+        with open(os.path.join(log_dir_time,'step1_loss.npy'), 'w') as f:
+            for item in step1_train_loss:
+                f.write("%s\n" % item) 
+        file.close()
+        
+        step1_val_loss = np.array(history.history['val_loss'])
+        
+        file = open(os.path.join(log_dir_time,'step1_val_loss.npy'), "w")
+        with open(os.path.join(log_dir_time,'step1_val_loss.npy'), 'w') as f:
+            for item in step1_val_loss:
+                f.write("%s\n" % item) 
+        file.close()
+        
     # Unfreeze and continue training, to fine-tune.
     # Train longer if the result is not good.
     if True:
@@ -153,7 +171,7 @@ if __name__ == '__main__':
 
         batch_size = 4 # note that more GPU memory is required after unfreezing the body
         print('Train on {} samples, val on {} samples, with batch size {}.'.format(num_train, num_val, batch_size))
-        model.fit_generator(data_generator_wrapper(lines[:num_train], batch_size, input_shape, anchors, num_classes),
+        history=model.fit_generator(data_generator_wrapper(lines[:num_train], batch_size, input_shape, anchors, num_classes),
             steps_per_epoch=max(1, num_train//batch_size),
             validation_data=data_generator_wrapper(lines[num_train:], batch_size, input_shape, anchors, num_classes),
             validation_steps=max(1, num_val//batch_size),
@@ -161,3 +179,18 @@ if __name__ == '__main__':
             initial_epoch=epoch1,
             callbacks=[logging, checkpoint, reduce_lr, early_stopping])
         model.save_weights(os.path.join(log_dir,'trained_weights_final.h5'))
+        step2_train_loss = history.history['loss']
+        
+        file = open(os.path.join(log_dir_time,'step2_loss.npy'), "w")
+        with open(os.path.join(log_dir_time,'step2_loss.npy'), 'w') as f:
+            for item in step2_train_loss:
+                f.write("%s\n" % item) 
+        file.close()
+        
+        step2_val_loss = np.array(history.history['val_loss'])
+        
+        file = open(os.path.join(log_dir_time,'step2_val_loss.npy'), "w")
+        with open(os.path.join(log_dir_time,'step2_val_loss.npy'), 'w') as f:
+            for item in step2_val_loss:
+                f.write("%s\n" % item) 
+        file.close()

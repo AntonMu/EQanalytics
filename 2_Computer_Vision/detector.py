@@ -138,7 +138,7 @@ if __name__ == '__main__':
                 "classes_path": FLAGS.classes_path,
                 "score" : FLAGS.score,
                 "gpu_num" : FLAGS.gpu_num,
-                "model_image_size" : (640, 640),
+                "model_image_size" : (416, 416),
                 }
                )
 
