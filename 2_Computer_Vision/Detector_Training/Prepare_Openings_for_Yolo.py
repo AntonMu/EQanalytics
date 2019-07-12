@@ -64,7 +64,6 @@ if __name__ == '__main__':
     	df_csv = df_csv[df_csv['label'].isin(['door','window','shop'])]
     	codes = df_csv['code'].unique()
     	df_csv['code']=df_csv['code'].apply(lambda x: np.where(codes==x)[0][0])
-    	df_csv.to_csv('esy.csv')
     sorted_names = ((df_csv.drop_duplicates(subset = ['code','label'])[['code','label']].sort_values(by = ['code']))['label']).values
 
     #Write sorted names to file to make classes file
