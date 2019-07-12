@@ -5,6 +5,7 @@ import re
 import pandas as pd
 import sys
 import argparse
+import numpy as np
 def get_parent_dir(n=1):
     """ returns the n-th parent dicrectory of the current
     working directory """
@@ -32,25 +33,15 @@ if __name__ == '__main__':
     '''
     Command line options
     '''
-    # parser.add_argument(
-    #     "--VoTT_Folder", type=str, default=VoTT_Folder,
-    #     help = "absolute path to the exported files from the image tagging step with VoTT."
-    # )
-
-    # parser.add_argument(
-    #     "--VoTT_csv", type=str, default=VoTT_csv,
-    #     help = "absolute path to the *.csv file exported from VoTT. The default name is 'Houses-export.csv'."
-    # )
     parser.add_argument(
         "--YOLO_filename", type=str, default=YOLO_filename,
         help = "absolute path to the file where the annotations in YOLO format should be saved. The default name is 'data_train.txt' and is saved in the VoTT folder."
     )
 
-    # parser.add_argument(
-    #     "--item_name", type=str, default='house',
-    #     help = "The name of the annotated item. The default is 'house'."
-    # )
-
+    parser.add_argument(
+        "--drop_classes", default=True, action="store_true",
+        help = "If enabled, only relevant classes will be trained on. That is, only 'shop', 'window' and 'door'."
+    )
 
     parser.add_argument(
         '--AWS', default=True, action="store_true",
@@ -69,7 +60,11 @@ if __name__ == '__main__':
     df_csv.to_csv(CSV_filename,index=False)
 
     #Get label names and sort 
-
+    if FLAGS.drop_classes:
+    	df_csv = df_csv[df_csv['label'].isin(['door','window','shop'])]
+    	codes = df_csv['code'].unique()
+    	df_csv['code']=df_csv['code'].apply(lambda x: np.where(codes==x)[0][0])
+    	df_csv.to_csv('esy.csv')
     sorted_names = ((df_csv.drop_duplicates(subset = ['code','label'])[['code','label']].sort_values(by = ['code']))['label']).values
 
     #Write sorted names to file to make classes file
