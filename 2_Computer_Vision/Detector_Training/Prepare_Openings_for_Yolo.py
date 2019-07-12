@@ -39,14 +39,21 @@ if __name__ == '__main__':
     )
 
     parser.add_argument(
-        "--drop_classes", default=True, action="store_true",
+        "--drop_classes", default=True, action="store_false",
         help = "If enabled, only relevant classes will be trained on. That is, only 'shop', 'window' and 'door'."
     )
 
     parser.add_argument(
-        '--AWS', default=True, action="store_true",
+        '--single_class', default=False, action="store_true",
+        help='Enable this flag if you want to only train on one class called "openings".'
+    )
+
+
+    parser.add_argument(
+        '--AWS', default=True, action="store_false",
         help='Enable this flag if you plan to train on AWS but did your pre-processing on a local machine.'
     )
+
 
     FLAGS = parser.parse_args()
 
@@ -64,6 +71,10 @@ if __name__ == '__main__':
     	df_csv = df_csv[df_csv['label'].isin(['door','window','shop'])]
     	codes = df_csv['code'].unique()
     	df_csv['code']=df_csv['code'].apply(lambda x: np.where(codes==x)[0][0])
+    if FLAGS.single_class:
+    	df_csv['code']=0
+    	df_csv['label']='opening'
+    df_csv.to_csv('est.csv')
     sorted_names = ((df_csv.drop_duplicates(subset = ['code','label'])[['code','label']].sort_values(by = ['code']))['label']).values
 
     #Write sorted names to file to make classes file
