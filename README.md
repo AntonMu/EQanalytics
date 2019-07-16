@@ -66,13 +66,13 @@ Create Virtual Environment ([Venv](https://packaging.python.org/guides/installin
 python3 -m venv env
 source env/bin/activate
 ```
-
+<!-- 
 If you are a conda user, create your virtual environment with:
 ```
 conda create -n EQanalytics
 source activate EQanalytics
 ```
-
+ -->
 Next, install all required packages:
 
 ```
