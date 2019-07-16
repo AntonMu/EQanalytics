@@ -89,7 +89,7 @@ if __name__ == '__main__':
     label_dict = pd.read_csv(FLAGS.classes_path,header=None).to_dict()[0]
     opening_df = pd.read_csv(FLAGS.input_file).sort_values('image')
 
-    #Now calculate features such as the width of windows and doors. Also filter everythin that is not a door, window, blind or shop
+    #Now calculate features such as the width of windows and doors. Also filter everythin that is not a door, window or shop
     opening_df = get_features(opening_df,label_dict,label_names = ['door', 'window', 'shop'])
 
     #Next remove all objects that have more than 75% IoU (and keep the bigger one)
