@@ -45,7 +45,6 @@ Model inference consists of four similar steps. After entering an address (or li
 + [`2_Computer_Vision`](/2_Computer_Vision/): Both Image Segmentation Tasks
 + [`3_Classification`](/3_Classification/): Final Classification Task
 + [`Data`](/Data/): Input Data, Output Data and Results
-<!-- + `Built`: Scripts to get started, train and evaluate -->
 
 ## Getting Started
 
@@ -121,7 +120,6 @@ images in the [data/test/sample_in/](data/test/sample_in/) directory to logos in
 cd src/
 python logohunter.py --test
 ```
-
 Typical ways to run the program involve specifying one input brand and a folder of sample images:
 ```
 python logohunter.py  --image --input_brands ../data/test/test_brands/test_lexus.png \
@@ -140,8 +138,6 @@ python logohunter.py  --image --input_images data_test.txt  \
 In the first two use cases, we test a folder of images for a single brand ([lexus logo](data/test/test_brands/test_lexus.png) or [golden state logo](data/test/test_brands/test_golden_state.jpg)). The input images were downloaded from Google Images for test purposes. Running LogoHunter saves images with bounding box annotations in the folder specified (`test_lexus`, `test_gs`). Because each of these images contains the logo we are looking for, this is a way to estimate the false negative rate (and the recall).
 
 In the third example, we test a text file containing paths to 2590 input images from the LogosInTheWild dataset against a single brand, without saving the annotated images. Because the brand is new to the dataset, this is a way to estimate the false positive rate (and the precision). (**Note:** this will not run out of the box, as you will need to separately download the LogosInTheWild dataset - follow the instructions below to download the dataset).
-
-
 
 #### Data
 This project uses the [Logos In The Wild dataset](https://www.iosb.fraunhofer.de/servlet/is/78045/) which can be requested via email directly from the authors of the paper, [arXiv:1710.10891](https://arxiv.org/abs/1710.10891). This dataset includes 11,054 images with 32,850 bounding boxes for a total of 871 brands.

@@ -24,10 +24,7 @@ import argparse
 from keras_yolo3.yolo import YOLO
 from PIL import Image
 from timeit import default_timer as timer
-from logos import detect_logo #, match_logo
-# from similarity import load_brands_compute_cutoffs
-from utils import load_extractor_model, load_features, parse_input
-# from utils import load_extractor_model, load_features, model_flavor_from_name, parse_input
+from utils import load_extractor_model, load_features, parse_input, detect_object
 import test
 import utils
 import pandas as pd
@@ -157,7 +154,7 @@ if __name__ == '__main__':
 
     for i, img_path in enumerate(input_image_paths):
         print(img_path)
-        prediction, image = detect_logo(yolo, img_path, save_img = save_img,
+        prediction, image = detect_object(yolo, img_path, save_img = save_img,
                                           save_img_path = FLAGS.output,
                                           postfix=FLAGS.postfix)
         y_size,x_size,_ = np.array(image).shape

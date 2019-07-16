@@ -13,6 +13,39 @@ readline.parse_and_bind("tab: complete")
 
 min_logo_size = (10,10)
 
+
+def detect_object(yolo, img_path, save_img, save_img_path='./', postfix=''):
+    """
+    Call YOLO logo detector on input image, optionally save resulting image.
+
+    Args:
+      yolo: keras-yolo3 initialized YOLO instance
+      img_path: path to image file
+      save_img: bool to save annotated image
+      save_img_path: path to directory where to save image
+      postfix: string to add to filenames
+    Returns:
+      prediction: list of bounding boxes in format (xmin,ymin,xmax,ymax,class_id,confidence)
+      image: unaltered input image as (H,W,C) array
+    """
+    try:
+        image = Image.open(img_path)
+        if image.mode != "RGB":
+            image = image.convert("RGB")
+        image_array = np.array(image)
+    except:
+        print('File Open Error! Try again!')
+        return None, None
+
+    prediction, new_image = yolo.detect_image(image)
+
+    img_out = postfix.join(os.path.splitext(os.path.basename(img_path)))
+    if save_img:
+        new_image.save(os.path.join(save_img_path, img_out))
+
+    return prediction, image_array
+
+
 def parse_input():
     """
     Ask user input for input images: pass path to individual images, directory
@@ -64,38 +97,6 @@ def load_extractor_model(model_name='InceptionV3', flavor=1):
     end = timer()
     print('Loaded {} feature extractor in {:.2f}sec'.format(model_name, end-start))
     return model_out, preprocess_input, input_shape
-
-
-# def model_flavor_from_name(path):
-#     """ Return model name (InceptionV3 or VGG16) and model variant from HDF5 filename.
-#     """
-#     filename = os.path.basename(path)
-#     if filename.startswith('inception'):
-#         model_name = 'InceptionV3'
-#         if filename == 'inception_logo_features.hdf5':
-#             flavor = 0
-#         elif filename == 'inception_logo_features_200_trunc1.hdf5':
-#             flavor = 1
-#         elif filename == 'inception_logo_features_200_trunc2.hdf5':
-#             flavor = 2
-#         elif filename == 'inception_logo_features_200_trunc3.hdf5':
-#             flavor = 3
-#         elif filename == 'inception_logo_features_200.hdf5':
-#             flavor = 4
-#         else:
-#             raise Exception(f'Model not recognized: {path}')
-#     elif filename.startswith('vgg16'):
-#         model_name = 'VGG16'
-#         length = int(filename.split('_')[3].split('.')[0]) #vgg16_logo_features_NNN.hdf5
-#         flavor = [224,128,64].index(length)
-#     else:
-#         raise Exception(f'Model not recognized as InceptionV3 or VGG16 from filename: {path}')
-
-#     if not os.path.exists(path):
-#         print(f'Features not found on local disk! Downloading from AWS S3 bucket, logohunters3.s3-us-west-2.amazonaws.com/{filename} \n')
-#         os.system(f'wget  logohunters3.s3-us-west-2.amazonaws.com/{filename}')
-
-#     return model_name, flavor
 
 
 def chunks(l, n, preprocessing_function = None):
@@ -330,13 +331,3 @@ def draw_annotated_box(image, box_list_list, label_list, color_list):
     del draw
 
     return image
-
-
-
-# def main():
-#     print('Nothing to do here...')
-
-
-
-# if __name__ == '__main__':
-#     main()
