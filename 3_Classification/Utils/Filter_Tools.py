@@ -215,7 +215,8 @@ def calcuate_softness(df,metric='x_len'):
             for level in [1,2]:
                 #metric[0]+'min' equals xmin for metric = 'x_len' and ymin for metric = 'y_len'
                 scores.append(current_df[metric[0]+'_size'].iloc[0]-get_intervall_union(list(zip(current_df[current_df['level']==level][metric[0]+'min'].values,current_df[current_df['level']==level][metric[0]+'max'].values))))
-            result_df=result_df.append(pd.DataFrame([[image_name,float(scores[0])/float(scores[1])]], columns = ['image','score']))
+            # To avoid divsion by 0 we take the max of scores[1] and 1.
+            result_df=result_df.append(pd.DataFrame([[image_name,float(scores[0])/max(float(scores[1]),1.)]], columns = ['image','score']))
     result_df.reset_index(inplace=True,drop=True)
     result_df['type'] = result_df['score'].apply(lambda x: score(x))
     return result_df
