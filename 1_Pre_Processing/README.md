@@ -7,7 +7,7 @@ To run the script you first need to obtain a Google Street View Static API key o
 ```
 python Download_Images.py --G_API_key <your Google API key>
 ```
-To get started on a small test set of 62 buildings run:
+Depending on your connection, this will take between 2 and 5 hours to complete. To get started on a small test set of 62 buildings run:
 ```
 python Download_Images.py --G_API_key <your Google API key> --test
 ```

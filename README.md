@@ -79,11 +79,21 @@ pip3 install -r requirements.txt
 ```
 
 ## Quick Start
-To get started on a [minimal example on two images](https://docs.google.com/presentation/d/1tJNnS9jaWtCXk3s1T_jZcwygjJv0KPZYK-7gcffLXKo/edit#slide=id.p) located in [`Data/Minimal_Test`](/Data/Minimal_Test/) run the `Minimal_Test.py` script.
+To get started on a [minimal example on two images](https://docs.google.com/presentation/d/1tJNnS9jaWtCXk3s1T_jZcwygjJv0KPZYK-7gcffLXKo/edit#slide=id.p) located in [`Data/Minimal_Example`](/Data/Minimal_Example/) run the `Minimal_Example.py` script.
 
 ```
 python Minimal_Example.py
 ```
+
+The outputs of all detections are saved in the [`Data/Minimal_Example`](/Data/Minimal_Example/) folder. This includes:
+ - Results of the housing detector
+ - Cropped housing images
+ - Results of the opening detector
+ - Results of the level detector
+ - Softness scores located [`Softness_Scores.csv`](/Data/Minimal_Example/Softness_Scores.csv) 
+
+## Full Start
+
 To run a full model, follow the individual instructions located in [1_Pre_Processing](/1_Pre_Processing/), [2_Computer_Vision](/2_Computer_Vision/) and [3_Classification](/3_Classification/), respectively. To retrain detectors navigate to [2_Computer_Vision/Detector_Training](/2_Computer_Vision/Detector_Training/).
 
 <!-- 
