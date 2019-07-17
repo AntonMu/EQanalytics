@@ -1,6 +1,6 @@
 # EQanalytics: Detection of Vulnerable Buildings
 
-Machine learning project developed at Insight Data Science, 2019 AI session.
+Machine learning project developed at Insight Data Science, 2019 AI session. A slide deck is available [here.](https://docs.google.com/presentation/d/1tJNnS9jaWtCXk3s1T_jZcwygjJv0KPZYK-7gcffLXKo/edit#slide=id.p)
 
 ## Project description
 In August 2018, [**AB-2681 Seismic safety: potentially vulnerable buildings**]([https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201720180AB2681](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201720180AB2681)) was passed. This bill requires the state of California to identify all potentially vulnerable buildings before Jan 1, 2021. 
@@ -23,7 +23,7 @@ On a high level, the model training consists of three separate steps:
  	- Identify number of stories via K-means clustering
  	- Compute softness-score as the quotient of the total width of openings on the second story over the total width of openings on the first story.
  
-Based on the softness-score, buildings are either classified as *soft*, *non_soft* or *undetermined*. A building score could be *undetermined* if the street view image is heavily obstructed or if the image segmentation fails for other reasons.  
+Based on the softness-score, buildings are either classified as *soft* or *non_soft*.  
 
 ### Model Training
 The model uses two supervised image detection deep learning approaches (both based on YOLOv3) located in [Detector_Training](/2_Computer_Vision/Detector_Training/).
