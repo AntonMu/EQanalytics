@@ -90,7 +90,7 @@ The outputs of all detections are saved in the [`Data/Minimal_Example`](/Data/Mi
  - Cropped housing images
  - Results of the opening detector
  - Results of the level detector
- - Softness scores located [`Softness_Scores.csv`](/Data/Minimal_Example/Softness_Scores.csv) 
+ - Softness scores located in [`Softness_Scores.csv`](/Data/Minimal_Example/Softness_Scores.csv) 
 
 ## Full Start
 
