@@ -70,4 +70,4 @@ python Train_Opening_detector.py
 
 This python script is a wrapper to call the `Train.py` script with the correct arguments. It uses the prepared YOLOv3 training file [`EQanalytics/Data/CMP_Facade_DB/data_all_train.txt`](/Data/CMP_Facade_DB/data_all_train.txt) for annotations, the file [`EQanalytics/Data/Model_Weights/Openings/data_all_classes.txt`](/Data/Model_Weights/Openings/data_all_classes.txt) for class names and the folder [`EQanalytics/Data/Model_Weights/Openings`](/Data/Model_Weights/Openings) to save the trained weights to (along with some log files). 
 
-Wait until training finishes. Trained weights are saved in [`EQanalytics/Data/Model_Weights/Openings`](/Data/Model_Weights/Openings) as [`trained_weights_final.h5`](/Data/Model_Weights/Openings/trained_weights_final.h5). That's it - we have successfully trained our opening detector!
+Wait until training finishes. Trained weights are saved in [`EQanalytics/Data/Model_Weights/Openings`](/Data/Model_Weights/Openings) as `trained_weights_final.h5`. That's it - we have successfully trained our opening detector!
