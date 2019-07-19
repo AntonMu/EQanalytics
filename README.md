@@ -96,6 +96,8 @@ The outputs of all detections are saved in the [`Data/Minimal_Example`](/Data/Mi
 
 To run a full model, follow the individual instructions located in [1_Pre_Processing](/1_Pre_Processing/), [2_Computer_Vision](/2_Computer_Vision/) and [3_Classification](/3_Classification/), respectively. To retrain detectors navigate to [2_Computer_Vision/Detector_Training](/2_Computer_Vision/Detector_Training/).
 
+Note that the ['Data'](/Data/) folder is populated with a small set of sample in- and outputs for each step and thus all scripts can be run independently. For example, it is possible to run scripts in [2_Computer_Vision](/2_Computer_Vision/) without having previously run the pre-processing step in [1_Pre_Processing](/1_Pre_Processing/). 
+
 <!-- 
 #### Build Environment For Inference
 
