@@ -8,7 +8,7 @@ python Download_Weights.py
 ```
 
 ## House Segmentation
-In the first processing stepm, we segment houses by running the housing detector script.
+In the first processing step, we segment houses by running the housing detector script.
 ```
 python detector.py
 ```
