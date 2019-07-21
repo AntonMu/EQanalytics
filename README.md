@@ -72,8 +72,11 @@ conda create -n EQanalytics
 source activate EQanalytics
 ```
  -->
-Next, install all required packages:
-
+Next, install all required packages. If you are running EQanalytics on a machine with GPU run:
+```
+pip3 install -r requirements.txt
+```
+Otherwise, run:
 ```
 pip3 install -r requirements.txt
 ```
