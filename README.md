@@ -78,7 +78,7 @@ pip3 install -r requirements.txt
 ```
 Otherwise, run:
 ```
-pip3 install -r requirements.txt
+pip3 install -r requirements_cpu.txt
 ```
 
 ## Quick Start
