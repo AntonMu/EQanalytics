@@ -7,10 +7,10 @@ To run the script you first need to obtain a Google Street View Static API key o
 ```
 python Download_Images.py --G_API_key <your Google API key>
 ```
-Depending on your connection, this will take between 2 and 5 hours to complete. To get started on a small test set of 62 buildings run:
+Depending on your connection, this will take between two and five hours to complete. To get started on a small test set of 62 buildings run:
 ```
 python Download_Images.py --G_API_key <your Google API key> --test
 ```
-By default, addresses in `eqanalytics/1_Pre_Processing/Locations/SF.csv` are used. Downloaded images will be saved in `EQanalytics/Data/Street_View_Images` and the index file under  `EQanalytics/Data/Street_View_Images/results.csv`. Use the flags `--address_file`, `--result_folder` and `--result_file` to change this behavior. In all cases you must provide an absolute path. 
+By default, addresses in [`EQanalytics/1_Pre_Processing/Locations/SF.csv`](/1_Pre_Processing/Locations/SF.csv) are used. Downloaded images will be saved in [`EQanalytics/Data/Street_View_Images`](/Data/Street_View_Images) and the index file under  [`EQanalytics/Data/Street_View_Images/results.csv`](/Data/Street_View_Images/results.csv). Use the flags `--address_file`, `--result_folder` and `--result_file` to change this behavior. In all cases you must provide an absolute path. 
 
 Other possible flags are `--city`, which is set to `SAN FRANCISCO` by default, and `--pitch`, which determines the angle of the street view camera. The default pitch value is set to `10` and `0` would mean a completely horizontal picture.
