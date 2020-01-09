@@ -6,15 +6,17 @@ import json
 import requests
 import os
 
+
 def get_parent_dir(n=1):
     """ returns the n-th parent dicrectory of the current
     working directory """
     current_path = os.path.dirname(os.path.abspath(__file__))
     for k in range(n):
-    	current_path = os.path.dirname(current_path)
+        current_path = os.path.dirname(current_path)
     return current_path
 
-def ignore_non_int(df, column = 'NUMBER'):
+
+def ignore_non_int(df, column="NUMBER"):
     """Returns a df with all rows removed that 
     do not have integers in 'column'
     
@@ -32,19 +34,22 @@ def ignore_non_int(df, column = 'NUMBER'):
     pd.DataFrame
         The dataframe with rows removed
     """
+
     def to_int(x):
         try:
             return int(x)
         except:
             return x
-    df[column]=df[column].apply(lambda x: to_int(x))
-    df['dtypes']=df[column].apply(lambda x: type(x))
-    df=df.loc[df['dtypes']==type(1)]
-    df.drop('dtypes',axis=1,inplace=True)
-    df[column]=df[column].apply(lambda x: to_int(x))
+
+    df[column] = df[column].apply(lambda x: to_int(x))
+    df["dtypes"] = df[column].apply(lambda x: type(x))
+    df = df.loc[df["dtypes"] == type(1)]
+    df.drop("dtypes", axis=1, inplace=True)
+    df[column] = df[column].apply(lambda x: to_int(x))
     return df
 
-def seperate_house_numbers(df, column = 'address', city ='SAN FRANCISCO'):
+
+def seperate_house_numbers(df, column="address", city="SAN FRANCISCO"):
     """Returns a df that splits the 'address'
     column in house number, street number and 
     building
@@ -61,13 +66,16 @@ def seperate_house_numbers(df, column = 'address', city ='SAN FRANCISCO'):
         The dataframe with seperate columns
         for NUMBER, STREET, BUILDING
     """
-    #Seperate Street and number
-    df[['NUMBER','STREET']] = pd.DataFrame(df[column].str.split(' ',1).tolist(),
-                                       columns = ['NUMBER','STREET'])
-    df['CITY']=city
+    # Seperate Street and number
+    df[["NUMBER", "STREET"]] = pd.DataFrame(
+        df[column].str.split(" ", 1).tolist(), columns=["NUMBER", "STREET"]
+    )
+    df["CITY"] = city
     return df
+
+
 # Split the odd numbers into seperate columns
-def tidy_split(df, column, sep='|', keep=False):
+def tidy_split(df, column, sep="|", keep=False):
     """
     Split the values of a column and expand so the new DataFrame has one split
     value per row. Filters rows where the column is missing.
@@ -105,7 +113,8 @@ def tidy_split(df, column, sep='|', keep=False):
     new_df[column] = new_values
     return new_df
 
-def find_similar_clusters(df, column_name,cutoff=.8):
+
+def find_similar_clusters(df, column_name, cutoff=0.8):
     """Returns a clusters of similar terms in column_name of the
     DataFrame df. The cut_off variable determines the threshold
     for similarity
@@ -123,7 +132,7 @@ def find_similar_clusters(df, column_name,cutoff=.8):
     -------
     list of list of expressions that are similar.
         
-    """   
+    """
     #     Make a list of all unique items in column
     cats = list(pd.DataFrame(df[column_name].value_counts()).index)
 
@@ -140,9 +149,20 @@ def find_similar_clusters(df, column_name,cutoff=.8):
         if not logical_set in unique_list:
             unique_list.append(logical_set)
     return unique_list
+
+
 ## Download Street View Images for Datasets via Google API
-def download_images(df,filelist_df, api_key='', dir_path ='images',class_name = 'vulnerable', 
-                    title = 'view', category = '',pitch=10, save_tier = False):
+def download_images(
+    df,
+    filelist_df,
+    api_key="",
+    dir_path="images",
+    class_name="vulnerable",
+    title="view",
+    category="",
+    pitch=10,
+    save_tier=False,
+):
     """Downloads all Street view for all rows with addresses in df. 
     Parameters
     ----------
@@ -176,67 +196,82 @@ def download_images(df,filelist_df, api_key='', dir_path ='images',class_name = 
     returns True once completed. 
         
     """
+
     def empty_str(x):
-        if str(x)=='nan':
-            return ''
+        if str(x) == "nan":
+            return ""
         else:
             return x
-    total_path = ('/').join([dir_path,class_name])
-    tier_root = ('/').join([dir_path,class_name])
+
+    total_path = ("/").join([dir_path, class_name])
+    tier_root = ("/").join([dir_path, class_name])
     if not path.isdir(total_path):
         makedirs(total_path)
     if category:
-            category = category.replace(' ','-').replace('/','-').replace(',','-').replace('--','-')
-            total_path=('/').join([total_path,category])
-            if not path.isdir(total_path):
-                makedirs(total_path)        
-    for index,row in df.iterrows():
-        address_str = ('+').join([str(row['NUMBER']),
-                                        row['STREET'],
-                                        row['CITY'],
-                                            ]).replace(' ','+')
-        
-        tier = 0 if row['TIER']==' ' else row['TIER']
+        category = (
+            category.replace(" ", "-")
+            .replace("/", "-")
+            .replace(",", "-")
+            .replace("--", "-")
+        )
+        total_path = ("/").join([total_path, category])
+        if not path.isdir(total_path):
+            makedirs(total_path)
+    for index, row in df.iterrows():
+        address_str = (
+            ("+")
+            .join([str(row["NUMBER"]), row["STREET"], row["CITY"],])
+            .replace(" ", "+")
+        )
+
+        tier = 0 if row["TIER"] == " " else row["TIER"]
         try:
-            unit = empty_str(row['UNIT'])
-            address_str+='+'+unit
+            unit = empty_str(row["UNIT"])
+            address_str += "+" + unit
         except:
             pass
         try:
-            postcode = str(row['POSTCODE'])
-            address_str+='+'+postcode
+            postcode = str(row["POSTCODE"])
+            address_str += "+" + postcode
         except:
             pass
-        file_name = ('_').join([title,
-                                class_name,
-                                # str(int(time.time())),
-                                str(pitch),
-                                str(tier),
-                                address_str
-                               ]) 
+        file_name = ("_").join(
+            [
+                title,
+                class_name,
+                # str(int(time.time())),
+                str(pitch),
+                str(tier),
+                address_str,
+            ]
+        )
         if category:
-            file_name+='+'+category
+            file_name += "+" + category
 
-        url='https://maps.googleapis.com/maps/api/streetview?source=outdoor&size=640x640'
-        url+= '&pitch='+str(pitch)
-        url+= '&key='+api_key
-        url+= '&location='+address_str
-        
+        url = "https://maps.googleapis.com/maps/api/streetview?source=outdoor&size=640x640"
+        url += "&pitch=" + str(pitch)
+        url += "&key=" + api_key
+        url += "&location=" + address_str
 
-        file_path = path.join(total_path,file_name)
-        filelist_df = filelist_df.append(pd.DataFrame([[file_name+".jpg",file_path+".jpg",category,tier,class_name]],columns = ['image','full_path','category','tier','class']))
+        file_path = path.join(total_path, file_name)
+        filelist_df = filelist_df.append(
+            pd.DataFrame(
+                [[file_name + ".jpg", file_path + ".jpg", category, tier, class_name]],
+                columns=["image", "full_path", "category", "tier", "class"],
+            )
+        )
         if api_key:
             response = requests.get(url)
             if response.status_code == 200:
-                with open(file_path+".jpg", 'wb') as f:
+                with open(file_path + ".jpg", "wb") as f:
                     f.write(response.content)
-                with open(file_path+".json", 'w') as f:
+                with open(file_path + ".json", "w") as f:
                     f.write(str(row.to_json()))
                 if save_tier:
-                    tier_path=('/').join([tier_root,str(tier)])
+                    tier_path = ("/").join([tier_root, str(tier)])
                     if not path.isdir(tier_path):
-                        makedirs(tier_path) 
-                    tier_file_path =  path.join(tier_path,file_name)
-                    with open(tier_file_path+".jpg", 'wb') as f:
+                        makedirs(tier_path)
+                    tier_file_path = path.join(tier_path, file_name)
+                    with open(tier_file_path + ".jpg", "wb") as f:
                         f.write(response.content)
     return filelist_df
